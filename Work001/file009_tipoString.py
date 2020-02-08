@@ -15,7 +15,7 @@ duplasdentro = "aspas \" duplas dentro"
 print(duplasdentro)
 
 maiuscula, minuscula = 'palavra1', 'PALAVRA2'
-print(F'maiuscula é {maiuscula.upper()} e minuscula é {maiuscula.lower()}')
+print(F'maiuscula é {maiuscula.upper()} e minuscula é {minuscula.lower()}')
 
 frase2 = 'Isto é uma lista de strings'
 print(frase2.split())

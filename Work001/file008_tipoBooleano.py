@@ -12,7 +12,7 @@ print(not ativo)
 # alternância (or)
 bol1, bol2, bol3 = True, False, True
 print(bol1 or bol2 or bol3)
-bol1, bol2, bol3 =  False, False, False
+bol1, bol2, bol3 = False, False, False
 print(bol1 or bol2 or bol3)
 
 # e (and)
