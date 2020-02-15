@@ -10,6 +10,7 @@ print(f'o tipo de ativo é {type(ativo)}')
 print(not ativo)
 
 # alternância (or)
+print('------')
 bol1, bol2, bol3 = True, False, True
 print(bol1 or bol2 or bol3)
 bol1, bol2, bol3 = False, False, False
