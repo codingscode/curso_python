@@ -1,3 +1,7 @@
+# pasta 4
+
+"""
+
 #01
     #numero = int(input('Digite um número inteiro : '))
     #print(f'o número é {numero}')
@@ -68,3 +72,17 @@
 #    print('o número não tem 3 dígitos')
 
 #47
+numero = input('Digite um número de 4 dígitos: ')
+
+if(len(str(numero))) != 4:
+    print('o numero n tem 4 digitos')
+elif (int(numero) >= 100 and int(numero)<= 9999) is False:
+    print('fora do intervalo')
+else:
+    for n in range(0, len(numero)):
+        print(numero[n])
+
+"""
+
+#51
+
