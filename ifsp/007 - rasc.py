@@ -24,14 +24,32 @@ print(f'o tamanho de aluno é : {len(aluno)}')
 print('------------')
 
 #verificando existencia de elementos
-produto = {'nome': 'bicicleta', 'cor': 'verde', 'preco': 400}
+produto = {'nome': 'bicicleta', 'cor': 'verde', 'preco': 400, 'desconto': True}
 
 print('preco' in produto)
 print('marca' in produto)
+print('--------------')
 
 #get()
 print(produto.get('nome'))
 print(produto.get('marca'))
 print(produto.get('marca', 'não tem'))
+print('----------------')
+
+# items(), keys(), values()
+print(produto.items())    # par chave/valor
+print(produto.keys())     # chaves
+print(produto.values())   #valores
+print('----------------')
+
+aluno_original = {'nome': 'Raul', 'idade': 20, 'nota': 7.5}
+aluno_atualizar = {'peso': 80, 'nota': 9}
+aluno_original.update(aluno_atualizar)
+
+print(aluno_original)
+print('-------------')
+
+
+
 
 

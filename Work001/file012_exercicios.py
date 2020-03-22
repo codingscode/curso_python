@@ -82,7 +82,40 @@ else:
     for n in range(0, len(numero)):
         print(numero[n])
 
+#51
+x = float(input('digite o valor de x : '))
+y = float(input('digite o valor de y : '))
+
+distancia = ((x)**2 + (y)**2)**0.5
+print(f'a distancia até a origem (0, 0) é : {distancia}')
+
+#52
+
+premio = float(input('Qual o valor do premio ? : '))
+
+jogador1 = float(input('Valor dado pelo jogador1: '))
+jogador2 = float(input('Valor dado pelo jogador2: '))
+jogador3 = float(input('Valor dado pelo jogador3: '))
+
+k = jogador1 + jogador2 + jogador3
+
+print(f'jogador1 ganha : {(jogador1/k)*premio}, jogador2 ganha : {(jogador2/k)*premio}, jogador3 ganha : {(jogador3/k)*premio}')
+
+#53
+print('dimensões do terreno:')
+comprimento = float(input('Qual o comprimento(m) do terreno : '))
+largura = float(input('Qual a largura(m) do terreno : '))
+preco = float(input('preco por m²: '))
+
+custotoal = comprimento*largura*preco
+print(custotoal)
 """
 
-#51
+
+
+
+
+
+
+
 

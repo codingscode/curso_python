@@ -69,6 +69,7 @@ print(lista1)
 lista6 = [32, 33, 34, 'meio', 37]
 lista6.append(5)
 print(lista6)
+print('----------------')
 
 # Podemos inserir um novo elemento na lista informando a posição do indice
 lista6.insert(2, 'novo valor')  # ordem 2, n substitui
@@ -79,6 +80,7 @@ lista8 = lista6 + lista7
 print(lista8)
 lista6.extend(lista7)
 print(lista6)
+print('----------------')
 
 # podemos inverter uma lista
 lista7.reverse()
@@ -93,6 +95,7 @@ print(lista10)
 
 # contando elementos dentro da lista
 print(f'o tamanho de lista 9 é {len(lista9)}')
+print('----------------')
 
 # remover último elemento de uma lista
 lista11 = [90, 91, 92, 93, 94, 95, 96, 97]
@@ -118,7 +121,7 @@ print(novo)
 # exemplo1
 curso = 'programação em python'
 print(curso)
-curso = curso.split()
+curso = curso.split()  # sem nada, o padrão é espaço
 print(curso)
 
 curso2 = 'programando-em-react'
@@ -232,7 +235,7 @@ print(listnumeros.index(10))  # retorna o indice o 1º ref elemento encontrado
 print('--------------')
 
 # Podemos fazer busca dentro de um range, ou seja, qual indice comerçar a buscar
-print(listnumeros.index(7, 1)) #buscar a partir do indice 1
+print(listnumeros.index(7, 1)) #buscar o 7 a partir do indice 1
 print(listnumeros.index(41, 3))
 print(listnumeros.index(16, 1))
 print('---------------')
@@ -318,5 +321,18 @@ nova2.append(23)
 
 print(f'lista20 é {lista20}')
 print(f'nova2 é {nova2}')
+print('--------------------')
+
+# Somando duas listas, tendo a menor como delimitador.
+lista_a = [1, 2, 3, 4, 5, 6, 7]
+lista_b = [1, 1, 1, 1]
+
+print([sum(v) for v in zip(lista_a, lista_b)])
+
+print('--------------------')
+list1 = [2, 3, 7, 10, 4]
+list2 = [2, 0, 1]
+
+print(list1 + list2)
 
 
