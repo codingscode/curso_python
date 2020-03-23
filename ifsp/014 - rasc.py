@@ -51,10 +51,12 @@ print(datatempo2)
 datatempo2 = datetime.utcnow()
 print(datatempo2)
 
+print(datatempo2.minute)
+print(datatempo2.second)
+print(datatempo2.day)
 
 
-
-
+# https://docs.python.org/3.6/library/datetime.html#strftime-strptime-behavior
 
 
 

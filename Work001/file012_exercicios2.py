@@ -103,11 +103,62 @@ if verificar == 0:
         print(f'{ano} não é ano bissexto')
 
 
+# 26
+
+distancia = float(input('Distancia(Km) percorrida: '))
+litros = float(input('Quantidade(l) consumida: '))
+
+razao = distancia/litros
+
+if razao > 12:
+    print('seu carro é super economico')
+elif 8 <= razao < 14:
+    print('seu carro é economico')
+else:
+    print('venda o carro')
+
+
+#29
+import random
+
+armazenar = []
+resposta = 0
+contador = 0
+
+for i in range(5):
+    aleatorio1 = random.randint(1, 100)
+    aleatorio2 = random.randint(1, 100)
+    correto = aleatorio1 + aleatorio2
+
+    print(f'{str(aleatorio1)} + {str(aleatorio2)} ? : ')
+    resposta = input('resposta: ')
+    print(f'resposta correta: {correto}')
+    if int(resposta) == correto:
+        contador += 1
+
+print(f'o aluno acertou : {contador} vezes')
+
+
+#30
+
+valor = []
+
+for i in range(3):
+    valorrecebido = float(input('digite um valor: '))
+    valor.append(valorrecebido)
+
+valor.sort()
+print(f'numeros ordenados {valor}')
+
+
 
 """
 
 
-# 26
+#37
+
+
+
 
 
 

@@ -19,7 +19,7 @@ misturado[0] = False   # alterando valores
 print(misturado)
 print('--------------')
 
-misturado.append('011-rasc')  # adiciona no final da lista
+misturado.append('mais')  # adiciona no final da lista
 print(misturado)
 misturado.insert(2, 'posicao escolhida')  # escolhe a posição para adicionar
 print(misturado)
@@ -32,7 +32,7 @@ print(lista)
 print('----------------')
 
 lista2 = [1, 2, 3]
-lista3 = ['011-rasc', 'mais2', 'mais3']
+lista3 = ['mais', 'mais2', 'mais3']
 lista4 = lista2 + lista3
 
 print(lista4)
