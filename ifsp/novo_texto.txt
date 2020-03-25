@@ -1,2 +1,2 @@
-Testando, testando
-mais uma linha
+Novo texto, no mesmo arquivo
+Texto adicionado ao arquivo com o modo "a"
