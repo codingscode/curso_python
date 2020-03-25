@@ -151,19 +151,36 @@ valor.sort()
 print(f'numeros ordenados {valor}')
 
 
+# 37
+from datetime import timedelta
+import math
+
+chegada = input('horario da chegada(hh:mm) : ')
+saida = input('horario da saida(hh:mm) : ')
+
+cheg = chegada.split(':')
+sai = saida.split(':')
+
+delta1 = timedelta(hours=int(cheg[0]), minutes=int(cheg[1]))
+delta2 = timedelta(hours=int(sai[0]), minutes=int(sai[1]))
+
+diferenca = delta2 - delta1
+convdif = str(diferenca)
+
+dividido = convdif.split(':')
+horas = int(dividido[0]) + int(dividido[1]) / 60
+
+if horas <= 2:
+    print(f'preco : {math.ceil(horas)}')
+elif 2 < horas < 4:
+    print(f'preco: {2 + (math.ceil(horas - 2)) * 1.4}')
+elif horas >= 5:
+    print(f'preco: {4.8 + (math.ceil(horas - 4) * 2)}')
+
+
+
 
 """
-
-
-#37
-
-
-
-
-
-
-
-
 
 
 
@@ -171,27 +188,6 @@ print(f'numeros ordenados {valor}')
 
 """ 
 
-
-numero = 4.2
-verificar = float(numero) - int(numero)
-
-if verificar == 0.0:
-    print('é inteiro')
-else:
-    print('não é inteiro')
-    
-    
-x = 1.0
-y = 1
-z = '1'
-k = str(x)
-t = str(y)
-
-print(type(x))
-print(type(y))
-print(type(z))
-
-print(k == t)
 
 
 """

@@ -1,0 +1,5 @@
+python
+big data
+artificial inteligence
+machine learning
+deep learning
