@@ -5,7 +5,7 @@ x = y = z = 8
 
 print(f'valores: {x}, {y}, {z}')
 
-a, b, c = 7, 8, 9
+a, b, c = 7, 8, 9  # desempacotando
 
 print(f'valores: {a}, {b}, {c}')
 
@@ -17,7 +17,7 @@ Caracteres são escapados como se espera.
 
 print(string_grande)
 
-string8 = r"Utilizamos \n para inserir uma nova linha na string"
+string8 = "Utilizamos \n para inserir uma nova linha na string"
 print(string8)
 
 a = 30.46257

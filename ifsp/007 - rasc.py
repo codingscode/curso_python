@@ -30,7 +30,7 @@ print('preco' in produto)
 print('marca' in produto)
 print('--------------')
 
-#get()
+#get() acessar valor da chave
 print(produto.get('nome'))
 print(produto.get('marca'))
 print(produto.get('marca', 'não tem'))

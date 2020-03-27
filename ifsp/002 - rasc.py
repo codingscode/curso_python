@@ -28,7 +28,7 @@ frase2 = 'fica tudo maiusculo'
 print(f'{nome4.capitalize()}, {frase1.lower()}, {frase2.upper()}')
 
 umastring2 = 'amanhã é sol'
-print(umastring2.center(20, '*'))
+print(umastring2.center(20, '*'))  # center(nº caracteres, o que nas extremidades)
 
 frase3 = 'hoje o dia foi bom'
 frase4 = 'amanhã será melhor ainda'

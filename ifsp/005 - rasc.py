@@ -42,12 +42,12 @@ print(f'quantas vezes aparece luigi : {qluigi}')
 print('------------')
 
 alunos3 = ['vicente', 'fabiola', 'adina', 'ziraldo', 'mauricio', 'leonardo']
-alunos3.sort()
+alunos3.sort()   #modifica
 
 print(alunos3)
 alunos3 = ['vicente', 'fabiola', 'adina', 'ziraldo', 'mauricio', 'leonardo']  #sobrescrevendo
 
-alunos3.reverse()
+alunos3.reverse()   #modifica
 print(alunos3)
 print(alunos3.reverse())
 
@@ -62,7 +62,7 @@ print('patinete' in transportes)
 cor = 'vermelho'
 cor2 = 'violeta'
 cor3 = 'laranja'
-cor4 = 'vermelho, azul, roxo, verde, laranja'
+cor4 = 'vermelho,azul,roxo,verde,laranja'
 cor5 = 'laranja'
 
 cor_asterisco = '**'.join(cor)   # criterio entre elementos
