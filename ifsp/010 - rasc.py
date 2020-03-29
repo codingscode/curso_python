@@ -46,7 +46,7 @@ print('-----------------')
 
 def mostrar_argumentos(*args):   # como listas
     for parametro in args:
-       print(parametro)
+        print(parametro)
 
 
 mostrar_argumentos('Olá', 'Python', 'ok')

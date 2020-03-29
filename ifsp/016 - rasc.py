@@ -29,11 +29,13 @@ arquivo3.write('Testando, testando\n')
 arquivo3.write('mais uma linha')
 arquivo3.close()
 
+
 print('-----------------')
 
 arquivo4 = open('novo_texto.txt', 'w')    # sobrescreve o arquivo3
 arquivo4.write('Novo texto, no mesmo arquivo')
 arquivo4.close()
+
 
 print('-----------------')
 
@@ -42,6 +44,7 @@ arquivo5.write('\nTexto adicionado ao arquivo com o modo "a"')
 arquivo5.close()
 
 print('-----------------')
+
 
 # abrindo no modo r+
 
@@ -57,10 +60,6 @@ arquivo6.close()
 
 print('-----------------')
 
+"""
 
-
-
-
-
-
-
+"""
