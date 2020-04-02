@@ -395,49 +395,71 @@ else:
 
 """
 
-
-
 # 55
 
+quantidade = int(input('digite a quantidade: '))
+
+atual = 0  # numero atual
+delta = 0  # variacao
+atual_divisores = []  # divisores do numero atual
+n_primos = []  # numeros primos
+
+
+def testar(x, delta2):
+    while (x - delta2) >= 1:
+        if x % (x - delta2) == 0:
+            atual_divisores.append(x - delta2)
+        delta2 += 1
+
+    if len(atual_divisores) == 2:
+        # print(f'{x} é um número primo')
+        return True
+    elif len(atual_divisores) > 2:
+        # print(f'{x} não é um número primo')
+        return False
+
+# print(testar(29, 0))
+
+
+while len(n_primos) <= quantidade-1:
+    if testar(atual, delta) is True:
+        n_primos.append(atual)
+    atual_divisores.clear()
+    atual += 1
+
+print(f'os {quantidade}º primos: {n_primos}')
+print(f'sua soma é {sum(n_primos)}')
+
+
+#while len(n_primos) <= quantidade:
+#    for numero in range(2, 100):
+#        atual = numero
+#        if testar(atual, delta) is True:
+#            n_primos.append(atual)
+#        atual_divisores.clear()
+
+#print(n_primos)
+
+#for numero in range(2, 21):
+#    atual = numero
+#    if testar(atual, delta) is True:
+#        n_primos.append(atual)
+#    atual_divisores.clear()
+
+#print(n_primos)
+
+
+#for numero in range(2, 21):
+#    atual = numero
+#    print(f'{atual} : {testar(atual, delta)}')
+#    atual_divisores.clear()
 
 
 
 
 
+""" 
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+"""
