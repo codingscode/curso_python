@@ -57,8 +57,8 @@ else:
 populacao_cidade = localizacao.get('populacao', 'Não encontrado')
 idh = localizacao.get('idh', 'Não encontrado')
 
-print(f'Encontrado a populacao {populacao_cidade}')
-print(f'Encontrado o idh {idh}')
+print(f'Encontrado a populacao: {populacao_cidade}')
+print(f'Encontrado o idh: {idh}')
 print('------------------------')
 
 
