@@ -135,14 +135,42 @@ unicos1 = estudantes_python.union(estudantes_java)
 unicos2 = estudantes_java.union(estudantes_python)
 
 print(f'unicos1: {unicos1}')
-print(f'unicos2: {unicos2}')
+print(f'unicos2: {unicos2}')   # igual ao de cima
+
+# Forma 2 - utilizando o caractere pipe |
+unicos3 = estudantes_python | estudantes_java
+print(f'unicos3: {unicos3}')
+
+# gerar um conjunto de alunos que estão em ambos os cursos
+# Forma 1 - utilizando o intersection()
+
+ambos1 = estudantes_python.intersection(estudantes_java)
+print(f'ambos1: {ambos1}')
+
+# Forma 2 - utilizando o &
+ambos2 = estudantes_python & estudantes_java
+print(f'ambos2: {ambos2}')
 
 
+# gerar um conjunto de estudantes que só pertencem ou ao curso python ou ao curso java
+    # só python
+somente_python = estudantes_python.difference(estudantes_java)
+print(f'somente python: {somente_python}')
 
+    # só java
+somente_java = estudantes_java.difference(estudantes_python)
+print(f'somente java: {somente_java}')
 
+print('-------------------\n')
 
+# Soma de valores, máximo, mínimo, tamanho
 
-
+   # se os valores forem todos inteiros ou reais
+conjunto_atual = {5, 7, 20, 12, 30, 15}
+print(f'soma: {sum(conjunto_atual)}')
+print(f'maximo: {max(conjunto_atual)}')
+print(f'minimo: {min(conjunto_atual)}')
+print(f'tamanho: {len(conjunto_atual)}')
 
 
 
