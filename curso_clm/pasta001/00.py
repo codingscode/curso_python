@@ -80,5 +80,17 @@ lista_2 = [8, 47, 51]
 lista_3 = [8, 47, 51]
 
 print(f'{lista_2 == lista_3} || {lista_2 is lista_3}')
+"""
+== verifica valores, is verifica se são o mesmo objeto
+ 
+"""
 
+print('-------------------\n')
 
+uma_string3 = 'aranha'
+#para_int = int(uma_string3)   dá erro
+#print(f'para_int: {para_int}')
+
+uma_string4 = '5'
+para_int2 = int(uma_string4)
+print(f'para_int2: {para_int2}')
