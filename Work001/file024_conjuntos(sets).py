@@ -9,7 +9,7 @@ Sets não possuem valores ordenados
 Elementos não são acessados via índice, ou seja, não são indexados
 
 Conjuntos são bons para se utilizar quando precisamos armazenar elementos mas não nos importamos
-com a ordenação deles. Quando não precisamos se preocupar com chaves, valores e itens duplicados.
+com a ordenação deles. Quando não precisamos nos preocupar com chaves, valores e itens duplicados.
 
 os conjuntos são referenciados por '{}'
 conjuntos não tem chaves/valores, apenas valor(es).

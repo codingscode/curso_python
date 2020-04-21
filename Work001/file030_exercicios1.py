@@ -64,11 +64,65 @@ for cada in valores:
 
 print(f'pares: {pares} || quantos: {len(pares)}')
 
+
+# 07
+
+print('digite 10 números inteiros: ')
+valores = []
+
+for indice in range(10):
+    valor = int(input(f'{indice+1}º valor: '))
+    valores.append(valor)
+
+print(valores)
+print(f'maior: {max(valores)}, seu indice: {valores.index(max(valores))}')
+
+#08
+
+valores = []
+
+for indice in range(6):
+    valor = int(input(f'{indice+1}º valor: '))
+    valores.append(valor)
+
+print(f'ordem inversa {valores[::-1]}')
+
+
+#11
+valores = []
+contar_negativo = 0
+soma_positivos = 0
+
+for indice in range(10):
+    valor = int(input(f'{indice+1}º valor: '))
+    valores.append(valor)
+
+for cada in valores:
+    if cada < 0:
+        contar_negativo += 1
+    else:
+        soma_positivos += cada
+
+print(f'quantidade de negativos: {contar_negativo}')
+print(f'soma dos positivos: {soma_positivos}')
+
+
+
+
+
 """
 
 
 
-# 07
+
+
+#14
+
+
+
+
+
+
 
 
 
