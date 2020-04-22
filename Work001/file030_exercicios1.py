@@ -106,6 +106,120 @@ for cada in valores:
 print(f'quantidade de negativos: {contar_negativo}')
 print(f'soma dos positivos: {soma_positivos}')
 
+#14
+from functools import reduce
+
+valores = []
+
+for indice in range(4):
+    valor = int(input(f'{indice+1}º valor: '))
+    valores.append(valor)
+
+print(valores)
+
+#
+verificar = all(cada == valores[0] for cada in valores)
+
+print(verificar)
+
+#14.2
+
+from functools import reduce
+
+valores = []
+
+for indice in range(4):
+    valor = int(input(f'{indice+1}º valor: '))
+    valores.append(valor)
+
+print(valores)
+
+# reduce(function, sequence[, initial]) -> value
+def funcao(acumulador, atual):
+    return acumulador is atual
+
+
+#verificar = all((valores[indice] == valores[indice]) for indice in range(len(valores)))
+
+verificar = reduce(funcao, valores)
+
+print(verificar)
+#https://thispointer.com/python-check-if-all-elements-in-a-list-are-same-or-matches-a-condition/
+
+
+#15
+
+elementos = set()
+
+for i in range(20):
+    valor = int(input(f'{i+1}º valor: '))
+    elementos.add(valor)
+
+print(f'{elementos} || {type(elementos)}')
+
+#17
+
+valores = []
+
+for i in range(5):
+    valor = int(input(f'{i+1}º valor: '))
+    if valor < 0:
+        valores.append(0)
+    else:
+        valores.append(valor)
+
+print(valores)
+
+
+#18
+
+x = int(input('valor para x: '))
+
+numeros = []
+contador = 0
+
+for i in range(5):
+    valor = int(input(f'{i+1}º valor: '))
+    numeros.append(valor)
+
+print(numeros)
+
+for cada in numeros:
+    if cada % x == 0:
+        contador += 1
+    else:
+        contador += 0
+
+print(f'números de múltiplos de {x}: {contador}')
+
+
+"""
+
+
+
+
+#24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -115,14 +229,7 @@ print(f'soma dos positivos: {soma_positivos}')
 
 
 
-
-#14
-
-
-
-
-
-
+"""
 
 
 
