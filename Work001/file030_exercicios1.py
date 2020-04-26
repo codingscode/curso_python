@@ -225,14 +225,71 @@ print(f'mbaixo: {mbaixo}, seu numero: {todos[extrair(todos).index(mbaixo)][0]}')
 print(f'malto: {malto}, seu numero: {todos[extrair(todos).index(malto)][0]}')
 
 
-
-
-"""
-
-
 #25
 
+quantidade = 99
 
+atual = 1
+valores = []
+
+while len(valores) <= quantidade:
+    if (atual % 7 == 0) or (int(repr(atual)[-1]) == 7):  # usado para pegar o nth dígito numero
+        valores.append(atual)
+    atual += 1
+
+print(len(valores))
+print(valores)
+
+
+#27
+
+quantidade = 10
+
+valores = []
+ordem = 0
+
+primos = []
+
+while len(valores) <= quantidade:
+    valor = int(input(f'{ordem+1}º valor: '))
+    valores.append(valor)
+    ordem += 1
+
+print(valores)
+
+
+def primo(numero):
+    delta = 0
+    divisores = []
+    while numero - delta >= 1:
+        if numero % (numero - delta) == 0:
+            divisores.append((numero - delta))
+        delta += 1
+    if len(divisores) == 2:
+        return True
+    else:
+        return False
+
+#print(primo(4))
+
+
+for cada in valores:
+    if primo(cada) is True:
+        primos.append(cada)
+
+print(f'primos: {primos}')
+
+for cada in primos:
+    print(f'{cada} sua posição: {valores.index(cada)}')
+
+
+
+
+"""
+
+
+
+#30
 
 
 
@@ -247,6 +304,10 @@ print(f'malto: {malto}, seu numero: {todos[extrair(todos).index(malto)][0]}')
 """
 
 
+
+numero = 36528
+
+print(int(repr(numero)[-1]))
 
 
 
