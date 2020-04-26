@@ -193,17 +193,80 @@ for cada in numeros:
 print(f'números de múltiplos de {x}: {contador}')
 
 
+
+#24
+from operator import itemgetter
+
+todos = []
+mbaixo = 0
+malto = 0
+
+
+def extrair(lista):
+    return list(map(itemgetter(1), lista))  # 1 é indice da lista de cada elemento-lista
+
+
+for i in range(10):
+    numerox = float(input('numero: '))
+    alturax = float(input('altura: '))
+    par = [numerox, alturax]
+    todos.append(par)
+
+#for numero, altura in todos:
+#    alturas.append(altura)
+
+print(f'todos: {todos}')
+print(f'alturas: {extrair(todos)}')
+
+mbaixo = min(extrair(todos))
+malto = max(extrair(todos))
+
+print(f'mbaixo: {mbaixo}, seu numero: {todos[extrair(todos).index(mbaixo)][0]}')
+print(f'malto: {malto}, seu numero: {todos[extrair(todos).index(malto)][0]}')
+
+
+
+
+"""
+
+
+#25
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
 
 
 
 
-#24
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 
 
 
