@@ -283,18 +283,51 @@ for cada in primos:
     print(f'{cada} sua posição: {valores.index(cada)}')
 
 
-
-
-"""
-
-
-
 #30
+    # 2 vetores de 10 elementos
+quant_em_cada = 4
+
+conjunto1 = set()
+conjunto2 = set()
+
+while len(conjunto1) < quant_em_cada:
+    valor = int(input(f'{len(conjunto1) + 1}º valor: '))
+    conjunto1.add(valor)
+
+while len(conjunto2) < quant_em_cada:
+    valor = int(input(f'{len(conjunto2) + 1}º valor: '))
+    conjunto2.add(valor)
+
+print(f'conjunto1: {conjunto1}')
+print(f'conjunto2: {conjunto2}')
+
+intersecao = conjunto1.intersection(conjunto2)
+uniao = conjunto1 | conjunto2
+soconjunto1 = conjunto1.difference(conjunto2)
+soconjunto2 = conjunto2.difference(conjunto1)
+
+print(f'intersecao: {intersecao}')
+print(f'uniao: {uniao}')
+print(f'somente conjunto1: {soconjunto1}')
+print(f'somente conjunto2: {soconjunto2}')
+
+
+#33
 
 
 
+#36
 
+quantidade = 4
+valores = set()
 
+for i in range(4):
+    valor = int(input(f'{i+1}º valor: '))
+    valores.add(valor)
+
+print(valores)
+ordenado = sorted(valores)
+print(ordenado)
 
 
 
@@ -303,6 +336,21 @@ for cada in primos:
 
 """
 
+
+
+#35
+
+
+
+"""
+
+
+x = {1, 2, 4, 10, -3}
+
+print(x)
+
+for cada in x:
+    print(cada)
 
 
 numero = 36528
@@ -314,49 +362,4 @@ print(int(repr(numero)[-1]))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-
-
-
-
-"""
-
-
-
-
-
-
