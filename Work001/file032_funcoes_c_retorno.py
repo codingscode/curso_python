@@ -98,7 +98,7 @@ from random import random
 def jogar_moeda():
     valor = random()
     if valor > 0.5:
-      return 'Cara'
+        return 'Cara'
     return 'Coroa'
 
 
@@ -115,14 +115,5 @@ def eh_impar():
     else:
         return False
 
+
 print(eh_impar())
-
-
-
-
-
-
-
-
-
-
