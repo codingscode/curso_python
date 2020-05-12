@@ -69,7 +69,34 @@ print(com_soma('simon', 'simon@'))
 print(com_soma('paul', 'paul@', 1.4, 3.2, 7.1))
 print(com_soma('shin', 'shin@', 3, 2, 1))
 print(com_soma('vicente', 'vicente@', 0, 2, 5))
+print('-----------------------------\n')
 
 
+def verificar_info(*args):
+    if 'Python' in args and 'Curso' in args:
+        return 'Bem vindo ao curso Python'
+    return 'você não faz curso Python'
 
 
+print(verificar_info())
+print(verificar_info(1, True, 'Python', 'Curso'))
+print(verificar_info(False, 1.5, 'java', True, 3))
+
+print('-------------------\n')
+
+
+def somartodos(*args):
+    print(f'quem é args: {args}')
+    return sum(args)
+
+
+minha_lista1 = [4, 1, 0, 7]
+minha_lista2 = [3, 0, 10, 2]
+print(somartodos())
+print(somartodos(1, 2, 3))
+#print(somartodos(minha_lista1))  # dá erro  entende como  ([4, 1, 0, 7],)
+
+# desempacotador
+print(somartodos(*minha_lista2))
+# OBS: O asteristo (*) serve para que informemos ao Python que estamos passando como argumento
+# uma coleção de dados. Desta forma, ele saberá que precisará antes desempacotar estes dados.

@@ -20,7 +20,8 @@ print(exponencial(4, 3))
 print(exponencial(5))  # já informado antes
 print('-----------------------')
 
-# OBS: Em funções Python, os parametros com valores default(padrão) devem sempre estar ao final da declaração
+# OBS: Em funções Python, os parametros com valores default(padrão) devem sempre estar ao final da
+# declaração
 
 
 def mostrar_informacao(nome='CodePython', instrutor=False):
@@ -104,11 +105,3 @@ print(fora())
 print(fora())
 print(fora())
 #print(dentro())  # dá erro
-
-
-
-
-
-
-
-
