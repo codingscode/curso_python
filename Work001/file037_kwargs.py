@@ -25,7 +25,7 @@ def cores_favoritas2(**kwargs):
 
 cores_favoritas2(vicente='laranja', simon='verde', geovana='azul', patricia='purpura')
 
-# OBS:  Os parametros *args e **kwargs não obrigatórios
+# OBS:  Os parametros *args e **kwargs não são obrigatórios
 cores_favoritas2()
 print('------------------------\n')
 
@@ -117,4 +117,4 @@ somarnumeros(**dicionario1)
 # OBS: Os nomes da chave em um dicionario devem ser o mesmo dos parametros da função
 print('-----------------------------------')
 
-somarnumeros(**dicionario3, lang='Python')  # dá erro, mas pode ser evitado se colocar **kwargs na definição da função
+#somarnumeros(**dicionario3, lang='Python')  # dá erro, mas pode ser evitado se colocar **kwargs na definição da função
