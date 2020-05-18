@@ -105,14 +105,89 @@ print('isnt', isinstance(1.2, float))
 print('isnt', isinstance(2, int))
 
 
-"""
-
-
-
-
-
-
 #12
+num = int(input('digite um número inteiro positivo: '))
+
+#n = 123
+#para_string = str(n)
+#print(para_string)
+#print(para_string[0])
+#print(para_string[1])
+#print([float(para_string[i:i+1]) for i in range(0, len(para_string), 1)])
+
+
+def somardigitos(numero):
+    if numero > 0:
+        lista = [int(str(numero)[i:i + 1]) for i in range(0, len(str(numero)), 1)]
+        return f'soma dos dígitos: {sum(lista)}'
+    return 'número inválido'
+
+
+print(somardigitos(num))
+
+
+# 14
+dist = float(input('digite a distancia percorrida: '))
+lit = float(input('digite a quantidade de litros gastos: '))
+
+
+def carro(distancia, litros):
+    consumo = distancia/litros
+    if consumo < 8:
+        return 'venda o carro!'
+    elif 8 <= consumo < 14:
+        return 'econômico'
+    elif consumo > 12:
+        return 'supereconomico'
+
+
+print(carro(dist, lit))
+
+#16
+q = int(input('quantos traços: '))
+
+
+def tracos(numero):
+    re = ''
+    re += '=' * numero
+    return re
+
+
+print(tracos(q))
+
+
+#17
+numero1 = int(input('digite o 1º numero: '))
+numero2 = int(input('digite o 2º numero: '))
+
+
+def somarnumeros(num1, num2):
+    maior = max([num1, num2])
+    menor = min([num1, num2])
+    soma = 0
+    for cada in range(menor+1, maior):
+        soma += cada
+    return soma
+
+
+print('soma do intervalo:', somarnumeros(numero1, numero2))
+
+
+"""
+
+
+
+
+
+
+
+# 19
+
+
+
+
+
+
 
 
 
@@ -131,29 +206,6 @@ print('isnt', isinstance(2, int))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 """
+
+
