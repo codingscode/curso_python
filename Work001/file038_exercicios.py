@@ -173,21 +173,47 @@ def somarnumeros(num1, num2):
 print('soma do intervalo:', somarnumeros(numero1, numero2))
 
 
-"""
-
-
-
-
-
-
-
 # 19
 
+import math
+
+entrada = int(input('digite um número inteiro e positivo: '))
+
+div = []
+
+
+def seusdivisores(numero, variacao=0):
+    divisores = []
+    while numero - variacao >= 1:
+        if numero % (numero - variacao) == 0:
+            divisores.append(numero - variacao)
+        variacao += 1
+    return divisores
+
+
+div = seusdivisores(entrada)
+print(div)
+
+
+def seusprimos(num):
+    lista = seusdivisores(num)
+    primos = []
+    for cada in lista:
+        if len(seusdivisores(cada, 0)) == 2:
+            primos.append(cada)
+    return primos
+
+
+print(f'fatores primos de {entrada} é : {seusprimos(entrada)}')
+print(f'maior fator primo de {entrada} é : {max(seusprimos(entrada))}')
+print(f'logaritmo de 27 na base 3 é : {math.log(27, 3)}')
+
+
+"""
 
 
 
-
-
+#20
 
 
 
@@ -206,6 +232,9 @@ print('soma do intervalo:', somarnumeros(numero1, numero2))
 
 
 
+
+
+
+
+
 """
-
-
