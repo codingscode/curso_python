@@ -209,12 +209,69 @@ print(f'maior fator primo de {entrada} é : {max(seusprimos(entrada))}')
 print(f'logaritmo de 27 na base 3 é : {math.log(27, 3)}')
 
 
-"""
-
-
-
 #20
 
+entrada = int(input('digite um numero inteiro e positivo: '))
+
+
+def seufatorial(numero):
+    delta = 0
+    fat = 1
+    while numero - delta >= 1:
+        fat *= numero - delta
+        delta += 1
+    return fat
+
+
+print(f'o fatorial de {entrada} é : {seufatorial(entrada)}')
+
+
+# 22
+valor = int(input('digite um valor: '))
+
+
+def tracos(linhas):
+    n = 1
+    while n <= linhas:
+        print('!'*n)
+        n += 1
+
+
+tracos(valor)
+
+
+"""
+
+
+
+
+
+
+
+
+
+# 23
+
+entrada = int(input('digite um número inteiro: '))
+
+n = 1
+matriz = []
+
+
+def modificador(valor):
+    delta = 1
+    while delta <= valor:
+        matriz.append(delta)
+        delta += 1
+    matriz.extend(matriz[-2:(-2-entrada):-1])
+    for cada in matriz:
+        print('*'*cada)
+
+
+modificador(entrada)
+
+
+
 
 
 
@@ -228,7 +285,11 @@ print(f'logaritmo de 27 na base 3 é : {math.log(27, 3)}')
 """
 
 
-
+b = [10]
+lista = [2, 3, 4, 5, 6]
+print(lista[-2:-6:-1])
+b.extend(lista)
+print(b)
 
 
 
