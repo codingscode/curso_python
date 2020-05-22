@@ -240,16 +240,6 @@ def tracos(linhas):
 tracos(valor)
 
 
-"""
-
-
-
-
-
-
-
-
-
 # 23
 
 entrada = int(input('digite um número inteiro: '))
@@ -271,6 +261,113 @@ def modificador(valor):
 modificador(entrada)
 
 
+# 24
+entrada = int(input('digite um valor inteiro e positivo: '))
+
+
+def torre(valor):
+    delta = 0
+    while valor - 1 - delta >= 0:
+        print((valor - 1 - delta)*' ' + (1 + 2 * delta) * '*' + (valor - 1 - delta)*' ')
+        delta += 1
+
+
+torre(entrada)
+
+
+# 26
+entrada = int(input('digite um valor inteiro: '))
+
+
+def soma(valor):
+    soma = 0
+    for cada in range(valor+1):
+        soma += cada
+    return soma
+
+
+print(soma(entrada))
+
+
+
+#32
+numerador = int(input('digite o numerador: '))
+denominador = int(input('digite o denominador: '))
+lista = [numerador, denominador]
+
+
+def mdc(matriz, delta=0):
+    x = max(matriz)
+    while all(cada % (x - delta) == 0 for cada in matriz) is False:
+        delta += 1
+    return x - delta
+
+
+def simplifica(matriz):
+    m_divisor = mdc(matriz)
+    return f'a forma simplificada de {matriz[0]}/{matriz[1]} é : {int(matriz[0]/m_divisor)}/{int(matriz[1]/m_divisor)}'
+
+
+print(simplifica(lista))
+
+
+#41
+lista = input('digite valores: ').split(',')
+
+
+def lista_numerica(vetor):
+    outro = []
+    for cada in vetor:
+        outro.append(int(cada))
+    print(outro)
+    return f'maior numero: {max(outro)}'
+
+
+print(lista_numerica(lista))
+
+
+#42
+import statistics
+
+lista = input('digite valores: ').split(',')
+
+
+def lista_numerica(vetor):
+    outro = []
+    for cada in vetor:
+        outro.append(int(cada))
+    print(outro)
+    return f'média: {statistics.mean(outro)}'
+
+
+print(lista_numerica(lista))
+
+
+#43
+import random
+
+tamanho = int(input('tamanho da lista: '))
+
+
+def listasemrepet(comprimento):
+    conjunto = set()
+    while len(conjunto) < comprimento:
+        #aleatorio = random.choice([1, 2, 3, 4])
+        aleatorio = random.randrange(1, 15, 1)  # de 1 a 15, com passo de 1
+        conjunto.add(aleatorio)
+    return conjunto
+
+
+print(listasemrepet(tamanho))
+
+
+
+"""
+
+
+#46
+
+
 
 
 
@@ -285,9 +382,11 @@ modificador(entrada)
 """
 
 
+
+
 b = [10]
 lista = [2, 3, 4, 5, 6]
-print(lista[-2:-6:-1])
+print(lista[-2:-6:-1])   # inicio:ondepara:passo
 b.extend(lista)
 print(b)
 
