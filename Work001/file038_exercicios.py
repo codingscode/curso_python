@@ -381,14 +381,67 @@ def uniao(m1, m2):
 
 print(uniao(lista1, lista2))
 
+
+#60
+uma_string = input('digite uma string: ')
+uma_substring = input('digite uma substring: ')
+
+
+def verificar(a_string, a_substring):
+    if a_substring in a_string:
+        return f'sua posição é {a_string.find(a_substring)}'
+    return -1
+
+
+print(verificar(uma_string, uma_substring))
+
+#63
+s1 = 'asadelta'
+s2 = 'voadeira'
+
+
+def verificar(ec1, ec2):
+    if ec1 == ec2:
+        return 'são iguais'
+    return 'são diferentes'
+
+
+print(verificar(s1, s2))
+
+#64
+uma_string1 = 'azul'
+uma_string2 = 'branco'
+
+
+def concatenar(valor1, valor2):
+    #return valor1+valor2
+    #return ''.join([valor1, valor2])
+    #return ' '.join([valor1, valor2])
+    #return '{} - {}'.format(valor1, valor2)
+    return '{p1} - {p2}'.format(p1=valor1, p2=valor2)
+
+
+print(concatenar(uma_string1, uma_string2))
+
+
+
 """
 
 
 
+#65
 
 
 
-#60
+
+
+
+
+
+
+
+
+
 
 
 
