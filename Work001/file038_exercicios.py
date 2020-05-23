@@ -361,20 +361,34 @@ def listasemrepet(comprimento):
 print(listasemrepet(tamanho))
 
 
+#59
+
+lista1 = [2, 3, 4, 5, 6]
+lista2 = [5, 6, 7, 8, 9, 10, 11]
+
+
+def uniao(m1, m2):
+    conjunto1 = set()
+    conjunto2 = set()
+    uni = set()
+    for cada in m1:
+        conjunto1.add(cada)
+    for cada in m2:
+        conjunto2.add(cada)
+    uni = conjunto1.union(conjunto2)
+    return uni
+
+
+print(uniao(lista1, lista2))
 
 """
 
 
-#46
 
 
 
 
-
-
-
-
-
+#60
 
 
 
