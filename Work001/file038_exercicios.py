@@ -423,13 +423,86 @@ def concatenar(valor1, valor2):
 
 print(concatenar(uma_string1, uma_string2))
 
-
-
-"""
-
-
-
 #65
+uma_string1 = input('digite a 1ª string: ')
+uma_string2 = input('digite a 2ª string: ')
+numero = int(input('digite um número: '))
+
+
+def concatenar(valor1, valor2, n):
+    return valor1 + 'NULL' + valor2[0:n]
+
+
+print(concatenar(uma_string1, uma_string2, numero))
+
+
+
+#66
+caract = input('digite um caractere: ')
+
+
+def maiusculo(valor):
+    return valor.upper()
+
+
+print(maiusculo(caract))
+
+
+
+#68
+
+pri_string = input('digite a 1ª string: ')
+seg_string = input('digite a 2ª string: ')
+
+
+def intercalar(str1, str2):
+    novo = []
+    if len(str1) < len(str2):
+        for i in range(len(str1)):
+            novo.append(str1[i])
+            novo.append(str2[i])
+        novo.append(str2[len(str1):len(str2)])
+        return ''.join(novo)
+    elif len(str1) > len(str2):
+        for i in range(len(str2)):
+            novo.append(str1[i])
+            novo.append(str2[i])
+        novo.append(str1[len(str2):len(str1)])
+        return ''.join(novo)
+    else:
+        for i in range(len(str1)):
+            novo.append(str1[i])
+            novo.append(str2[i])
+        return ''.join(novo)
+
+
+print(intercalar(pri_string, seg_string))
+
+
+
+
+
+
+
+
+
+
+
+"""
+
+
+
+
+
+
+
+
+
+
+#69
+
+
+
 
 
 
@@ -447,6 +520,56 @@ print(concatenar(uma_string1, uma_string2))
 
 
 """
+
+pp = 'abcde'
+lp = 'goiabada'
+x = list(pp)
+print(x)
+novo = []
+
+
+for i in range(len(pp)):
+    novo.append(pp[i])
+    novo.append(lp[i])
+
+print(novo)
+
+print(lp[len(pp):len(lp)])
+
+print(str(novo))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
