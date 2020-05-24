@@ -491,35 +491,65 @@ print(intercalar(pri_string, seg_string))
 """
 
 
-
-
-
-
-
-
-
-
 #69
+from fractions import Fraction
+
+prifra = Fraction(input('fracao 1: ')) #2/3
+segfra = Fraction(input('fracao 2: ')) #3/5
+
+p = Fraction(prifra).limit_denominator()
+q = Fraction(segfra).limit_denominator()
+duasf = [p, q]
 
 
+def somar(*lista):
+    return sum(lista)
 
 
+def subtrair(lista):
+    return lista[1] - lista[0]
 
 
+def multiplicar(lista):
+    return lista[0]*lista[1]
 
 
+def dividir(lista):
+    return lista[1]/lista[0]
 
 
+def geral(vetor):
+    return f'soma {somar(*vetor)}, subtração {subtrair(vetor)}, multiplicação {multiplicar(vetor)}, quociente {dividir(vetor)}'
 
 
+print(geral(duasf))
+print('------------------')
 
 
+def seummc(vetor, variacao=0):
+    maior = max(vetor)
+    while all((maior + variacao) % cada == 0 for cada in vetor) is False:
+        variacao += 1
+    return maior + variacao
 
 
+print(seummc([2, 5])) # exemplo
 
+
+def seumdc(vetor, variacao=0):
+    maior = max(vetor)
+    while all(cada % (maior - variacao) == 0 for cada in vetor) is False:
+        variacao += 1
+    return maior - variacao
+
+
+print(seumdc([18, 24]))  # exemplo
 
 
 """
+
+
+
 
 pp = 'abcde'
 lp = 'goiabada'
