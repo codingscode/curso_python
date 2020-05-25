@@ -330,6 +330,30 @@ ordenado = sorted(valores)
 print(ordenado)
 
 
+#36
+vetor0 = set()
+tamanho = 10
+
+while len(vetor0) <= tamanho-1:
+    entrada = float(input(f'digite o {len(vetor0)+1}º valor numérico: '))
+    vetor0.add(entrada)
+
+ordenado = sorted(vetor0)
+
+print(ordenado)
+
+
+
+"""
+
+
+
+
+
+
+
+
+
 
 
 
@@ -338,11 +362,6 @@ print(ordenado)
 
 
 
-#35
-
-
-
-"""
 
 
 x = {1, 2, 4, 10, -3}
