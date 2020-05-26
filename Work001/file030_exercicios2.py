@@ -13,8 +13,6 @@ print(f'quantos valores maiores que 10: {contador}')
 
 
 #02
-#https://kharisecario.wordpress.com/2017/03/25/create-nxn-matrix-in-pythonnumpy/
-
 
 ordem = 5
 matriz = []
@@ -100,20 +98,50 @@ print(f'valor procurado : {ref}, posição(coluna, linha): {posicao}')
 print(f'ocorrência: {contador} vezes')
 
 
-
-
-
-
-
-
-
-"""
-
-
-
 #11
+matriz = [[4, 0, 5], [1, 8, 3], [7, 2, 6]]
+submatriz = []
+soma = 0
+
+for i_coluna in range(len(matriz)):
+    for i_linha in range(len(matriz[i_coluna])):
+        submatriz.append(matriz[len(matriz) - i_coluna - 1][i_coluna])
+    soma = sum(submatriz)/len(matriz)
 
 
+print(soma)
+print(submatriz)
+
+
+#11.2 correção
+
+matriz = [[4, 0, 5], [1, 8, 3], [7, 2, 6]]
+submatriz = []
+soma = 0
+
+for i_coluna in range(len(matriz)):
+    for i_linha in range(len(matriz[i_coluna])):
+        if i_coluna + i_linha == len(matriz) - 1:
+            submatriz.append(matriz[len(matriz) - i_coluna - 1][i_coluna])
+    soma = sum(submatriz)
+
+print(soma)
+print(submatriz)
+
+
+
+
+
+
+
+"""
+
+
+
+
+
+
+# 18
 
 
 
@@ -128,7 +156,7 @@ print(f'ocorrência: {contador} vezes')
 
 
 """
-
+https://kharisecario.wordpress.com/2017/03/25/create-nxn-matrix-in-pythonnumpy/
 
 
 
