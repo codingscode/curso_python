@@ -129,6 +129,44 @@ print(soma)
 print(submatriz)
 
 
+# 18
+import numpy
+
+i = 3
+matriz = numpy.zeros(shape=(i, i))  # nº coluna | nº linha
+
+for i_coluna in range(len(matriz)):
+    for i_linha in range(len(matriz[i_coluna])):
+        valor = float(input(f'digite valor[{i_coluna}][{i_linha}]: '))
+        matriz[i_coluna][i_linha] = valor
+
+print(matriz)
+
+
+def imprimir(vetor):
+    uma_string = ''
+    for cada in vetor:
+        uma_string += f'{int(cada)} '
+    return uma_string
+
+
+for coluna in matriz:
+    print(imprimir(coluna))
+
+
+def soma_colunas(valor_vetor):
+    vetor_soma = []
+    em_string = ''
+    for i2_coluna in range(len(valor_vetor)):
+        res = [lis[i2_coluna] for lis in valor_vetor]
+        # print(res)
+        #vetor_soma.append(int(sum(res)))
+        em_string += f'{int(sum(res))} '
+    #return vetor_soma
+    return em_string
+
+
+print(soma_colunas(matriz))
 
 
 
@@ -139,9 +177,9 @@ print(submatriz)
 
 
 
+#19
 
 
-# 18
 
 
 
@@ -157,6 +195,7 @@ print(submatriz)
 
 """
 https://kharisecario.wordpress.com/2017/03/25/create-nxn-matrix-in-pythonnumpy/
+
 
 
 
