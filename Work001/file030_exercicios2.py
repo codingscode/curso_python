@@ -178,10 +178,23 @@ print(soma_colunas(matriz))
 
 
 #19
+import numpy
+import numpy as np
+np.set_printoptions(suppress=True)
 
+l = 5
+c = 4
+matriz = numpy.zeros(shape=(l, c))  # nº linha | nº coluna
 
+for i_linha in range(len(matriz)):
+    matriz[i_linha][0] = int(input('matrícula: '))
+    matriz[i_linha][1] = float(input('média das provas: '))
+    matriz[i_linha][2] = float(input('média dos trabalhos: '))
+    matriz[i_linha][3] = matriz[i_linha][1] + matriz[i_linha][2]
 
+a = np.array(matriz)
 
+print(a)
 
 
 
