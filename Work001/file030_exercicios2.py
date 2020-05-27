@@ -178,13 +178,15 @@ print(soma_colunas(matriz))
 
 
 #19
+from statistics import mean
+
 import numpy
 import numpy as np
 np.set_printoptions(suppress=True)
 
-l = 5
-c = 4
-matriz = numpy.zeros(shape=(l, c))  # nº linha | nº coluna
+linhas = 5
+colunas = 4
+matriz = numpy.zeros(shape=(linhas, colunas))  # nº linha | nº coluna
 
 for i_linha in range(len(matriz)):
     matriz[i_linha][0] = int(input('matrícula: '))
@@ -192,9 +194,35 @@ for i_linha in range(len(matriz)):
     matriz[i_linha][2] = float(input('média dos trabalhos: '))
     matriz[i_linha][3] = matriz[i_linha][1] + matriz[i_linha][2]
 
-a = np.array(matriz)
+formatado = np.array(matriz)
 
-print(a)
+print(formatado)
+
+
+def o_maior(vetor):
+    ref_i = vetor[0][3]
+    comp = [cada[3] for cada in vetor]
+    for linha in range(len(vetor)):
+        if vetor[linha][3] == max(comp):
+            ref_i = vetor[linha]
+    #return f'o maior: {max(comp)} | {comp}'
+    #return ref_i
+    return f'matrícula: {ref_i[0]}'
+
+
+print(o_maior(formatado))
+
+
+def media_aritmetica(lista):
+    finais = [sub[3] for sub in lista]
+    return f'média: {mean(finais)}'
+
+
+print(media_aritmetica(formatado))
+
+
+#20
+
 
 
 
