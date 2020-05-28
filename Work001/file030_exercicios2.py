@@ -213,16 +213,6 @@ def media_aritmetica(lista):
 
 print(media_aritmetica(formatado))
 
-
-
-
-"""
-
-
-
-
-
-
 #20
 
 from statistics import mean
@@ -248,7 +238,7 @@ def soma_c_impares(vetor):
     soma = 0
     for i2_coluna in range(colunas):
         if i2_coluna % 2 != 0:
-            colunas_impar.append([cada[i2_coluna] for cada in vetor])    #  [cada[3] for cada in vetor]
+            colunas_impar.append([cada[i2_coluna] for cada in vetor])
     print('coluna impar', colunas_impar)
     for cada in colunas_impar:
         soma += sum(cada)
@@ -283,8 +273,41 @@ print(sexta_coluna(matriz_formatada))
 print(matriz_formatada)
 
 
+"""
+
+
+
+
+
+
+
+
+
 
 #25
+import numpy
+import numpy as np
+np.set_printoptions(suppress=True)
+
+ordem = 3
+
+matriz = numpy.zeros(shape=(ordem, ordem))  # nº linha | nº coluna
+
+matriz_formatada = np.array(matriz)
+
+
+
+print(matriz_formatada)
+
+
+
+
+
+
+
+
+
+
 
 
 
