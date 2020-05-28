@@ -231,11 +231,10 @@ import numpy as np
 np.set_printoptions(suppress=True)
 
 linhas = 3
-colunas = 4 # 6
+colunas = 6
 matriz = numpy.zeros(shape=(linhas, colunas))  # nº linha | nº coluna
 
 matriz_formatada = np.array(matriz)
-#print(matriz_formatada)
 
 for i_linha in range(len(matriz_formatada)):
     for i_coluna in range(len(matriz_formatada[i_linha])):
@@ -253,7 +252,7 @@ def soma_c_impares(vetor):
     print('coluna impar', colunas_impar)
     for cada in colunas_impar:
         soma += sum(cada)
-    return f'soma das col impares: {soma}' # sum(colunas_impar)
+    return f'soma das col impares: {soma}'
 
 
 print(soma_c_impares(matriz_formatada))
@@ -269,8 +268,23 @@ def media_especifica(*vetor2):
 print(media_especifica(*matriz_formatada))
 
 
+def sexta_coluna(vetor3):
+    nova_6coluna = [col[5] for col in vetor3]
+    col1 = [col[0] for col in vetor3]
+    col2 = [col[1] for col in vetor3]
+    for i3_linha in range(linhas):
+        nova_6coluna[i3_linha] = col1[i3_linha] + col2[i3_linha]
+    for ind in range(len(vetor3)):
+        vetor3[ind][5] = nova_6coluna[ind]
+    return nova_6coluna
 
 
+print(sexta_coluna(matriz_formatada))
+print(matriz_formatada)
+
+
+
+#25
 
 
 
