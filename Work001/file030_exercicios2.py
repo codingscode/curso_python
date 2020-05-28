@@ -170,13 +170,6 @@ print(soma_colunas(matriz))
 
 
 
-
-
-"""
-
-
-
-
 #19
 from statistics import mean
 
@@ -221,10 +214,59 @@ def media_aritmetica(lista):
 print(media_aritmetica(formatado))
 
 
+
+
+"""
+
+
+
+
+
+
 #20
 
+from statistics import mean
+import numpy
+import numpy as np
+np.set_printoptions(suppress=True)
+
+linhas = 3
+colunas = 4 # 6
+matriz = numpy.zeros(shape=(linhas, colunas))  # nº linha | nº coluna
+
+matriz_formatada = np.array(matriz)
+#print(matriz_formatada)
+
+for i_linha in range(len(matriz_formatada)):
+    for i_coluna in range(len(matriz_formatada[i_linha])):
+        matriz_formatada[i_linha][i_coluna] = float(input(f'digite o valor[{i_linha}][{i_coluna}]: '))
+
+print(matriz_formatada)
 
 
+def soma_c_impares(vetor):
+    colunas_impar = []
+    soma = 0
+    for i2_coluna in range(colunas):
+        if i2_coluna % 2 != 0:
+            colunas_impar.append([cada[i2_coluna] for cada in vetor])    #  [cada[3] for cada in vetor]
+    print('coluna impar', colunas_impar)
+    for cada in colunas_impar:
+        soma += sum(cada)
+    return f'soma das col impares: {soma}' # sum(colunas_impar)
+
+
+print(soma_c_impares(matriz_formatada))
+
+
+def media_especifica(*vetor2):
+    notas1_e_3 = []
+    notas1_e_3.extend([*[cada[1] for cada in vetor2], *[cada[3] for cada in vetor2]]) #desempacotando valores
+    print(notas1_e_3)
+    return f'média das colunas 2 e 4: {mean(notas1_e_3)}'
+
+
+print(media_especifica(*matriz_formatada))
 
 
 
@@ -236,6 +278,7 @@ print(media_aritmetica(formatado))
 
 """
 https://kharisecario.wordpress.com/2017/03/25/create-nxn-matrix-in-pythonnumpy/
+
 
 
 
