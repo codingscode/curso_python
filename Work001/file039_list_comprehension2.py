@@ -33,7 +33,37 @@ for cada in numeros:
     numeros_dobrados.append(cada*2)
 
 print(numeros_dobrados)
+
+print([cada*2 for cada in numeros])
 print('--------------------')
+
+nome = 'Curso Python'
+print([letra.upper() for letra in nome])
+
+
+def caixa_alta(valor):
+    return valor.replace(valor[2], valor[2].upper())
+
+
+amigos = ['vicente', 'larissa', 'rafaela', 'simon']
+transportes = ['bicicleta', 'onibus', 'carro', 'aviao', 'navio']
+print([amigo[0].upper() for amigo in amigos])
+print([amigo.title() for amigo in amigos])
+print([caixa_alta(amigo) for amigo in amigos])
+print([caixa_alta(cada) for cada in transportes])
+
+print('----------------------------')
+
+print([indice*3 for indice in range(1, 6)])
+
+print([bool(cada) for cada in [0, [], '', True, 1, 3.14]])
+
+print([str(cada) for cada in [2, 3, 4, 5]])
+
+print('----------------------------------\n parte 2\n')
+
+
+
 
 
 
