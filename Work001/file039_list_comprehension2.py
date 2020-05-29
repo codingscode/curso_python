@@ -41,11 +41,12 @@ nome = 'Curso Python'
 print([letra.upper() for letra in nome])
 
 
-def caixa_alta(valor):
-    return valor.replace(valor[2], valor[2].upper())
+def caixa_alta(valor):  # string é imutavel
+    #print('--------------', valor.replace(valor[2], valor[2].upper()))
+    return valor.replace(valor[2], valor[2].upper(), 1)
 
 
-amigos = ['vicente', 'larissa', 'rafaela', 'simon']
+amigos = ['vicente', 'larissa', 'rafaela', 'simom']
 transportes = ['bicicleta', 'onibus', 'carro', 'aviao', 'navio']
 print([amigo[0].upper() for amigo in amigos])
 print([amigo.title() for amigo in amigos])
