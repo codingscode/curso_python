@@ -62,6 +62,26 @@ print([str(cada) for cada in [2, 3, 4, 5]])
 
 print('----------------------------------\n parte 2\n')
 
+"""
+Podemos adicionar estruturas condicionais lógicas às nossas list comprehension
+
+"""
+
+numeros2 = [3, 7, 42, 21, 12, 15, 30]
+print(numeros2)
+
+pares = [cada for cada in numeros2 if cada % 2 == 0]
+print('pares:', pares)
+print('pares:', [cada for cada in numeros2 if not cada % 2])  # 0 é False
+print('impares:', [cada for cada in numeros2 if cada % 2])  # numero positivo é True
+
+print('------------------------')
+
+res3 = [cada*2 if cada % 2 == 0 else cada/2 for cada in numeros2]
+print(res3)
+
+
+
 
 
 
