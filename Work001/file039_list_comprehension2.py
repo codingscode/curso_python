@@ -80,31 +80,3 @@ print('------------------------')
 
 res3 = [cada*2 if cada % 2 == 0 else cada/2 for cada in numeros2]
 print(res3)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
