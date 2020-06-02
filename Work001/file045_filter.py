@@ -39,7 +39,7 @@ res4 = filter(lambda cada: len(cada) > 0, paises)
 print(res4)
 print(list(res4))
 
-print('' is None)
+print('' == None)
 
 print('------------------------------')
 """
