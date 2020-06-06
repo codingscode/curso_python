@@ -2,14 +2,10 @@
 Map
 
 Map ≠ mapas
-
 - mapeamento função valor
 - Com map, fazemos mapeamento de valores função.
 
-
-
 """
-
 import math
 
 
