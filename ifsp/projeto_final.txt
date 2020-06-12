@@ -1,0 +1,39 @@
+Lançamento de Notas
+
+- Crie um estrutura que permita o lançamento de notas para vários alunos.
+
+- Cada aluno terá 3 notas. Observando:
+   - Nenhuma nota poderá receber nota inferior a 0.
+   - Nenhuma nota poderá receber nota superior a 10.
+
+- Calcule a nota média do aluno
+   - Somatório das três notas e divida por 3
+
+
+Mais dados:
+Além das notas deverá ser informado:
+  - O nome do aluno
+  - Sexo do aluno
+
+
+Condição para os alunos
+- Média maior ou iguala 7.0: APROVADO
+- Média entre 4 e 7: EXAME
+- Média menor que 4.0: REPROVADO
+
+
+Ao final apresente:
+   - Total de alunos cadastrados
+
+   PORCENTAGEM
+   - Quantidade porcentual de alunos aprovados
+   - Quantidade porcentual de alunos de exame
+   - Quantidade porcentual de alunos reprovados
+
+   VALORES ABSOLUTOS
+   - Quantidade de pessoas do sexo feminino aprovadas
+   - Quantidade de pessoas do sexo masculino aprovadas
+   - Quantidade de pessoas do sexo feminino de exame
+   - Quantidade de pessoas do sexo masculino de exame
+   - Quantidade de pessoas do sexo feminino reprovadas
+   - Quantidade de pessoas do sexo masculino reprovadas
