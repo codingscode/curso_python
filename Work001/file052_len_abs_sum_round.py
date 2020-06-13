@@ -41,7 +41,7 @@ print(sum([14, 5, 11]))  # também com tupla, set, dicio.values()
 print(sum([3, 7, 5], 4))
 print(sum([3, 7, 5], -10))
 print(sum([4.6, 3.5, 1.9]))
-print(sum({'a': 2.3, 'b': 5.5,'c': 1.2}.values()))
+print(sum({'a': 2.3, 'b': 5.5, 'c': 1.2}.values()))
 
 print('------------------------------')
 
