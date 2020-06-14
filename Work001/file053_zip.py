@@ -11,7 +11,7 @@ lista2 = [4, 5, 6]
 zip1 = zip(lista1, lista2)
 
 print(zip1)
-print(list(zip1)) # serve tupla e dicio tambem
+print(list(zip1))  # serve tupla e dicio tambem
 print(type(zip1))
 
 # sempre podemos gerar uma lista, tupla ou dicionario
@@ -45,21 +45,32 @@ um_dicionario = {'a': 'um', 'b': 'dois', 'c': 'tres', 'd': 'quatro', 'e': 'cinco
 zip4 = zip(uma_tupla, uma_lista, um_dicionario.values())
 print(list(zip4))
 
+# lista de tuplas
+dados1 = [(3, 6), (51, 10), (1, 9), (8, 4), (2, 20)]
+
+print(list(zip(*dados1)))
+
+print('---------------------')
+
+# exemplos mais complexos
+prova1 = [80, 91, 78]
+prova2 = [98, 89, 53]
+alunos = ['vicente', 'simon', 'toni']
+
+final = {dado[0]: max(dado[1], dado[2]) for dado in zip(alunos, prova1, prova2)}
+
+print(final)
+
+# podemos usar o map
+final2 = zip(alunos, map(lambda cada: max(cada), zip(prova1, prova2)))
+
+print(dict(final2))
+
+
+
+
+
 print('---------------------')
 print('---------------------')
 print('---------------------')
 print('---------------------')
-print('---------------------')
-
-
-
-
-
-
-
-
-
-
-
-
-

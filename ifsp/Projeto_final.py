@@ -2,7 +2,6 @@
 Projeto Final
 
 """
-
 q = int(input('digite a quantidade de alunos: '))
 
 todos = []
@@ -10,7 +9,7 @@ todos = []
 for cada in range(q):
     todos_com_dados = dict()
     todos_com_dados['nome'] = input(f'Digite o nome do {cada+1}º aluno: ')
-    todos_com_dados['sexo'] = input(f'Digite o sexo do aluno: ')
+    todos_com_dados['sexo'] = input(f'Digite o sexo(m/f) do aluno: ')
 
     pri_nota = float(input(f'Digite a 1ª nota do {cada+1}º aluno: '))
     seg_nota = float(input(f'Digite a 2ª nota do {cada+1}º aluno: '))
