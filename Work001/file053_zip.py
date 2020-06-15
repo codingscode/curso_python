@@ -65,12 +65,3 @@ print(final)
 final2 = zip(alunos, map(lambda cada: max(cada), zip(prova1, prova2)))
 
 print(dict(final2))
-
-
-
-
-
-print('---------------------')
-print('---------------------')
-print('---------------------')
-print('---------------------')
