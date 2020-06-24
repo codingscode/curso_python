@@ -54,7 +54,7 @@ def colore(texto, cor):
 
 colore('codando python', 'verde') # normal
 
-colore('codando python', 'verde') # normal
+colore('codando python', 'laranja') # normal
 
 colore('codando python', 'cinza')
 -->     raise ValueError(f'a cor precisa estar entre {cores}')

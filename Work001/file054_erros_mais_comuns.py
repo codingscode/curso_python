@@ -84,8 +84,7 @@ lista1 = ['python']
 print(lista1[0]) # normal
 print(lista1[1]) # IndexError: list index out of range
 print(lista1[0][0]) # normal
-print(lista1[0][0]) # IndexError: string index out of range
-
+print(lista1[0][10]) # IndexError: string index out of range
 
 
 """

@@ -4,7 +4,6 @@ o bloco try/except:
 o utilizamos para tratar erros que podem ocorrer no nosso código, prevenindo assim que
 o programa pare de funcionar e o usuario receba mensagens de erro inesperadas.
 
-
 A forma geral mais simples é:
 
 try:
@@ -49,12 +48,12 @@ except NameError:
 """
 
 try:
-    len(5) #  normal
+    len(5)
 except TypeError:
     print('ou tipo de erro')
 
 try:
-    len(5) #  normal
+    len(5)
 except TypeError as erro:
     print('ou tipo de erro')
     print('------->>>', erro)
@@ -68,11 +67,11 @@ try:
     print('geek'[7])
     #print(1/0)
 except NameError as erroa:
-    print(f'há NameError: {erroa}')
+    print(f'*há NameError: {erroa}')
 except TypeError as errob:
-    print(f'há TypeError: {errob}')
+    print(f'**há TypeError: {errob}')
 except:
-    print('outro erro')
+    print('***outro erro')
 
 print('-----------------------------')
 

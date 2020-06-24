@@ -1,13 +1,11 @@
 """
 try / except / else / finally
 
-
 Dica de quando e onde tratar codigo:
 Toda entrada deve ser tratada !
 
 obs: a função do usuario é destruir seu sistema.
 else -> é executado somente se não ocorrer o erro.
-
 
 """
 num = 0
