@@ -79,21 +79,3 @@ shuffle(cartas) # modifica a original
 
 print(cartas)
 print(cartas.pop())
-
-print('------------------')
-print('------------------')
-print('------------------')
-print('------------------')
-print('------------------')
-
-
-
-
-
-
-
-
-
-
-
-
