@@ -2,7 +2,7 @@
 Módulos customizados
 
 
-modulos customizados em python são arquivos python prontos para seren utilizados
+modulos customizados em python são arquivos python prontos para serem utilizados
 
 """
 from file061_modulo_exportado import soma as algo, multiplicacao as algo2

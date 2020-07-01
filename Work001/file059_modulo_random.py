@@ -14,7 +14,7 @@ obs: existem duas formas de se utilizar um modulo ou funcoes deste
 """
 ao realizar o import de todo o modulo, todas as funções, atributos, classese e propriedades que 
 estiverem dentro do modulo ficarão disponíveis (ficarão em memória).
-caso você saiba quais funções você precisa utilizar deste modulo, então esta não seria a forma ideia
+caso você saiba quais funções você precisa utilizar deste modulo, então esta não seria a forma ideial
  de utilização. a forma 2 é melhor
 # dir(random)
 # help(random.random)

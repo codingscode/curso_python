@@ -38,9 +38,10 @@ print('Mais')
 print(Style.RESET_ALL + 'Resetando tudo')
 print(Fore.YELLOW + 'amarelo')
 """
-dir(colorama)
+import colorama
+dir(colorama):
+        ['AnsiToWin32', 'Back', 'Cursor', 'Fore', 'Style', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'ansi', 'ansitowin32', 'colorama_text', 'deinit', 'init', 'initialise', 'reinit', 'win32', 'winterm']
 help(colorama.colorama_text)
-
 
 """
 
