@@ -40,5 +40,63 @@ print(arquivo2.read())
 
 print('---------------------')
 
+arquivo2.seek(20)
+print(arquivo2.read())
 
+print('---------------------')
 
+arquivo3 = open('file066_arquivo1.txt')
+retorno1 = arquivo3.readline()
+"""
+readLine() -> funcao que lê o arquivo linha a linha
+"""
+
+print(retorno1)  # 1ª linha
+print(retorno1)  # 2ª linha
+print(f'----> {type(retorno1)}')
+
+print(retorno1.split(' '))
+
+print('---------------------')
+
+arquivo4 = open('file066_arquivo1.txt')
+print(arquivo4.readlines())
+print(f'comprimento: {len(arquivo4.readlines())}')
+
+arquivo4.seek(0)
+print(f'comprimento: {len(arquivo4.readlines())}')
+
+"""
+Obs: quando abrimos um arquivo com a funcao open() é criada uma conexão entre o arquivo no disco do 
+computador e o nosso programa. Essa conexão é chamada de streaming. Ao finalizar os trabalhos com o 
+arquivo devemos fechar essa conexão. Para isso utilizamos a função close().
+
+Passos para se trabalhar com um arquivo:
+1 - abrir o arquivo; 2 - trabalhar o arquivo; 3 - fechar o arquivo
+"""
+
+print('---------------------')
+
+# 1
+arquivo5 = open('file066_arquivo1.txt')
+
+# 2
+print(arquivo5.read())
+print('está fechado:', arquivo5.closed)  # verifica se o arquivo está aberto ou fechado
+
+# 3
+arquivo5.close()
+print('está fechado:', arquivo5.closed)
+#print(arquivo5.read()) # dá erro
+"""
+Obs: Se tentarmos manipular o arquivo após seu fechamento, teremos um ValueError
+"""
+
+print('---------------------')
+
+arquivo6 = open('file066_arquivo1.txt')
+print(arquivo6.read(50))  # os 50 primeiros caracteres
+
+print('---------------------')
+print('---------------------')
+print('---------------------')
