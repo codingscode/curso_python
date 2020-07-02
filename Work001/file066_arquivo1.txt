@@ -1,0 +1,6 @@
+Eu estou estudando Python. Python é uma linguagem muito legal.
+Estou aprendendo muita coisa.
+Neste momento estou trabalhando com arquivos.
+
+
+
