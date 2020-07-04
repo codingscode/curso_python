@@ -34,11 +34,3 @@ with open('file068_fruta.txt', 'w') as arquivo3:
             break
 
 print('-----------------')
-print('-----------------')
-print('-----------------')
-
-
-
-
-
-
