@@ -1,3 +1,4 @@
-uva
+tanja
 laranja
-maca
+maçã
+uva

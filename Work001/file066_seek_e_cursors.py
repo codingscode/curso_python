@@ -20,8 +20,6 @@ arquivo2 = open('file066_arquivo1.txt')
 
 print(arquivo2.read())
 
-
-
 print('---------------------')
 
 """
@@ -97,6 +95,4 @@ print('---------------------')
 arquivo6 = open('file066_arquivo1.txt')
 print(arquivo6.read(50))  # os 50 primeiros caracteres
 
-print('---------------------')
-print('---------------------')
 print('---------------------')
