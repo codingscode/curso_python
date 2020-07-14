@@ -91,11 +91,27 @@ try:
 except FileNotFoundError as erro:
     print('arquivo não encontrado ou já renomeado')
 
-
 print('---------------------')
+# Removendo arquivos
+# obs: atenção: tome cuidado com os comandos de deleção. Ao deletarmos um arquivo ou
+# diretorio, eles nao vão para a lixeira. Eles somem
 
+try:
+    os.remove('file072_seraremovido.txt')
+    print('apagado')
+except FileNotFoundError as erro:
+    print('arquivo nao encontrado ou já removido')
 
+# obs: se você estiver no windows e o arquivo que você for deletar estiver em uso, você terá um erro
+# obs: se você informar um diretorio ao invés de um arquivo, teremos um IsADirectoryError
 
+try:
+    os.rmdir('diretorio_naoexistente')
+    print('diretorio apagado com sucesso')
+except FileNotFoundError as erro1:
+    print('diretorio nao existente ou já apagado')
+except OSError as erro2:
+    print('o diretorio contem arquivos, n pode ser removido')
 
 print('---------------------')
 print('---------------------')
