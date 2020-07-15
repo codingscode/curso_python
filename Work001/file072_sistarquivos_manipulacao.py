@@ -114,7 +114,27 @@ except OSError as erro2:
     print('o diretorio contem arquivos, n pode ser removido')
 
 print('---------------------')
+# removendo uma arvores de diretorios ???
+
+try:
+    for arquivo in os.scandir('file072_dentros'):
+        if arquivo.is_file():
+            os.remove(arquivo.path)
+        if not arquivo.is_file():
+            os.rmdir(arquivo.path)
+except OSError as erro:
+    print(erro)
+    print('*** há erro')
+
 print('---------------------')
-print('---------------------')
+"""
+no terminal digitar: pip install send2trash
+"""
+from send2trash import send2trash
 
 
+send2trash('file_072_outroapague.txt')  # vai pra lixeira, pode ser restaurado
+print('apagado ou já apagado')
+
+print('---------------------')
+print('---------------------')
