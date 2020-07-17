@@ -13,7 +13,13 @@ with open('file067_texto.txt') as arquivo1:  # forma pythonica
     print('fechado?', arquivo1.closed)
 
 print('----------------------')
-#print(arquivo1.readlines())  # dá erro
+
+try:
+    print(arquivo1.readlines())  # dá erro
+except ValueError as erro:
+    print(f'****: {erro}')
+    print('arquivo já fechado ou arquivo inexistente')
+
 print('fechado?', arquivo1.closed)
 
 print('----------------------')

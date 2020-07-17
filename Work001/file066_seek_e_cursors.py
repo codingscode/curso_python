@@ -11,16 +11,19 @@ arquivo1 = open('file066_arquivo1.txt')
 print(arquivo1.read())
 
 print('---------------------')
+print('p1:\n')
 print('nao tem')
 print(arquivo1.read())  # fica vazio
 
 print('---------------------')
+print('p2:\n')
 
 arquivo2 = open('file066_arquivo1.txt')
 
 print(arquivo2.read())
 
 print('---------------------')
+print('p3:\n')
 
 """
 seek() -> esta funcao é utilizada para movimentacao do cursor pelo arquivo. Ela recebe um parametro que
@@ -33,15 +36,18 @@ arquivo2.seek(0)
 print(arquivo2.read())  # agora ler do começo
 
 print('---------------------')
+print('p4:\n')
 
 print(arquivo2.read())
 
 print('---------------------')
+print('p5:\n')
 
 arquivo2.seek(20)
 print(arquivo2.read())
 
 print('---------------------')
+print('p6:\n')
 
 arquivo3 = open('file066_arquivo1.txt')
 retorno1 = arquivo3.readline()
@@ -56,6 +62,7 @@ print(f'----> {type(retorno1)}')
 print(retorno1.split(' '))
 
 print('---------------------')
+print('p7:\n')
 
 arquivo4 = open('file066_arquivo1.txt')
 print(arquivo4.readlines())
@@ -74,6 +81,7 @@ Passos para se trabalhar com um arquivo:
 """
 
 print('---------------------')
+print('p8:\n')
 
 # 1
 arquivo5 = open('file066_arquivo1.txt')
@@ -91,6 +99,7 @@ Obs: Se tentarmos manipular o arquivo após seu fechamento, teremos um ValueErro
 """
 
 print('---------------------')
+print('p9:\n')
 
 arquivo6 = open('file066_arquivo1.txt')
 print(arquivo6.read(50))  # os 50 primeiros caracteres

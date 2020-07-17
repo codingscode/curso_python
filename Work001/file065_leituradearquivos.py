@@ -32,7 +32,7 @@ Para ler o conteudo de um arquivo, após sua abertura, devemos utilizar a funç�
 
 arquivo1_1 = open('file065_arquivo1.txt')
 
-print(arquivo1_1.read()) # imprime inclusive o espaço em branco
+print(arquivo1_1.read())   # imprime inclusive o espaço em branco
 
 print('---------------')
 

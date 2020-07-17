@@ -15,7 +15,7 @@ os.chdir('../..')  # '../..' , assim sucessivamente
 
 print(os.getcwd())
 
-# podemos checar se um diretório e absoluto(começa da raiz) ou relativo()
+# podemos checar se um diretório é absoluto(começa da raiz) ou relativo()
 print(os.path.isabs('C:\\olddoc'))  # windows
 
 print(os.path.isabs('..'))

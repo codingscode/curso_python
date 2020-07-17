@@ -80,7 +80,7 @@ except FileExistsError as erro:
 print('---------------------')
 
 try:
-    os.rename('file072_nomemudara', 'file072_nomemudara')
+    os.rename('file072_nomemudara', 'file072_nomemudou')
 except FileNotFoundError as erro:
     print('diretorio não encontrado ou já renomeado')
 
