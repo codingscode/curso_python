@@ -120,11 +120,7 @@ print(unidecode('Ó'.lower()))  # unidecode('í').lower() == 'a'
 print('----------------')
 
 
-
-"""
-
 #06
-
 
 from unidecode import unidecode
 
@@ -140,16 +136,88 @@ with open('daquest06.txt', encoding='utf-8') as arquivo6:
             if unidecode(letra.lower()).isalpha():
                 nao_repetido.add(unidecode(letra.lower()))
 
-
-print(repetido)
-print(nao_repetido)
+#print(repetido)
+#print(nao_repetido)
 
 n_repet_lista = list(nao_repetido)
-print(n_repet_lista)
+#print(n_repet_lista)
+
+frequencias = dict()
+
+for caract_nr in n_repet_lista:
+    frequencias[caract_nr] = repetido.count(caract_nr)
+
+print(frequencias)
+#print(list(frequencias.keys()))
+
+[print(f'{cada} : {frequencias[cada]} vezes') for cada in frequencias]
+
+
+print('----------------')
+
+
+#07
+
+from unidecode import unidecode
+
+texto = ''
+texto_enviado = ''
+
+with open('daquest07.txt', encoding='utf-8') as arquivo7:
+    vetor = arquivo7.readlines()
+    for linha in vetor:
+        texto += linha
+
+print(texto)
+
+for letra in texto:
+    if unidecode(letra.lower()) in ['a', 'e', 'i', 'o', 'u', 'y']:
+        letra = '*'
+    texto_enviado += letra
+
+print(texto_enviado)
+
+with open('daquest07_enviado.txt', 'w', encoding='utf-8') as arquivo7_2:
+    arquivo7_2.write(texto_enviado)
+
+print('----------------')
+
+#08
+
+from unidecode import unidecode
+
+texto = ''
+texto_modificado = ''
+
+with open('daquest08.txt', encoding='utf-8') as arquivo8:
+    vetor = arquivo8.readlines()
+    for linha in vetor:
+        texto += linha
+
+print(texto)
+
+for letra in texto:
+    texto_modificado += letra.upper()
+
+print(texto_modificado)
+
+with open('daquest08_enviado.txt', 'w', encoding='utf-8') as arquivo8_2:
+    arquivo8_2.write(texto_modificado)
+
+print('----------------')
+
+
+"""
+
+#09
 
 
 
 
 print('----------------')
+
+
+
+
 print('----------------')
 print('----------------')
