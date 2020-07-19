@@ -207,11 +207,56 @@ with open('daquest08_enviado.txt', 'w', encoding='utf-8') as arquivo8_2:
 print('----------------')
 
 
-"""
-
 #09
 
+texto_1 = ''
+texto_2 = ''
+texto_enviado = ''
 
+with open('daquest09.1.txt', encoding='utf-8') as arquivo9_1:
+    vetor = arquivo9_1.readlines()
+    for linha in vetor:
+        texto_1 += linha
+
+with open('daquest09.2.txt', encoding='utf-8') as arquivo9_2:
+    vetor = arquivo9_2.readlines()
+    for linha in vetor:
+        texto_2 += linha
+
+with open('daquest09_enviado', 'w', encoding='utf-8') as arquivo9_env:
+    arquivo9_env.write(texto_1)
+    arquivo9_env.write(texto_2)
+
+
+print('----------------')
+
+
+"""
+
+#10
+
+lista = dict()
+
+with open('daquest10_1.txt', encoding='utf-8') as arquivo10:
+    vetor = arquivo10.readlines()
+    for linha in vetor:
+        par = linha.replace('\n', '').split(',')
+        #print(par)
+        lista[par[0]] = float(par[1])
+
+print(lista)
+
+maior = {'cidade': 'x', 'populacao': 0}
+
+for cada in lista:
+    if lista[cada] == max(lista.values()):
+        maior['cidade'] = cada
+        maior['populacao'] = max(lista.values())
+
+print(maior)
+
+with open('daquest10_env.txt', 'w', encoding='utf-8') as arquivo10_env:
+    arquivo10_env.write(f'{maior["cidade"]} - {maior["populacao"]} habitantes')
 
 
 print('----------------')

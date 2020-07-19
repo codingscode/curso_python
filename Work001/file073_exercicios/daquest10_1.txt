@@ -1,0 +1,10 @@
+Campo Grande, 840
+Caucaia, 361400
+Blumenau, 357199
+Canoas, 346616
+Florianópolis, 500973
+Porto Alegre, 1483771
+Caruaru, 361118
+Recife, 1645727
+São Luís, 1101884
+Cuiabá, 612500
