@@ -230,9 +230,6 @@ with open('daquest09_enviado', 'w', encoding='utf-8') as arquivo9_env:
 
 print('----------------')
 
-
-"""
-
 #10
 
 lista = dict()
@@ -257,6 +254,76 @@ print(maior)
 
 with open('daquest10_env.txt', 'w', encoding='utf-8') as arquivo10_env:
     arquivo10_env.write(f'{maior["cidade"]} - {maior["populacao"]} habitantes')
+
+# experimentar usando map
+
+print('----------------')
+
+#11
+palavra = input('digite a palavra ser procurada: ')
+
+contador = 0
+texto = ''
+texto_m = []
+
+with open('daquest11.txt', encoding='utf-8') as arquivo11:
+    vetor = arquivo11.readlines()
+    for linha in vetor:
+        texto += linha
+        texto = texto.replace(',', '').replace('.', '').replace(';', '').replace('(', '').replace(')', '').replace('\n', ' ').replace('  ', ' ')
+        texto_m = texto.split(' ')
+    for cada in texto_m:
+        if cada.lower() == palavra:
+            contador += 1
+
+
+print(texto_m)
+print(f'{palavra} : {contador} vezes')
+
+print('----------------')
+
+#13
+
+relacao = dict()
+texto = ''
+
+
+def colocar_dados(colocar):
+    nome = ''
+    telefone = ''
+    while telefone != '0':
+        nome = input('digite o nome: ')
+        telefone = input('digite o telefone: ')
+        colocar[nome] = telefone
+
+
+colocar_dados(relacao)
+
+print(relacao)
+
+
+def para_texto():
+    v = ''
+    for cada in relacao:
+        v += f'nome: {cada}, telefone: {relacao[cada]}\n'
+    return v
+
+
+texto = para_texto()
+print(texto)
+
+with open('daquest13.txt', 'w', encoding='utf-8') as arquivo13:
+    arquivo13.write(texto)
+
+print('----------------')
+
+
+"""
+
+#14
+
+
+
 
 
 print('----------------')

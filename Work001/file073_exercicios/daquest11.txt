@@ -1,0 +1,43 @@
+The ideal vision of learning is that it be broad, deep, fast, precise and practically relevant.
+However, these virtues set a high bar that is rarely reached in current educational settings,
+particularly in a world of commercial informal media that are replete with distractions.
+Many Americans worry that our learning is narrow, shallow, slow (or nonexistent) and vague, with a
+focus on frivolous content. Imagine a teenager spending 30 hours a week playing games, with no interest
+in formal academic content. That teenager, however, might be gaining important skills of managing
+limited resources, multitasking and communication with peers that scale up to the real world
+(Gee, 2004; Shaffer, 2007).
+Students can also benefit from serious games that smuggle in important academic content
+(Ritterfeld, Cody, & Vorderer, 2009). However, there are limits to the quality of the knowledge,
+skills and strategies that most games can teach us. In work settings, too, managers have limited
+resources for employee training, particularly at times of extreme economic recession. These challenges
+do not present a pretty picture for the ideal vision of learning.
+The ideal vision of learning encourages self-regulated learning (Pintrich, 2000; Schunk & Zimmerman, 2008).
+Such learners formulate their own learning goals, track their progress on achieving these goals, identify
+their knowledge deficits, detect contradictions, ask good questions, search relevant information sources
+for answers, make inferences when answers are not directly available and build knowledge at deep levels
+of mastery. Unfortunately, the vast majority of adolescents and adults don’t acquire these sophisticated
+cognitive skills. In order for self-regulated learning to succeed, a person has to have sufficient
+“meta” knowledge about cognition, emotions, communication and social interaction (Hacker, Dunlosky, &
+Graesser, 2009). Meta-comprehension is the knowledge we have about our comprehension processes. Examples
+include the need to slow down our pace of reading when the material is difficult and to scrutinize
+whether a text has contradictory claims. Meta-emotion is the knowledge a person has about the nature
+and regulation of his or her emotions, such as being patient and trying harder when material is
+confusing. Meta-communication is knowledge about the communication process, such as the insight that
+there can be discrepancies between the author’s intended meaning and the meaning that a reader
+constructs. Meta-social knowledge is knowledge about social interactions, politeness norms, status,
+deception and so on.
+Unfortunately, most adults don’t acquire meta-knowledge, so they need direct training to fill this void.
+For example, deep comprehension of technical text involves understanding underlying mental models of
+complex systems, causal relationships between events and explanations of why events occur. Strategies
+of comprehending material at deeper levels are underdeveloped in most children and adults, particularly
+for technical text, so they need deep comprehension strategy training (McNamara, 2007).
+There is a modest (r = .27) correlation between college students’ impressions of how well they comprehend
+technical text and their actual test scores on the text (Maki, 1998). Students have serious limitations
+in their knowledge or judgments of memory, comprehension, learning, planning, problem-solving and
+decision processes (Hacker et al., 2009). As a consequence, they are not good at planning, selecting,
+monitoring and evaluating their strategies of self-regulated learning (Azevedo & Cromley, 2004; Winne,
+2001), of question-based inquiry learning (White & Frederiksen, 2005; Wiley et al., 2009) and of
+learning through active discovery (Kirschner, Sweller, & Clark, 2006; Klahr, 2002).
+Students, whether children or adults, need to have explicit training, modeling and guided practice
+before they can acquire adequate strategies of deep comprehension, critical thinking, self-regulated
+learning, inquiry learning, discovery learning and other sophisticated active forms of learning.

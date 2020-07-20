@@ -1,0 +1,4 @@
+nome: toni, telefone: 123123
+nome: paulo, telefone: 6345435
+nome: ana, telefone: 978978
+nome: vicente, telefone: 0
