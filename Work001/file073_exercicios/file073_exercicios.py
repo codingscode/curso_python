@@ -320,8 +320,6 @@ with open('daquest13.txt', 'w', encoding='utf-8') as arquivo13:
 print('----------------')
 
 
-"""
-
 #14
 from datetime import date, datetime
 
@@ -364,6 +362,61 @@ print(relacao)
 with open('daquest14_env.txt', 'w', encoding='utf-8') as arquivo14_env:
     arquivo14_env.write(relacao)
 
+print('----------------')
+
+
+"""
+
+#15
+from datetime import date, datetime
+
+print(date(2020, 3, 1))
+print(datetime.now())
+print(date.today())
+
+bob = date(1993, 7, 15)
+idade_bob = date.today() - bob
+
+print(idade_bob)
+print(idade_bob.days // 365)  # anos
+
+texto = []
+
+
+with open('daquest15.txt', encoding='utf-8') as arquivo15:
+    vetor = arquivo15.readlines()
+    x = ''
+    for linha in vetor:
+        x = linha.replace('\n', '').split(', ')
+        x[1] = x[1].split(' ')
+        texto.append(x)
+
+
+def verificar_idade(anos):
+    if anos < 18:
+        return 'menor de idade'
+    elif anos > 18:
+        return 'maior de idade'
+    return 'entrando na maior idade'
+
+
+def para_texto(iteravel):
+    transf_texto = ''
+    for cada in iteravel:
+        ano = int(cada[1][2])
+        mes = int(cada[1][1])
+        dia = int(cada[1][0])
+        idade = (date.today() - date(ano, mes, dia)).days/365
+        transf_texto += f'{cada[0]} {int(idade)} anos, {verificar_idade(idade)}\n'
+    return transf_texto
+
+
+relacao = para_texto(texto)
+print(relacao)
+
+
+with open('daquest15_saida.txt', 'w', encoding='utf-8') as arquivo15_saida:
+    arquivo15_saida.write(relacao)
 
 print('----------------')
 

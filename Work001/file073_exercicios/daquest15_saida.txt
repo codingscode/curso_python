@@ -1,0 +1,5 @@
+Tom 30 anos, maior de idade
+Ben 10 anos, menor de idade
+Cesar 25 anos, maior de idade
+Fabiana 12 anos, menor de idade
+Alice 20 anos, maior de idade
