@@ -1,4 +1,6 @@
 """"""
+
+
 """
 Exercicios python
 
@@ -321,9 +323,46 @@ print('----------------')
 """
 
 #14
+from datetime import date, datetime
+
+print(date(2020, 3, 1))
+print(datetime.now())
+print(date.today())
+
+bob = date(1993, 7, 15)
+idade_bob = date.today() - bob
+
+print(idade_bob)
+print(idade_bob.days // 365)  # anos
+
+texto = []
 
 
+with open('daquest14.txt', encoding='utf-8') as arquivo14:
+    vetor = arquivo14.readlines()
+    x = ''
+    for linha in vetor:
+        x = linha.replace('\n', '').split(', ')
+        x[1] = x[1].split(' ')
+        texto.append(x)
 
+
+def para_texto(vetor):
+    transf_texto = ''
+    for cada in vetor:
+        ano = int(cada[1][2])
+        mes = int(cada[1][1])
+        dia = int(cada[1][0])
+        transf_texto += f'{cada[0]} {(date.today() - date(ano, mes, dia)).days//365} anos\n'
+    return transf_texto
+
+
+relacao = para_texto(texto)
+print(relacao)
+
+
+with open('daquest14_env.txt', 'w', encoding='utf-8') as arquivo14_env:
+    arquivo14_env.write(relacao)
 
 
 print('----------------')
