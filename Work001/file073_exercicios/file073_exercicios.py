@@ -364,9 +364,6 @@ with open('daquest14_env.txt', 'w', encoding='utf-8') as arquivo14_env:
 
 print('----------------')
 
-
-"""
-
 #15
 from datetime import date, datetime
 
@@ -417,6 +414,33 @@ print(relacao)
 
 with open('daquest15_saida.txt', 'w', encoding='utf-8') as arquivo15_saida:
     arquivo15_saida.write(relacao)
+
+print('----------------')
+
+
+"""
+
+#16
+
+meu_vetor = [1, 2, 14, 21, 10, 30, 40, 7, 5, 50]
+
+print(meu_vetor)
+
+
+def minha_saida(entrada):
+    uma_string = ''
+    for cada in entrada:
+        uma_string += f'{bin(cada)[2:]}\n'
+    return uma_string
+
+
+enviar = minha_saida(meu_vetor)
+
+with open('daquest16_saida.txt', 'w', encoding='utf-8') as arquivo16_saida:
+    arquivo16_saida.write(enviar)
+
+x = 'borboleta'
+print(x[2:])
 
 print('----------------')
 
