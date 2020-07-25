@@ -506,13 +506,9 @@ print('----------------')
 """
 
 #25
-#modelo
-#nome: didi, telefone: 12431241, aniversario: 12/3
-#nome: paula, telefone: 8678678, aniversario: 1/11
 from datetime import date, datetime
 
 quant_contatos = 2
-guardar = []
 
 
 def inserir(quantidade):
@@ -536,10 +532,6 @@ def inserir(quantidade):
         para_inserir.write(texto_inserir)
 
 
-#inserir(quant_contatos)
-print(guardar)
-
-
 def remover(quantidade):
     nome = input('nome a remover: ')
     conteudo = []
@@ -556,9 +548,6 @@ def remover(quantidade):
         rem_enviar.write(texto_enviar)
 
 
-#remover(quant_contatos)
-
-
 def pesquisar_nome():
     pesq_nome = input('nome a ser pesquisado: ')
     conteudo = []
@@ -570,13 +559,9 @@ def pesquisar_nome():
             print(cada)
 
 
-#pesquisar_nome()
-
 def listar_todos():
     with open('daquest25.txt', encoding='utf-8') as texto_presente:
         print(texto_presente.read())
-
-#listar_todos()
 
 
 def listar_cletra():
@@ -591,9 +576,6 @@ def listar_cletra():
     print(texto)
 
 
-#listar_cletra()
-
-
 def aniver_domes():
     aniversariantes = ''
     conteudo = []
@@ -606,7 +588,28 @@ def aniver_domes():
     #print(conteudo[0].replace('\n', '').split(', ')[2].split('/')[1])  #
     print(aniversariantes)
 
-aniver_domes()
+
+def escolher():
+    selecionado = input('escolha uma opção(número):\n1- inserir contato\n2- remover contato\n3- '
+        'pesquisar um contato pelo nome\n4- listar todos os contatos\n5- listar os contatos cujo '
+             'nome inicia com uma dada letra\n6- imprimir aniversariantes do mês.\nresposta: ')
+    if selecionado == '1':
+        inserir(quant_contatos)
+    elif selecionado == '2':
+        remover(quant_contatos)
+    elif selecionado == '3':
+        pesquisar_nome()
+    elif selecionado == '4':
+        listar_todos()
+    elif selecionado == '5':
+        listar_cletra()
+    elif selecionado == '6':
+        aniver_domes()
+    else:
+        print('valor invalido.')
+
+
+escolher()
 
 
 

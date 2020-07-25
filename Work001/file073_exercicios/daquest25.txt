@@ -1,8 +1,10 @@
-nome: billy, telefone: 7987986986, aniversario: 10/11
 nome: lionel, telefone: 1324325, aniversario: 11/9
 nome: lucia, telefone: 8978969, aniversario: 8/6
 nome: gabriela, telefone: 87896896, aniversario: 18/7
-nome: ben, telefone: 7858876, aniversario: 15/3
 nome: estela, telefone: 87896896, aniversario: 21/12
 nome: fabio, telefone: 87896896, aniversario: 3/11
 nome: felipe, telefone: 87896896, aniversario: 26/9
+nome: fabiola, telefone: 86483294723, aniversario: 9/7
+nome: chris, telefone: 5435345345, aniversario: 22/7
+nome: giovani, telefone: 45345346, aniversario: 14/8
+nome: vicente, telefone: 847548396734, aniversario: 9/11
