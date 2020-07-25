@@ -447,9 +447,6 @@ print(int(y, 3))
 
 print('----------------')
 
-
-"""
-
 #19
 nomes_notas = []
 
@@ -473,6 +470,37 @@ with open('daquest19.txt', encoding='utf-8') as arquivo19:
 print(nomes_notas)
 maior = max(nomes_notas, key=lambda cada: cada[1])
 print(maior)
+
+print('----------------')
+
+"""
+
+#23
+todos =''
+relacao = []
+
+
+def por_linhaenviado(lista):
+    texto = ''
+    for cada in lista:
+        texto += f'{cada["profissao"]}, {cada["temposerv"]} anos\n'
+    return texto
+
+
+for i in range(5):
+    par = dict()
+    par['profissao'] = input(f'{i+1}ª profissão: ')
+    par['temposerv'] = float(input(f'{i+1}º tempo de serviço[anos]: '))
+    relacao.append(par)
+
+
+print(relacao)
+todos = por_linhaenviado(relacao)
+print(todos)
+
+with open('daquest23.txt', 'w', encoding='utf-8') as arquivo23:
+    arquivo23.write(todos)
+
 
 print('----------------')
 

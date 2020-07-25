@@ -1,0 +1,5 @@
+programador, 15.0 anos
+chef, 23.0 anos
+agronomo, 30.0 anos
+dentista, 10.0 anos
+desenhista, 28.0 anos
