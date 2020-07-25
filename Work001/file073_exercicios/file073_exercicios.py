@@ -473,8 +473,6 @@ print(maior)
 
 print('----------------')
 
-"""
-
 #23
 todos =''
 relacao = []
@@ -501,6 +499,63 @@ print(todos)
 with open('daquest23.txt', 'w', encoding='utf-8') as arquivo23:
     arquivo23.write(todos)
 
+print('----------------')
+
+
+
+"""
+
+#25
+#modelo
+#nome: didi, telefone: 12431241, aniversario: 12/3
+#nome: paula, telefone: 8678678, aniversario: 1/11
+
+quant_contatos = 2
+guardar = []
+
+
+def inserir(quantidade):
+    texto_ja_presente = ''
+    texto_inserir = ''
+    matriz_i = []
+    with open('daquest25.txt', encoding='utf-8') as ja_presente:
+        texto_ja_presente = ja_presente.read()
+    print(texto_ja_presente)
+    for i in range(quantidade):
+        indiv = dict()
+        indiv['nome'] = input('nome: ')
+        indiv['telefone'] = input('telefone: ')
+        indiv['aniversario'] = input('aniversario: dia/mes: ')
+        indiv['aniversario'] = list(map(lambda cada: int(cada), indiv['aniversario'].split('/')))
+        matriz_i.append(indiv)
+    for cada in matriz_i:
+        texto_inserir += f'nome: {cada["nome"]}, telefone: {cada["telefone"]}, aniversario: {cada["aniversario"][0]}/{cada["aniversario"][1]}\n'
+    with open('daquest25.txt', 'w', encoding='utf-8') as para_inserir:
+        para_inserir.write(texto_ja_presente)
+        para_inserir.write(texto_inserir)
+
+
+#inserir(quant_contatos)
+print(guardar)
+
+
+def remover(quantidade):
+    nome = input('nome a remover: ')
+    conteudo = []
+    texto_enviar = ''
+    with open('daquest25.txt', encoding='utf-8') as texto_presente:
+        conteudo = texto_presente.readlines()
+    print(conteudo)
+    for cada in conteudo:
+        if nome not in cada:
+            texto_enviar += cada
+        else:
+            pass
+    with open('daquest25.txt', 'w', encoding='utf-8') as rem_enviar:
+        rem_enviar.write(texto_enviar)
+
+
+#remover(quant_contatos)
 
 print('----------------')
 

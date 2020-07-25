@@ -1,0 +1,4 @@
+nome: billy, telefone: 7987986986, aniversario: 10/11
+nome: tom, telefone: 1324325, aniversario: 11/9
+nome: lucia, telefone: 8978969, aniversario: 8/6
+nome: gabriela, telefone: 87896896, aniversario: 18/7
