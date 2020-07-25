@@ -509,6 +509,7 @@ print('----------------')
 #modelo
 #nome: didi, telefone: 12431241, aniversario: 12/3
 #nome: paula, telefone: 8678678, aniversario: 1/11
+from datetime import date, datetime
 
 quant_contatos = 2
 guardar = []
@@ -556,6 +557,58 @@ def remover(quantidade):
 
 
 #remover(quant_contatos)
+
+
+def pesquisar_nome():
+    pesq_nome = input('nome a ser pesquisado: ')
+    conteudo = []
+    with open('daquest25.txt', encoding='utf-8') as texto_presente:
+        conteudo = texto_presente.readlines()
+    print(conteudo)
+    for cada in conteudo:
+        if pesq_nome in cada:
+            print(cada)
+
+
+#pesquisar_nome()
+
+def listar_todos():
+    with open('daquest25.txt', encoding='utf-8') as texto_presente:
+        print(texto_presente.read())
+
+#listar_todos()
+
+
+def listar_cletra():
+    letra = input('digite a letra que o nome inicia: ')
+    conteudo = []
+    texto = ''
+    with open('daquest25.txt', encoding='utf-8') as texto_presente:
+        conteudo = texto_presente.readlines()
+    for cada in conteudo:
+        if cada.split(', ')[0].replace('nome: ', '')[0] is letra:
+            texto += cada
+    print(texto)
+
+
+#listar_cletra()
+
+
+def aniver_domes():
+    aniversariantes = ''
+    conteudo = []
+    mes_atual = datetime.now().month
+    with open('daquest25.txt', encoding='utf-8') as texto_presente:
+        conteudo = texto_presente.readlines()
+    for cada in conteudo:
+        if int(cada.replace('\n', '').split(', ')[2].split('/')[1]) == mes_atual:
+            aniversariantes += cada
+    #print(conteudo[0].replace('\n', '').split(', ')[2].split('/')[1])  #
+    print(aniversariantes)
+
+aniver_domes()
+
+
 
 print('----------------')
 

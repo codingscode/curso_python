@@ -1,9 +1,8 @@
 
 
-x = ['23', '3217']
 
-y = list(map(lambda cada: int(cada), x))
+from datetime import date, datetime
 
-print(y)
+print(datetime.now().month)
 
 
