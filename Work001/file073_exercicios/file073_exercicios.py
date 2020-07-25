@@ -417,9 +417,6 @@ with open('daquest15_saida.txt', 'w', encoding='utf-8') as arquivo15_saida:
 
 print('----------------')
 
-
-"""
-
 #16
 
 meu_vetor = [1, 2, 14, 21, 10, 30, 40, 7, 5, 50]
@@ -441,6 +438,41 @@ with open('daquest16_saida.txt', 'w', encoding='utf-8') as arquivo16_saida:
 
 x = 'borboleta'
 print(x[2:])
+
+k = '100'
+y = '201'
+print(int(k, 2))  # binario para int base 10
+print(int(y, 3))
+
+
+print('----------------')
+
+
+"""
+
+#19
+nomes_notas = []
+
+
+def pares(vetor):
+    matriz = []
+    for cada in vetor:
+        cada = cada.replace('Nome: ', '').replace('\n', '')
+        cada = cada.split(' Nota: ')
+        cada[1] = float(cada[1])
+        matriz.append(cada)
+    return matriz
+
+
+with open('daquest19.txt', encoding='utf-8') as arquivo19:
+    lista = arquivo19.readlines()
+    #print(lista)
+    nomes_notas = pares(lista)
+
+
+print(nomes_notas)
+maior = max(nomes_notas, key=lambda cada: cada[1])
+print(maior)
 
 print('----------------')
 
