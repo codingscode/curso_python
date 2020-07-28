@@ -501,10 +501,6 @@ with open('daquest23.txt', 'w', encoding='utf-8') as arquivo23:
 
 print('----------------')
 
-
-
-"""
-
 #25
 from datetime import date, datetime
 
@@ -610,6 +606,16 @@ def escolher():
 
 
 escolher()
+
+print('----------------')
+
+
+"""
+
+#28
+
+
+
 
 
 
