@@ -65,5 +65,3 @@ gen4 = list(conta_ate(4))
 print(gen4)
 
 print('-----------------------------')
-
-
