@@ -4,7 +4,6 @@ Iterator Customizado
 
 """
 
-
 for n in range(5):
     print(n)
 
@@ -18,8 +17,8 @@ print('---------')
 
 class Contador:
     def __init__(self, menor, maior):  # constructor
-        self.menor = menor
-        self.maior = maior
+        self.menor = menor    # propriedade recebe parametro
+        self.maior = maior    # propriedade recebe parametro
 
 
 cont = Contador(3, 8)
@@ -52,6 +51,7 @@ class Contador2:
 
 cont2 = Contador2(10, 18)
 print(cont2)
+print(type(cont2))
 print(cont2.menor)
 print(cont2.maior)
 

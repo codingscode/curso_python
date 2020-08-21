@@ -1,13 +1,12 @@
 """
 Propria versão de Loop
 
-
-
 """
 
 for cada in [2, 3, 4, 5, 6]:
     print(cada)
 
+print('-------------------')
 
 for cada in 'borboleta':
     print(cada)

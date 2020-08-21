@@ -614,6 +614,48 @@ print('----------------')
 
 #28
 
+texto_invertido = []
+
+for cada in 'borboleta'[::-1]:
+    print(cada, end='')
+
+print('')
+
+
+def ajeitar(vetor):
+    matriz = []
+    for cada in vetor:
+        cada = cada.replace('\n', '')
+        matriz.append(cada[::-1])
+    return matriz
+
+
+with open('daquest28.txt', encoding='utf-8') as arquivo28:
+    linhas = arquivo28.readlines()
+    #print(linhas)
+    texto_invertido = ajeitar(linhas)
+
+print(texto_invertido)
+
+with open('daquest28_saida.txt', 'w', encoding='utf-8') as arquivo28_saida:
+    texto = ''
+    for cada in texto_invertido:
+        texto += f'{cada}\n'
+    arquivo28_saida.write(texto)
+
+
+
+
+
+
+
+
+"""
+
+"""
+
+
+print('----------------')
 
 
 

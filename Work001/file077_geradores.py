@@ -21,8 +21,6 @@ funções geradoras:
 -> podem utilizar yield multiplas vezes
 -> quanto executada, retorna um generator
 
-
-
 """
 # exemplo generator function
 
@@ -37,7 +35,7 @@ def conta_ate(valor_maximo):
 
 gen = conta_ate(5)
 
-#print(type(gen))  # <class 'generator'>
+print(type(gen))  # <class 'generator'>
 print(next(gen))
 print(next(gen))
 print(next(gen))  # assim até passar do limite dá StopIteration
