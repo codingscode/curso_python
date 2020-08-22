@@ -610,8 +610,6 @@ escolher()
 print('----------------')
 
 
-"""
-
 #28
 
 texto_invertido = []
@@ -644,15 +642,17 @@ with open('daquest28_saida.txt', 'w', encoding='utf-8') as arquivo28_saida:
     arquivo28_saida.write(texto)
 
 
-
-
-
-
-
-
 """
 
-"""
+#29
+
+
+
+
+
+
+
+
 
 
 print('----------------')
