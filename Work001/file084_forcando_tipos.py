@@ -1,9 +1,6 @@
 """
 Forçando tipos de dados com Decoradores
 
-
-
-
 """
 
 

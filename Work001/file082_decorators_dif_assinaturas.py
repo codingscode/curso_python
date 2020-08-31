@@ -50,7 +50,7 @@ def ordenar2(principal, acompanhamento):
     return f'Olá, eu gostaria de {principal}, acompanhado de {acompanhamento}, por favor'
 
 
-print(ordenar2('Bisteca', 'pure'))
+print(ordenar2('Bisteca', 'purê'))
 
 print('---------------------')
 

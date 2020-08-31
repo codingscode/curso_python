@@ -29,7 +29,9 @@ print(soma_dois(10, 30))
 
 print('--------------------')
 
+print(soma_dois)
 print(soma_dois.__name__)
+print(soma_dois)
 print(soma_dois.__doc__)
 
 print('--------------------')

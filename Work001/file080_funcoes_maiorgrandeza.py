@@ -1,15 +1,12 @@
 """
 Funções de maior grandeza -> Higher Order Functions (HOF)
 
-
-O que isso signidica?
+O que isso significa?
 Quando uma linguagem de programação suporta HOF, indica que podemos ter funções que retornam outras
 funções como resultado ou mesmo que podemos passar função como argumentos para outras funções, e até
 mesmo criar variaveis do tipo de funções nos nossos programas.
 
-
 """
-
 # Exemplo - definindo as funções
 
 
@@ -54,8 +51,8 @@ print(saudacao('silas'))
 print(saudacao('felícia'))
 print(saudacao('toni'))
 print('-----------------')
-
 # Retornando funções de outras funções
+
 
 def fazer_rir():
     def rir():
