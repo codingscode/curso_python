@@ -166,24 +166,96 @@ class ProdutoRef:
 
 
 prod1 = ProdutoRef('pendrive', 'storage', 17.00)
-prod2 = ProdutoRef('caneta', 'escrita', 1.00)
+prod2 = ProdutoRef('caneta', 'escrita', 2.00)
 
 print(prod1.imposto)
 print(prod2.imposto)
 
-print(prod1.valor)
+print(prod1.valor)  # Acesso possível, mas incorreto de um atributo de classe
 print(prod2.valor)
 
 """
 OBS: Não precisamos criar uma instancia de uma classe para fazer acesso a um atributo de classe.
 """
+print(ProdutoRef.imposto)  # Acesso correto de um atributo de classe
 
-
-print('--------------')
-print('--------------')
-print('--------------')
 print('--------------')
 
 
+class ProdutoRef2:
+    # Atributo de classe
+    imposto = 1.05  # 5% de imposto
+    contador = 0
+
+    def __init__(self, nome, descricao, valor):
+        self.id = ProdutoRef2.contador + 1  # atributo de instancia
+        self.nome = nome  # atributo de instancia
+        self.descricao = descricao  # atributo de instancia
+        self.valor = valor * ProdutoRef.imposto  # atributo de instancia
+        ProdutoRef2.contador = self.id   # atributo de classe
 
 
+meu_prod1 = ProdutoRef2('alicate', 'consertos', 12.00)
+meu_prod2 = ProdutoRef2('caderno', 'material p/escritorio', 15.00)
+meu_prod3 = ProdutoRef2('toalha', 'banho', 22.00)
+
+print(meu_prod1.valor)
+print(meu_prod2.valor)
+print(meu_prod3.valor)
+
+print(ProdutoRef2.imposto)
+
+print(meu_prod1.id)
+print(meu_prod2.id)
+print(meu_prod3.id)
+
+"""
+obs: em linguagens como o java, os atributos conhecidos como atributos de classe aqui em python são
+chamados de atributos estaticos.
+"""
+
+print('--------------')
+# Atributos Dinâmicos
+"""
+um atributo de instancia que pode ser criado em tempo de execução.
+obs: o atributo dinâmico será exclusivo da instancia que o criou.
+"""
+
+
+class ProdutoRef3:
+    # Atributo de classe
+    imposto = 1.05  # 5% de imposto
+    contador = 0
+
+    def __init__(self, nome, descricao, valor):
+        self.id = ProdutoRef2.contador + 1  # atributo de instancia
+        self.nome = nome  # atributo de instancia
+        self.descricao = descricao  # atributo de instancia
+        self.valor = valor * ProdutoRef.imposto  # atributo de instancia
+        ProdutoRef2.contador = self.id   # atributo de classe
+
+
+meu_prod4 = ProdutoRef3('goiaba', 'alimento', 9.00)
+meu_prod5 = ProdutoRef3('nescau', 'achocolatado', 3.2)
+
+# Criando um atributo dinâmico em tempo de execução
+meu_prod4.peso = '4'  # Note que na classe ProdutoRef3 não existe o atributo peso
+
+print(f'ProdutoRef3: {meu_prod4.nome}, Descrição: {meu_prod4.descricao}, Valor: {meu_prod4.valor}, Peso: {meu_prod4.peso}')
+# dá erro print(f'ProdutoRef3: {meu_prod5.nome}, Descrição: {meu_prod5.descricao}, Valor: {meu_prod5.valor}, Peso: {meu_prod5.peso}')
+
+print('--------------')
+
+# Deletando atributos
+print(meu_prod4.__dict__)
+print(meu_prod5.__dict__)
+
+print(ProdutoRef3.__dict__)
+
+del meu_prod4.nome
+del meu_prod5.descricao
+
+print(meu_prod4.__dict__)
+print(meu_prod5.__dict__)
+
+print('--------------')
