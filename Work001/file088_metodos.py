@@ -77,6 +77,44 @@ print(Produto.desconto(p1, 20))  # self, desconto
 
 print('----------------------')
 
+usuario1 = Usuario('Donatelo', 'Pizza', 'donatelo@gmail.com', '1234')
+usuario2 = Usuario('Fiorina', 'Pita', 'fiorina@gmail.com', '5678')
+
+print(usuario1.nome_completo())
+print(Usuario.nome_completo(usuario1))
+
+print(usuario2.nome_completo())
+
+print(f'Senha usuario1: {usuario1._Usuario__senha}')  #  Acesso de forma errada de um atributo de classe
+
+"""
+instalar no terminal: pip install passlib
+"""
+from passlib.hash import pbkdf2_sha256 as criptografar
+
+
+class UsuarioRef:
+    def __init__(self, nome, sobrenome, email, senha):
+        self.__nome = nome
+        self.__sobrenome = sobrenome
+        self.__email = email
+        self.__senha = criptografar.hash(senha, rounds=200000, salt_size=16) # usa-se hash(), pois encrypt() está deprecado
+
+    def correr(self, metros):  # evitar dunder(double under)  __correr__
+        print(f'Estou correndo {metros} metros')
+
+    def nome_completo(self):
+        return f'{self.__nome} {self.__sobrenome}'
+
+    def checar_senha(self, senha):
+        if criptografar.verify(senha, self.__senha):
+            return True
+        return False
+
+
+usuario3 = UsuarioRef('jurandir', 'pires', 'jurandir@gmail.com','goiaba')
+
+print(usuario3._UsuarioRef__senha)  # forma nao recomendada
 
 
 print('----------------------')
