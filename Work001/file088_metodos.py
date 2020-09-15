@@ -76,7 +76,7 @@ print(p1.desconto(20))
 #print(Produto.desconto(40))  # dá erro
 print(Produto.desconto(p1, 20))  # self, desconto
 
-print('----------------------')
+print('----------------------1')
 
 usuario1 = Usuario('Donatelo', 'Pizza', 'donatelo@gmail.com', '1234')
 usuario2 = Usuario('Fiorina', 'Pita', 'fiorina@gmail.com', '5678')
@@ -117,7 +117,7 @@ usuario3 = UsuarioRef('jurandir', 'pires', 'jurandir@gmail.com','goiaba')
 
 print(usuario3._UsuarioRef__senha)  # forma nao recomendada
 
-print('----------------------')
+print('----------------------2')
 # Métodos de Classe
 
 
@@ -151,7 +151,7 @@ UsuarioRef2.contar_usuarios()   # forma correta
 usuario4.contar_usuarios()  # possivel, mas incorreta
 # método de instancia ≠ método de classe
 
-print('----------------------')
+print('----------------------3')
 
 
 class UsuarioRef3:
@@ -185,7 +185,7 @@ class UsuarioRef3:
 usuario5 = UsuarioRef3('Leonardo', 'da vinci', 'leo@gmail.com', '1245678')
 usuario5.contar_usuarios()
 
-print('----------------------')
+print('----------------------4')
 
 class UsuarioRef4:
     contador = 0
@@ -196,7 +196,7 @@ class UsuarioRef4:
         print(f'Temos {cls.contador} usuários no sistema')
 
     def __init__(self, nome, sobrenome, email, senha):
-        self.__id = UsuarioRef2.contador + 1
+        self.__id = UsuarioRef4.contador + 1
         self.__nome = nome
         self.__sobrenome = sobrenome
         self.__email = email
@@ -226,7 +226,7 @@ usuario6 = UsuarioRef4('Vangogh', 'van', 'goguinho@gmail.com', '87312')
 print(usuario6._UsuarioRef4__gerar_usuario())  # acesso, de forma ruim
 
 
-print('----------------------')
+print('----------------------5')
 # Método Estático
 
 
@@ -243,7 +243,7 @@ class UsuarioRef5:
         return 'HLX22'
 
     def __init__(self, nome, sobrenome, email, senha):
-        self.__id = UsuarioRef2.contador + 1
+        self.__id = UsuarioRef5.contador + 1
         self.__nome = nome
         self.__sobrenome = sobrenome
         self.__email = email
@@ -274,4 +274,6 @@ usuario7 = UsuarioRef5('Nelson', 'cavaquinho', 'violaoecavacos@gmail.com', '9134
 
 print(UsuarioRef5.contador)
 print(UsuarioRef5.definicao())
-print('----------------------')
+usuario7 = UsuarioRef5('Nelson', 'cavaquinho', 'violaoecavacos@gmail.com', '91341')
+
+print('----------------------6')

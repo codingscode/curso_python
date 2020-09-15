@@ -6,7 +6,7 @@ POO -> Programação Orientada a Objetos
 - Paradigma de programação é a forma/metodologia utilizada para pensar/desenvolver sistemas.
 
 
-Principais elementos da Orientação a Objetos:
+Principais elementos de Orientação a Objetos:
 - Classe -> Modelo do objeto do mundo real sendo representado computacionalmente
 - Atributo -> Caracteristicas do objeto
 - Método -> Comportamento do objeto (funções)

@@ -1,7 +1,8 @@
 """
 POO - Atributos
 
-Atributos -> Representam as características do objeto. Ou seja, pelos atributos nós conseguimos representar computacionalmente os estados de um objeto.
+Atributos -> Representam as características do objeto. Ou seja, pelos atributos nós conseguimos
+representar computacionalmente os estados de um objeto.
 Em python, dividimos os atributos em 3 grupos:
 - atributos de instância
 - atributos de classe
@@ -9,8 +10,6 @@ Em python, dividimos os atributos em 3 grupos:
 
 # Atributos de instância: São atributos declarados dentro do método construtor
 obs: método construtor: é um método especial utilizado para a construção do objeto.
-
-
 
 """
 
@@ -103,7 +102,7 @@ usuario = Acesso('usuario@gmail.com', '123456', 'rudney')
 #print(usuario.__email)  # dá erro, pois é privado  AttributeError
 print(usuario.nome)    # não dá erro, pois é publico
 
-print('--------------')
+print('-------------1')
 
 print(dir(usuario))
 """
@@ -114,20 +113,20 @@ print(dir(usuario))
 '__weakref__', 'nome']
 
 """
-print('--------------')
+print('-------------2')
 
 print(usuario._Acesso__email)  # Temos acesso. Mas não deveriamos fazer este acesso.  Name Mangling
 print(usuario._Acesso__senha)
 
-print('--------------')
+print('-------------3')
 
 print(usuario.mostrar_senha())
 
-print('--------------')
+print('-------------4')
 
 print(usuario.mostrar_email())
 
-print('--------------')
+print('-------------5')
 """
 O que significa atributos de instância?
 Significa, que ao criarmos instancias/objetos de uma classe, todos as intancias terão estes atributos.
@@ -139,7 +138,7 @@ usuario2 = Acesso('usuario2@gmail.com', 'efgh', 'giulia')
 print(usuario1.mostrar_email())
 print(usuario2.mostrar_email())
 
-print('--------------')
+print('-------------6')
 
 # Atributos de classe
 """
@@ -151,7 +150,7 @@ instância, com os atributos de classe todas as instancias terão o mesmo valor 
 p1 = Produto('playstation 4', 'video game', 2400)
 p2 = Produto('macbook pro', 'computador movel', 16000)
 
-print('--------------')
+print('-------------7')
 # Refatorando a classe produto
 
 
@@ -179,7 +178,7 @@ OBS: Não precisamos criar uma instancia de uma classe para fazer acesso a um at
 """
 print(ProdutoRef.imposto)  # Acesso correto de um atributo de classe
 
-print('--------------')
+print('-------------8')
 
 
 class ProdutoRef2:
@@ -191,7 +190,7 @@ class ProdutoRef2:
         self.id = ProdutoRef2.contador + 1  # atributo de instancia
         self.nome = nome  # atributo de instancia
         self.descricao = descricao  # atributo de instancia
-        self.valor = valor * ProdutoRef.imposto  # atributo de instancia
+        self.valor = valor * ProdutoRef2.imposto  # atributo de instancia
         ProdutoRef2.contador = self.id   # atributo de classe
 
 
@@ -214,7 +213,7 @@ obs: em linguagens como o java, os atributos conhecidos como atributos de classe
 chamados de atributos estaticos.
 """
 
-print('--------------')
+print('-------------9')
 # Atributos Dinâmicos
 """
 um atributo de instancia que pode ser criado em tempo de execução.
@@ -228,11 +227,11 @@ class ProdutoRef3:
     contador = 0
 
     def __init__(self, nome, descricao, valor):
-        self.id = ProdutoRef2.contador + 1  # atributo de instancia
+        self.id = ProdutoRef3.contador + 1  # atributo de instancia
         self.nome = nome  # atributo de instancia
         self.descricao = descricao  # atributo de instancia
-        self.valor = valor * ProdutoRef.imposto  # atributo de instancia
-        ProdutoRef2.contador = self.id   # atributo de classe
+        self.valor = valor * ProdutoRef3.imposto  # atributo de instancia
+        ProdutoRef3.contador = self.id   # atributo de classe
 
 
 meu_prod4 = ProdutoRef3('goiaba', 'alimento', 9.00)
@@ -244,7 +243,7 @@ meu_prod4.peso = '4'  # Note que na classe ProdutoRef3 não existe o atributo pe
 print(f'ProdutoRef3: {meu_prod4.nome}, Descrição: {meu_prod4.descricao}, Valor: {meu_prod4.valor}, Peso: {meu_prod4.peso}')
 # dá erro print(f'ProdutoRef3: {meu_prod5.nome}, Descrição: {meu_prod5.descricao}, Valor: {meu_prod5.valor}, Peso: {meu_prod5.peso}')
 
-print('--------------')
+print('-------------10')
 
 # Deletando atributos
 print(meu_prod4.__dict__)
@@ -258,4 +257,4 @@ del meu_prod5.descricao
 print(meu_prod4.__dict__)
 print(meu_prod5.__dict__)
 
-print('--------------')
+print('--------------11')

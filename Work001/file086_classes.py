@@ -31,8 +31,7 @@ print(type(idade))
 print(type(preco))
 print(type(nome))
 
-print('--------------------')
-
+print('-------------------1')
 # tipo criado
 
 
@@ -50,7 +49,7 @@ print(type(lamp))
 
 valor = int('12')  # cast
 
-print('--------------------')
+print('-------------------2')
 
 print(help(int))  # int é classe
 
