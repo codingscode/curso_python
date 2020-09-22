@@ -8,7 +8,7 @@ Encapsular -> capsula
 Relembrando atributos/metodos privados em python:
 Imagine que temos uma classe chamada Pessoa, contendo um atributo privado chamado __nome e um metodo
 privado chamado __falar()
-Esses elementos privados só devem/deveriam sera acessados dentro da classe. Mas python não bloqueia
+Esses elementos privados só devem/deveriam ser acessados dentro da classe. Mas python não bloqueia
 este acesso fora da classe. Com python acontece um fenomeno chamado Name Mangling, que faz uma
 alteração na forma de se acessar os elementos privados, conforme:
 _Classe__elemento
