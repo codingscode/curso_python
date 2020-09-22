@@ -58,18 +58,51 @@ class Agenda:
         Agenda.pessoa = dict()
 
     def armazenar_pessoa(self, nome, idade, altura):
-        pass
+        colocar_pessoa = {'id': Agenda.id, 'nome': nome, 'idade': idade, 'altura': altura}
+        self.__lista.append(colocar_pessoa)
+        Agenda.id += 1
 
     def remover_pessoa(self, nome):
-        pass
+        todos = self.__lista
+
+        def filtrar(procurar, iteravel):
+            #print(todos)
+            for cada in iteravel:
+                if cada['nome'] == procurar:
+                    return True
+                else:
+                    return False
+
+        #return list(filter(filtrar(nome, todos), self.__lista))
+        return list(filter(lambda cada: cada['nome'] not in nome, todos))
+
 
     def buscar_pessoa(self, nome):
         pass
 
     def imprimir_agenda(self):
-        pass
+        return self.__lista
 
     def imprir_pessoa(self, indice):
         pass
-    
+
+
+agenda1 = Agenda('silas', 21, 1.7)
+agenda1.armazenar_pessoa('donatello', 33, 1.9)
+agenda1.armazenar_pessoa('bob', 17, 1.73)
+agenda1.armazenar_pessoa('lucia', 25, 1.8)
+agenda1.armazenar_pessoa('aladin', 16, 1.6)
+agenda1.armazenar_pessoa('jessy', 22, 1.71)
+agenda1.armazenar_pessoa('dennis', 12, 1.4)
+agenda1.armazenar_pessoa('dino', 26, 1.85)
+agenda1.armazenar_pessoa('fabian', 23, 1.78)
+
+print(agenda1.imprimir_agenda())
+
+print(agenda1.remover_pessoa('jessy'))
+
+
+
+
+
 
