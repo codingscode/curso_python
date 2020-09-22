@@ -65,16 +65,9 @@ class Agenda:
     def remover_pessoa(self, nome):
         todos = self.__lista
 
-        def filtrar(procurar, iteravel):
-            #print(todos)
-            for cada in iteravel:
-                if cada['nome'] == procurar:
-                    return True
-                else:
-                    return False
-
-        #return list(filter(filtrar(nome, todos), self.__lista))
-        return list(filter(lambda cada: cada['nome'] not in nome, todos))
+        nova_lista = list(filter(lambda cada: cada['nome'] not in nome, todos))
+        self.__lista = nova_lista
+        return nova_lista
 
 
     def buscar_pessoa(self, nome):
@@ -97,9 +90,17 @@ agenda1.armazenar_pessoa('dennis', 12, 1.4)
 agenda1.armazenar_pessoa('dino', 26, 1.85)
 agenda1.armazenar_pessoa('fabian', 23, 1.78)
 
-print(agenda1.imprimir_agenda())
+#print(agenda1.imprimir_agenda())
+[print(cada) for cada in agenda1.imprimir_agenda()]
+print(len(agenda1.imprimir_agenda()))
+print('------------------------------')
 
 print(agenda1.remover_pessoa('jessy'))
+#print(agenda1.imprimir_agenda())
+[print(cada) for cada in agenda1.imprimir_agenda()]
+print(len(agenda1.imprimir_agenda()))
+print('------------------------------')
+
 
 
 
