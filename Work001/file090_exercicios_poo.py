@@ -4,12 +4,7 @@ Exercicios POO
 """
 
 """
-
-
-"""
-
 # 01)
-
 
 class Pessoa:
 
@@ -43,8 +38,38 @@ pessoa1.setar_idade(32)
 pessoa1.setar_altura(1.78)
 print(pessoa1.__dict__)
 
+
+"""
+
+
 # 02)
 
 
+class Agenda:
+    id = 0
+    pessoa = dict()
 
+    def __init__(self, nome, idade, altura):
+        self.__nome = nome
+        self.__idade = idade
+        self.__altura = altura
+        self.__pessoaatual = Agenda.pessoa
+        self.__lista = []
+        Agenda.pessoa = dict()
+
+    def armazenar_pessoa(self, nome, idade, altura):
+        pass
+
+    def remover_pessoa(self, nome):
+        pass
+
+    def buscar_pessoa(self, nome):
+        pass
+
+    def imprimir_agenda(self):
+        pass
+
+    def imprir_pessoa(self, indice):
+        pass
+    
 
