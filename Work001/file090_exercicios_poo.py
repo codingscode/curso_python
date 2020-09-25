@@ -65,21 +65,25 @@ class Agenda:
     def remover_pessoa(self, nome):
         todos = self.__lista
 
-        nova_lista = list(filter(lambda cada: cada['nome'] not in nome, todos))
+        nova_lista = list(filter(lambda cada: cada['nome'] is not nome, todos))
         self.__lista = nova_lista
         return nova_lista
 
-
     def buscar_pessoa(self, nome):
-        pass
+        todos = self.__lista
+        pessoa_procurada = list(filter(lambda cada: cada['nome'] is nome, todos))
+        return f'{pessoa_procurada[0]} | posição: {pessoa_procurada[0]["id"] + 1}'
 
     def imprimir_agenda(self):
         return self.__lista
 
     def imprir_pessoa(self, indice):
-        pass
+        todos = self.__lista
+        pessoa_indice = list(filter(lambda cada: cada['id'] is indice, todos))
+        return pessoa_indice
 
 
+# adicionando pessoas
 agenda1 = Agenda('silas', 21, 1.7)
 agenda1.armazenar_pessoa('donatello', 33, 1.9)
 agenda1.armazenar_pessoa('bob', 17, 1.73)
@@ -90,16 +94,28 @@ agenda1.armazenar_pessoa('dennis', 12, 1.4)
 agenda1.armazenar_pessoa('dino', 26, 1.85)
 agenda1.armazenar_pessoa('fabian', 23, 1.78)
 
+# mostrando todos
 #print(agenda1.imprimir_agenda())
 [print(cada) for cada in agenda1.imprimir_agenda()]
 print(len(agenda1.imprimir_agenda()))
-print('------------------------------')
+print('1------------------------------')
 
+# removendo uma pessoa
 print(agenda1.remover_pessoa('jessy'))
 #print(agenda1.imprimir_agenda())
 [print(cada) for cada in agenda1.imprimir_agenda()]
 print(len(agenda1.imprimir_agenda()))
-print('------------------------------')
+print('2------------------------------')
+
+# buscando pessoa pelo nome
+print(agenda1.buscar_pessoa('lucia'))
+
+print('3------------------------------')
+# imprimir pessoa pela posição
+
+print(agenda1.imprir_pessoa(6))
+
+print('4------------------------------')
 
 
 
