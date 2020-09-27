@@ -114,10 +114,6 @@ print(agenda1.imprir_pessoa(6))
 print('4------------------------------')
 
 
-
-"""
-
-
 # 03)
 
 
@@ -200,5 +196,46 @@ elevador1.desce(9)
 print(elevador1.__dict__)
 
 print('6----------------------------------\n')
+
+"""
+
+
+# 04)
+
+
+class Televisao:
+    pass
+
+
+class ControleRemoto:
+    botoes = {'volume': ['mais', 'menos'], 'canal': ['mais', 'menos']}
+
+    def __init__(self, volume_atual, canal_atual):
+        self.__volume_atual = volume_atual
+        self.__canal_atual = canal_atual
+
+    def mudar_volume(self, direcao):
+        if direcao is 'mais':
+            self.__volume_atual += 1
+        elif direcao is 'menos':
+            self.__volume_atual -= 1
+        else:
+            print('valor inválido para volume')
+
+    def mudar_canal(self, valor):
+        if valor is 'mais':
+            self.__canal_atual += 1
+        elif valor is 'menos':
+            self.__canal_atual -= 1
+        elif valor > 0 & valor < 191:
+            self.__canal_atual = valor
+        else:
+            print('valor inválido para canal')
+
+
+
+
+
+
 
 
