@@ -38,10 +38,6 @@ pessoa1.setar_idade(32)
 pessoa1.setar_altura(1.78)
 print(pessoa1.__dict__)
 
-
-"""
-
-
 # 02)
 
 
@@ -119,7 +115,90 @@ print('4------------------------------')
 
 
 
+"""
 
 
+# 03)
+
+
+class Elevador:
+
+    def __init__(self, andar_atual, total_andares, capacidade_elev, quant_pessoas):
+        self.__andar_atual = andar_atual
+        self.__total_andares = total_andares
+        self.__capacidade_elev = capacidade_elev
+        self.__quant_pessoas = quant_pessoas
+
+    def inicializa(self, capacidade_elevador, total_andares):
+        self.__andar_atual = 0
+        self.__quant_pessoas = 0
+        self.__capacidade_elev = capacidade_elevador
+        self.__total_andares = total_andares
+
+    def entra(self, adicionar_pessoas):
+        if self.__quant_pessoas + adicionar_pessoas > self.__capacidade_elev:
+            self.__quant_pessoas = self.__capacidade_elev
+            print('Não é possível acrescentar mais pessoas')
+        else:
+            self.__quant_pessoas += adicionar_pessoas
+
+    def sai(self, retirar_pessoas):
+        if self.__quant_pessoas > 0:
+            if self.__quant_pessoas >= retirar_pessoas:
+                self.__quant_pessoas -= retirar_pessoas
+            else:
+                self.__quant_pessoas = 0
+                print('Quantidade a ser retirada maior que a quantidade de pessoas presentes')
+        else:
+            print('Não há pessoas no elevador')
+
+    def sobe(self, n_andares_subir):
+        if self.__andar_atual + n_andares_subir > self.__total_andares:
+            self.__andar_atual = self.__total_andares
+            print('Não é possível subir além do limite')
+        else:
+            self.__andar_atual += n_andares_subir
+
+    def desce(self, n_andares_descer):
+        if self.__andar_atual - n_andares_descer < 0:
+            print('Não é possível descer abaixo do térreo')
+            self.__andar_atual = 0
+        else:
+            self.__andar_atual -= n_andares_descer
+
+
+elevador1 = Elevador(1, 12, 8, 3)  # andar_atual, total_andares, capacidade_elev, quant_pessoas
+
+print(elevador1.__dict__)
+
+print('1----------------------------------\n')
+elevador1.inicializa(10, 15)
+print(elevador1.__dict__)
+
+print('2----------------------------------\n')
+elevador1.entra(7)
+print(elevador1.__dict__)
+elevador1.entra(4)
+print(elevador1.__dict__)
+
+print('3----------------------------------\n')
+elevador1.sobe(12)
+print(elevador1.__dict__)
+elevador1.sobe(4)
+print(elevador1.__dict__)
+
+print('4----------------------------------\n')
+elevador1.sai(6)
+print(elevador1.__dict__)
+elevador1.sai(5)
+print(elevador1.__dict__)
+
+print('5----------------------------------\n')
+elevador1.desce(8)
+print(elevador1.__dict__)
+elevador1.desce(9)
+print(elevador1.__dict__)
+
+print('6----------------------------------\n')
 
 
