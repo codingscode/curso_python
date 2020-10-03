@@ -205,46 +205,73 @@ print('6----------------------------------\n')
 
 class ControleRemoto:
     botoes = ['ch+', 'ch-', 'vol+', 'vol-']
-    pass
+
+    def __init__(self, botao):
+        self.__botao_pressionado = botao
+
+    def emitir(self, valor):
+        self.__botao_pressionado = valor
+        return self.__botao_pressionado
 
 
 class Televisao:
-    botoes = {'volume': ['mais', 'menos'], 'canal': ['mais', 'menos']}
 
-    def __init__(self, volume_atual, canal_atual):
+    def __init__(self, volume_atual=0, canal_atual=1):
         self.__volume_atual = volume_atual
         self.__canal_atual = canal_atual
 
-    def mudar_volume(self, direcao):
-        if direcao is 'mais':
-            self.__volume_atual += 1
-        elif direcao is 'menos':
-            self.__volume_atual -= 1
-        else:
-            print('valor inválido para volume')
-
-    def mudar_canal(self, valor):
-        if valor is 'mais':
-            self.__canal_atual += 1
-        elif valor is 'menos':
-            self.__canal_atual -= 1
-        elif valor > 0 & valor < 191:
-            self.__canal_atual = valor
-        else:
-            print('valor inválido para canal')
-
     def receber_sinal(self, valor):
-        if valor is 'ch+':
-            self.__canal_atual += 1
-        elif valor is 'ch-':
-            self.__canal_atual -= 1
-        elif valor > 0 & valor < 191:
-            self.__canal_atual = valor
+        if type(valor) == type('x'):
+            if valor == 'ch+':
+                if self.__canal_atual >= 190:
+                    self.__canal_atual = 190
+                else:
+                    self.__canal_atual += 1
+            elif valor == 'ch-':
+                if self.__canal_atual <= 1:
+                    self.__canal_atual = 1
+            elif valor == 'vol+':
+                if self.__volume_atual < 20:
+                    self.__volume_atual += 1
+                else:
+                    self.__volume_atual = 20
+            elif valor == 'vol-':
+                if self.__volume_atual == 0:
+                    self.__volume_atual = 0
+                else:
+                    self.__volume_atual -= 1
+        elif type(valor) == type(1):
+            if valor > 0 & valor <= 190:
+                self.__canal_atual = valor
+            else:
+                print('valor pressionado inválido')
 
 
+controle1 = ControleRemoto(3)
+
+print(controle1.__dict__)
+print(controle1._ControleRemoto__botao_pressionado)
+
+aparelho = Televisao()
+
+aparelho.receber_sinal(6)
+print(aparelho.__dict__)
+
+aparelho.receber_sinal('ch+')
+aparelho.receber_sinal('ch+')
+aparelho.receber_sinal('ch+')
+aparelho.receber_sinal('vol+')
+print(aparelho.__dict__)
+
+aparelho.receber_sinal('vol+')
+aparelho.receber_sinal('vol+')
+print(aparelho.__dict__)
+
+aparelho.receber_sinal('oi')
+print(aparelho)
+print(aparelho.__dict__)
 
 
-
-
-
+print('-----------------------')
+print('-----------------------')
 
