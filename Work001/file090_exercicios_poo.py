@@ -203,11 +203,12 @@ print('6----------------------------------\n')
 # 04)
 
 
-class Televisao:
+class ControleRemoto:
+    botoes = ['ch+', 'ch-', 'vol+', 'vol-']
     pass
 
 
-class ControleRemoto:
+class Televisao:
     botoes = {'volume': ['mais', 'menos'], 'canal': ['mais', 'menos']}
 
     def __init__(self, volume_atual, canal_atual):
@@ -231,6 +232,14 @@ class ControleRemoto:
             self.__canal_atual = valor
         else:
             print('valor inválido para canal')
+
+    def receber_sinal(self, valor):
+        if valor is 'ch+':
+            self.__canal_atual += 1
+        elif valor is 'ch-':
+            self.__canal_atual -= 1
+        elif valor > 0 & valor < 191:
+            self.__canal_atual = valor
 
 
 
