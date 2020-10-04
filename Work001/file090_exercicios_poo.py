@@ -240,38 +240,55 @@ class Televisao:
                     self.__volume_atual = 0
                 else:
                     self.__volume_atual -= 1
+            else:
+                print('valor pressionado inexistente')
         elif type(valor) == type(1):
-            if valor > 0 & valor <= 190:
+            if 0 < valor <= 190:
                 self.__canal_atual = valor
             else:
-                print('valor pressionado inválido')
+                print('valor pressionado fora do limite')
 
 
 controle1 = ControleRemoto(3)
 
 print(controle1.__dict__)
 print(controle1._ControleRemoto__botao_pressionado)
+# print(controle1.__botao_pressionado)
 
 aparelho = Televisao()
 
-aparelho.receber_sinal(6)
+controle1._ControleRemoto__botao_pressionado = 'ch+'
+aparelho.receber_sinal(controle1._ControleRemoto__botao_pressionado)
+controle1._ControleRemoto__botao_pressionado = 'ch+'
+aparelho.receber_sinal(controle1._ControleRemoto__botao_pressionado)
+controle1._ControleRemoto__botao_pressionado = 'ch+'
+aparelho.receber_sinal(controle1._ControleRemoto__botao_pressionado)
+controle1._ControleRemoto__botao_pressionado = 'vol+'
+aparelho.receber_sinal(controle1._ControleRemoto__botao_pressionado)
 print(aparelho.__dict__)
 
-aparelho.receber_sinal('ch+')
-aparelho.receber_sinal('ch+')
-aparelho.receber_sinal('ch+')
-aparelho.receber_sinal('vol+')
+print('1----------------------')
+controle1._ControleRemoto__botao_pressionado = 'vol+'
+aparelho.receber_sinal(controle1._ControleRemoto__botao_pressionado)
+controle1._ControleRemoto__botao_pressionado = 'vol+'
+aparelho.receber_sinal(controle1._ControleRemoto__botao_pressionado)
 print(aparelho.__dict__)
 
-aparelho.receber_sinal('vol+')
-aparelho.receber_sinal('vol+')
+print('2-----------------------')
+controle1._ControleRemoto__botao_pressionado = 21
+aparelho.receber_sinal(controle1._ControleRemoto__botao_pressionado)
 print(aparelho.__dict__)
 
-aparelho.receber_sinal('oi')
-print(aparelho)
+print('3-----------------------')
+controle1._ControleRemoto__botao_pressionado = 'oi'
+aparelho.receber_sinal(controle1._ControleRemoto__botao_pressionado)
+print(aparelho.__dict__)
+
+print('4-----------------------')
+controle1._ControleRemoto__botao_pressionado = 501
+aparelho.receber_sinal(controle1._ControleRemoto__botao_pressionado)
 print(aparelho.__dict__)
 
 
 print('-----------------------')
 print('-----------------------')
-
