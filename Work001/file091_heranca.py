@@ -23,6 +23,10 @@ Quando uma classe herda de outra classe, ela é chamada de:
 - Classe Filha
 - Classe Específica
 
+Sobrescrita de métodos (Override):
+Sobrescrita de métodos, ocorre quando reescrevemos/implementamos um método presente na super classe
+em classes filhas.
+
 """
 
 
@@ -73,7 +77,7 @@ class Pessoa:
 class ClienteRef1(Pessoa):  # ClienteRef1 herda de Pessoa
 
     def __init__(self, nome, sobrenome, cpf, renda):
-        super().__init__(nome, sobrenome, cpf)
+        super().__init__(nome, sobrenome, cpf)  # ou Pessoa.__init__(self, nome, sobrenome, cpf) // não comum
         self.__renda = renda
 
 
@@ -90,6 +94,47 @@ funcionario2 = FuncionarioRef1('Mike', 'Stone', 25841953857, 374572645)
 print(cliente2.nome_completo())
 print(funcionario2.nome_completo())
 
+print(cliente2.__dict__)
+print(funcionario2.__dict__)
+
 print('2---------------------')
+
+
+class PessoaRef2:
+
+    def __init__(self, nome, sobrenome, cpf):
+        self.__nome = nome
+        self.__sobrenome = sobrenome
+        self.__cpf = cpf
+
+    def nome_completo(self):
+        return f'{self.__nome} {self.__sobrenome}'
+
+
+class ClienteRef2(PessoaRef2):
+
+    def __init__(self, nome, sobrenome, cpf, renda):
+        super().__init__(nome, sobrenome, cpf)
+        self.__renda = renda
+
+
+class FuncionarioRef2(PessoaRef2):
+
+    def __init__(self, nome, sobrenome, cpf, matricula):
+        super().__init__(nome, sobrenome, cpf)
+        self.__matricula = matricula
+
+    def nome_completo(self):
+        print('**da super**', super().nome_completo())
+        print('***', self._PessoaRef2__cpf)  # dá erro com super()._PessoaRef2__cpf
+        return f'Funcionário: {self.__matricula}, Nome: {self._PessoaRef2__nome}'
+
+
+# Sobrescrita de métodos (Overriding)
+cliente3 = ClienteRef2('Tom', 'Stone', 57942755538, 1200)
+funcionario3 = FuncionarioRef2('Ken', 'Yamamoto', 25841953857, 374572645)
+
+print(cliente3.nome_completo())
+print(funcionario3.nome_completo())
+
 print('3---------------------')
-print('4---------------------')
