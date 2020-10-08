@@ -96,8 +96,80 @@ conta4 = ContaRef1('Lya', 4000, 6000)
 soma2 = conta3.get_saldo() + conta4.get_saldo()
 print(f'a soma das contas é {soma2}')
 
+print(conta3.__dict__)
+conta3.set_limite(10000)
+print(conta3.__dict__)
 
 print('2---------------------------')
+
+
+class ContaRef2:
+
+    contador = 0
+
+    def __init__(self, titular, saldo, limite):
+        self.__numero = ContaRef2.contador + 1
+        self.__titular = titular
+        self.__saldo = saldo
+        self.__limite = limite
+        ContaRef2.contador += 1
+
+    @property
+    def numero(self):
+        return self.__numero
+
+    @property
+    def titular(self):
+        return self.__titular
+
+    @property
+    def saldo(self):
+        return self.__saldo
+
+    @property
+    def limite(self):
+        return self.__limite
+
+    @limite.setter
+    def limite(self, novo_limite):
+        self.__limite = novo_limite
+
+    def extrato(self):
+        return f'Saldo de {self.__saldo}, do cliente {self.__titular}'
+
+    def depositar(self, valor):
+        self.__saldo += valor
+
+    def sacar(self, valor):
+        self.__saldo -= valor
+
+    def transferir(self, valor, destino):
+        self.__saldo -= valor
+        destino.__saldo += valor
+
+    @property
+    def valor_total(self):
+        return self.__saldo + self.__limite
+
+
+conta5 = ContaRef2('Rob', 14000, 20000)
+conta6 = ContaRef2('Caren', 23000, 32000)
+
+print(conta5.extrato())
+print(conta6.extrato())
+
+soma3 = conta5.saldo + conta6.saldo
+print(f'a soma é {soma3}')
+
+print(conta5.__dict__)
+print(conta5.limite)
+conta5.limite = 18000
+print(conta5.__dict__)
+print(conta5.limite)
+
+print('para conta5:', conta5.valor_total)
+print('para conta6:', conta6.valor_total)
+
 print('3---------------------------')
 print('4---------------------------')
 print('5---------------------------')
