@@ -93,13 +93,40 @@ class Pinguim(Aquatico, Terrestre):
         super().__init__(nome)
 
 
+baleia = Aquatico('Mobydick')
+print(baleia.nadar())
+print(baleia.cumprimentar())
 
+tatu = Terrestre('Peba')
+print(tatu.andar())
+print(tatu.cumprimentar())
 
-
-
-
-
+linu = Pinguim('Pingo')
+print(linu.andar())
+print(linu.nadar())
+print(linu.cumprimentar())  #  ??????  Method Resolution Order (MRO) // Eu sou Pingo do mar // Aquatico vem primeiro
 
 print('---------------------')
+
+print(f'Pingo é instancia de Pinguim ? : {isinstance(linu, Pinguim)}')
+print(f'Pingo é instancia de Aquatico ? : {isinstance(linu, Aquatico)}')
+print(f'Pingo é instancia de Terrestre ? : {isinstance(linu, Terrestre)}')
+print(f'Pingo é instancia de object ? : {isinstance(linu, object)}')
+print(f'Pingo é instancia de str ? : {isinstance(linu, str)}')
+print(f'Pingo é instancia de Animal ? : {isinstance(linu, Animal)}')
+print(f'Peba é instancia de Aquatico ? : {isinstance(tatu, Aquatico)}')
+
+"""
+(1)
+class Pessoa:
+    pass
+    
+(2)
+class Pessoa(object):
+    pass
+    
+(1) e (2) são a mesma coisa    
+"""
+
 print('---------------------')
 print('---------------------')
