@@ -30,6 +30,21 @@ class Livro:
 
     def __len__(self):  # descomentar evita o erro abaixo
         return self.paginas
+        #return len(self.titulo)
+
+    #def __del__(self):
+    #    print('Um objeto do tipo Livro foi deletado da memória')
+
+    def __add__(self, outro):  # tenta comentar
+        return f'{self} - {outro}'
+
+    def __mul__(self, outro):  # tentar comentar
+        if isinstance(outro, int):
+            msg = ''
+            for n in range(outro):
+                msg += ' ' + str(self)
+            return msg
+        return 'Não é possivel multiplicar'
 
 
 livro1 = Livro('Python coding', 'escola de codigo', 250)
@@ -57,13 +72,22 @@ print(repr(l1))  # testar no terminal é diferente
 print(len(l1))   # dá erro
 print(len(l2))
 
-
-
+#del l1
 
 print('2----------------------------------------')
+print(l1)
+print(l2)
+print(l1 + l2)  # dá erro
+print(dir())
+print(dir(__builtins__))
+
 print('3----------------------------------------')
+print(l1*3)  # dá erro
+print(l1*3.4)  # dá erro
+print(l1*'goiaba')  # dá erro
+
 print('4----------------------------------------')
+print(dir(object))
 
-
-
-
+print('5----------------------------------------')
+print('6----------------------------------------')
