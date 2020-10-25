@@ -28,6 +28,9 @@ class Livro:
     def __str__(self):
         return self.titulo
 
+    def __len__(self):  # descomentar evita o erro abaixo
+        return self.paginas
+
 
 livro1 = Livro('Python coding', 'escola de codigo', 250)
 livro2 = Livro('IA com Python', 'code match', 100)
@@ -45,12 +48,15 @@ print('1----------------------------------------')
 from file097_metodos_magicos import Livro
 
 l1 = Livro('Qualquer', 'Outro', 80)
+l2 = Livro('Harry Potter', 'ficção', 537)
 
 print(l1)
 print(str(l1))
 print(repr(l1))  # testar no terminal é diferente
 print(repr(l1))  # testar no terminal é diferente
-#print(len(l1))   # dá erro
+print(len(l1))   # dá erro
+print(len(l2))
+
 
 
 
