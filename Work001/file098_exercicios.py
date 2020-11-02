@@ -21,16 +21,10 @@ pessoa1 = Pessoa('magali', 'belo horizonte', 98782387)
 print(pessoa1.__dict__)
 print(pessoa1.imprimir())
 
-
-"""
-
-
 #03)
-
-
 class Quadrado:
 
-    def __init__(self, lado): # , area=0, perimetro=0
+    def __init__(self, lado): 
         self.__lado = lado
         self.__area = self.calcular_area()
         self.__perimetro = self.calcular_perimetro()
@@ -50,6 +44,54 @@ class Quadrado:
 quadrado1 = Quadrado(3)
 print(quadrado1.__dict__)
 print(quadrado1.imprimir())
+
+
+# 05)
+class Retangulo:
+
+    def __init__(self, lado1, lado2):
+        self.__lado1 = lado1
+        self.__lado2 = lado2
+        self.__area = self.calcular_area()
+        self.__perimetro = self.calcular_perimetro()
+
+    def calcular_area(self):
+        self.__area = self.__lado1 * self.__lado2
+        return self.__area
+
+    def calcular_perimetro(self):
+        self.__perimetro = (self.__lado1 + self.__lado2)*2
+        return self.__perimetro
+
+    def imprimir(self):
+        return f'lado1: {self.__lado1}, lado2: {self.__lado2}, area: {self.__area}, perimetro: {self.__perimetro}'
+
+
+retangulo1 = Retangulo(3, 4)
+print(retangulo1.__dict__)
+print(retangulo1.imprimir())
+"""
+
+
+#06)
+
+class Retangulo:
+
+    def __init__(self, lado1, lado2):
+        self.__lado1 = lado1
+        self.__lado2 = lado2
+        self.__area = self.__lado1 * self.__lado2
+        self.__perimetro = (self.__lado1 + self.__lado2)*2
+    
+
+retangulo1 = Retangulo(5, 7)
+print(retangulo1.__dict__)
+
+
+
+
+
+
 
 
 
