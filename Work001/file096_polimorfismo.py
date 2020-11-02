@@ -44,7 +44,7 @@ class Rato(Animal):
     def __init__(self, nome):
         super().__init__(nome)
 
-    #def falar(self): descomentar depois
+    #def falar(self):  # descomentar depois
     #    print(f'{self._Animal__nome} fala #rsqw..fsdfsdf')
 
 

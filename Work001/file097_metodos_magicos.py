@@ -9,8 +9,6 @@ dunder repr -> representação do objeto
 
 __str__ prevalece sobre __repr__
 
-
-
 """
 
 
@@ -47,16 +45,14 @@ class Livro:
         return 'Não é possivel multiplicar'
 
 
-livro1 = Livro('Python coding', 'escola de codigo', 250)
+livro1 = Livro('Python coding', 'escola do codigo', 250)
 livro2 = Livro('IA com Python', 'code match', 100)
 
 print(livro1)
 print(str(livro1))
 
-
 print(livro2)
 print(str(livro2))
-
 
 print('1----------------------------------------')
 
@@ -68,7 +64,7 @@ l2 = Livro('Harry Potter', 'ficção', 537)
 print(l1)
 print(str(l1))
 print(repr(l1))  # testar no terminal é diferente
-print(repr(l1))  # testar no terminal é diferente
+print(repr(l2))  # testar no terminal é diferente
 print(len(l1))   # dá erro
 print(len(l2))
 
