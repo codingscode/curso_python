@@ -70,11 +70,8 @@ class Retangulo:
 retangulo1 = Retangulo(3, 4)
 print(retangulo1.__dict__)
 print(retangulo1.imprimir())
-"""
-
 
 #06)
-
 class Retangulo:
 
     def __init__(self, lado1, lado2):
@@ -87,12 +84,60 @@ class Retangulo:
 retangulo1 = Retangulo(5, 7)
 print(retangulo1.__dict__)
 
+# 11)
+
+
+class Moto:
+
+    def __init__(self, marca, modelo, cor, marcha):
+        self.__marca = marca
+        self.__modelo = modelo
+        self.__cor = cor
+        self.__marcha = marcha
+
+    def imprimir(self):
+        return f'marca: {self.__marca}, modelo: {self.__modelo}, cor: {self.__cor}, marcha: {self.__marcha}'
+
+    def marcha_acima(self):
+        if self.__marcha == 2:
+            print('já se encontra na marcha limite')
+        self.__marcha += 1
+
+    def marcha_abaixo(self):
+        if self.__marcha == 2:
+            print('se encontra na marcha mínima')
+        self.__marcha -= 1
+
+
+moto1 = Moto('yamaha', 'KW8LW21', 'azul', 0)
+print(moto1.__dict__)
+print(moto1.imprimir())
+moto1.marcha_acima()
+moto1.marcha_acima()
+print(moto1.imprimir())
+moto1.marcha_acima()
+print(moto1.imprimir())
 
 
 
 
 
 
+"""
 
 
+# 17)
 
+
+class Eletrodomestico:
+
+    def __init__(self, ligado):
+        self.__ligado = ligado
+
+    def imprimir(self):
+        return f'ligado: {self.__ligado}'
+
+
+eletro1 = Eletrodomestico(True)
+print(eletro1.__dict__)
+print(eletro1.imprimir())
