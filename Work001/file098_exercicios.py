@@ -118,14 +118,6 @@ print(moto1.imprimir())
 moto1.marcha_acima()
 print(moto1.imprimir())
 
-
-
-
-
-
-"""
-
-
 # 17)
 
 
@@ -141,3 +133,45 @@ class Eletrodomestico:
 eletro1 = Eletrodomestico(True)
 print(eletro1.__dict__)
 print(eletro1.imprimir())
+
+
+
+
+
+"""
+
+
+#31)
+
+
+class Microondas:
+
+    def __init__(self, ligado):
+        self.__ligado = ligado
+
+    def imprimir(self):
+        return f'ligado: {self.__ligado}'
+
+    def ligar(self):
+        self.__ligado = True
+
+    def desligar(self):
+        self.__ligado = False
+        
+
+
+produto1 = Microondas(True)
+print(produto1.__dict__)
+print(produto1.imprimir())
+
+
+
+
+
+
+
+
+
+
+
+
