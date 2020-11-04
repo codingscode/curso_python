@@ -146,32 +146,38 @@ print(eletro1.imprimir())
 
 class Microondas:
 
-    def __init__(self, ligado):
+    def __init__(self, ligado, porta_fechada):
         self.__ligado = ligado
+        self.__porta_fechada = porta_fechada
 
     def imprimir(self):
-        return f'ligado: {self.__ligado}'
+        return f'ligado: {self.__ligado}, porta fechada: {self.__porta_fechada}'
 
     def ligar(self):
-        self.__ligado = True
+        if self.__porta_fechada:
+            self.__ligado = True
+        elif not self.__porta_fechada:
+            print('Feche a porta para ligar')
 
     def desligar(self):
         self.__ligado = False
-        
+
+    def fechar_porta(self):
+        self.__porta_fechada = True
+
+    def abrir_porta(self):
+        self.__porta_fechada = False
 
 
-produto1 = Microondas(True)
+produto1 = Microondas(True, True)
 print(produto1.__dict__)
 print(produto1.imprimir())
-
-
-
-
-
-
-
-
-
-
-
+produto1.ligar()
+print(produto1.imprimir())
+produto1.abrir_porta()
+print(produto1.imprimir())
+produto1.ligar()
+print(produto1.imprimir())
+produto1.desligar()
+print(produto1.imprimir())
 
