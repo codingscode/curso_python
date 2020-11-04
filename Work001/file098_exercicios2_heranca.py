@@ -25,19 +25,16 @@ class Computador(Equipamento):
         super().__init__(tipo, preco)
         self.__nome = nome
 
+    def get_nome(self):
+        return self.__nome
 
-class TestaEquipamento:
-    pass
-
-
-
-
+    def set_nome(self, valor):
+        self.__nome = valor
 
 
+class TestaEquipamento(Equipamento, Computador):
 
-
-
-
-
+    def __init__(self, tipo, preco):
+        super().__init__(tipo, preco)
 
 
