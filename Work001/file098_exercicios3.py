@@ -34,7 +34,8 @@ teste1 = Testapessoa(201243, 'paulo', 22)
 print(teste1.exibe())
 print(teste1.exibe(1))
 print(teste1.exibe(2))
-
+print(teste1.exibe(1, 2))
+print(teste1.exibe(2, 3))
 
 print('-------------------')
 print('-------------------')
