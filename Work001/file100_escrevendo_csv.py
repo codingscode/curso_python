@@ -27,9 +27,9 @@ print('1-----------------')
 
 from csv import DictWriter
 
-with open('file100_criandoarquivo2.csv', 'w', encoding='utf-8', newline='') as arquivo:  # experimentar 'a' no lugar de 'w'
+with open('file100_criandoarquivo2.csv', 'w', encoding='utf-8', newline='') as arquivo2:  # experimentar 'a' no lugar de 'w'
     cabecalho = ['Titulo', 'Genero', 'Duracao']
-    escritor_csv = DictWriter(arquivo, fieldnames=cabecalho)
+    escritor_csv = DictWriter(arquivo2, fieldnames=cabecalho)
     escritor_csv.writeheader()
     filme = None
     while filme != 'sair':

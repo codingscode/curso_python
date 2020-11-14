@@ -31,9 +31,9 @@ from csv import reader
 
 with open('file099_lutadores.csv', encoding='utf-8') as arquivo2:
     leitor_csv = reader(arquivo2)
+    #print(list(leitor_csv))
     print(type(leitor_csv))
     next(leitor_csv)  # pula o cabeçalho
-    #print(leitor_csv)
     for linha in leitor_csv:
         # Cada linha é uma lista
         print(f'{linha[0]} nasceu em {linha[1]} e mede {linha[2]} centimetros')
@@ -44,19 +44,19 @@ print('2---------------------')
 from csv import DictReader
 
 with open('file099_lutadores.csv', encoding='utf-8') as arquivo3:
-   leitor_csv = DictReader(arquivo3)
-
-   for linha in leitor_csv:
-       # Cada linha é um OrderedDict
-       print(f"{linha['Nome']} nasceu no(a)(s) {linha['País']} e mede {linha['Altura']}")
+    leitor_csv = DictReader(arquivo3)
+    # print(list(leitor_csv))
+    for linha in leitor_csv:
+        # Cada linha é um OrderedDict
+        print(f"{linha['Nome']} nasceu no(a)(s) {linha['País']} e mede {linha['Altura']}")
 
 print('3---------------------')
 
 with open('file099_lutadores.csv', encoding='utf-8') as arquivo4:
-   leitor_csv = DictReader(arquivo4, delimiter=',')  # separador -> ','
+    leitor_csv = DictReader(arquivo4, delimiter=',')  # separador -> ','
 
-   for linha in leitor_csv:
-       # Cada linha é um OrderedDict
-       print(f"{linha['Nome']} nasceu no(a)(s) {linha['País']} e mede {linha['Altura']}")
+    for linha in leitor_csv:
+        # Cada linha é um OrderedDict
+        print(f"{linha['Nome']} nasceu no(a)(s) {linha['País']} e mede {linha['Altura']}")
 
 print('4---------------------')

@@ -5,11 +5,8 @@ Objeto Python -> Binarização
 Binarização -> Objeto Python
 Este processo é chamado de serialização/deserialização
 
-#Obs: o modulo Pickle não seguro contra dados maliciosos e desta forma não é recomendado trabalhar
+#Obs: o modulo Pickle não é seguro contra dados maliciosos e desta forma não é recomendado trabalhar
 com arquivos pickle vindos de outras pessoas que você não conheça ou de fontes desconhecidas.
-
-
-
 
 """
 import pickle
@@ -62,7 +59,7 @@ with open('file101_pickle_criandoarquivo1.pickle', 'rb') as arquivo2:
     gato, cachorro = pickle.load(arquivo2)
     print(f'O gato chama-se {gato.nome}')
     print(gato.mia())
-    print(f'O tipo do gato e {type(gato)}')
+    print(f'O tipo do gato é {type(gato)}')
     print(f'O cachorro chama-se {cachorro.nome}')
     print(cachorro.late())
     print(f'O tipo do cachorro é {type(cachorro)}')

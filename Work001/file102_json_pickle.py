@@ -10,7 +10,6 @@ Integrando o JSON com o Pickle
 
 pip install jsonpickle
 
-
 """
 
 import json
