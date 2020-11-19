@@ -60,14 +60,67 @@ print('5------------------')
 # formatando datas/horas com strftime() (String Format Time)
 # dd/mm/yyyy hora minuto
 
+
+def formatar_data(data):
+    if data.month == 1:
+        return f'{data.day} de Janeiro de {data.year}'
+    elif data.month == 2:
+        return f'{data.day} de Fevereiro de {data.year}'
+    elif data.month == 3:
+        return f'{data.day} de Março de {data.year}'
+    elif data.month == 4:
+        return f'{data.day} de Abril de {data.year}'
+    elif data.month == 5:
+        return f'{data.day} de Maio de {data.year}'
+    elif data.month == 6:
+        return f'{data.day} de Junho de {data.year}'
+    elif data.month == 7:
+        return f'{data.day} de Julho de {data.year}'
+    elif data.month == 8:
+        return f'{data.day} de Agosto de {data.year}'
+    elif data.month == 9:
+        return f'{data.day} de Setembro de {data.year}'
+    elif data.month == 10:
+        return f'{data.day} de Outubro de {data.year}'
+    elif data.month == 11:
+        return f'{data.day} de Novembro de {data.year}'
+    else:
+        return f'{data.day} de Dezembro de {data.year}'
+
+
 hoje = datetime.datetime.today()
 print(hoje)
 
 hoje_formatado = hoje.strftime('%d/%m/%Y')
 print(hoje_formatado)
 
+#hoje_formatado = hoje.strftime('%D/%M/%y')  # para ano somente os 2 últimos dígitos, M é minutos aqui,
+#hoje_formatado = hoje.strftime('%d/%B/%Y')  # B é nome do mês, b é as iniciais do mês,
+hoje_formatado = hoje.strftime('%d/%B/%Y')
+print(hoje_formatado)
+
+print(formatar_data(hoje))
 
 print('6------------------')
+"""
+pip install textblob
+"""
+from textblob import TextBlob
+
+# precisa de internet
+
+
+def formatar_data2(minha_data):
+    return f"{minha_data.day} de {TextBlob(minha_data.strftime('%B')).translate(to='pt-br')} de {minha_data.year}"
+
+
+print(formatar_data2(hoje))
+
 print('7------------------')
+
+nascimento2 = datetime.datetime.strptime('23/03/1997', '%d/%m/%Y')
+print(nascimento2)
+
+
 print('8------------------')
 print('9------------------')
