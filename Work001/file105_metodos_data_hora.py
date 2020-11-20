@@ -121,6 +121,43 @@ print('7------------------')
 nascimento2 = datetime.datetime.strptime('23/03/1997', '%d/%m/%Y')
 print(nascimento2)
 
-
 print('8------------------')
+# somente a hora
+
+almoco = datetime.time(12, 30, 32)  # hora minuto segundo
+print(almoco)
+
 print('9------------------')
+import timeit
+
+# marcando tempo de execução do nosso codigo com timeit
+
+#loop for
+tempo1 = timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)
+print(tempo1)  # tempo gasto
+
+# list comprehension
+tempo2 = timeit.timeit('"-".join([str(n) for n in range(100)])', number=10000)
+print(tempo2)  # tempo gasto
+
+# map
+tempo3 = timeit.timeit('"-".join(map(str, range(100)))', number=10000)
+print(tempo3)  # tempo gasto
+
+print('10-----------------')
+import functools
+
+
+def teste(n):
+    soma = 0
+    for num in range(n*200):
+        soma += num**4 + 4
+    return soma
+
+
+print(teste(5))  # tempo
+print(timeit.timeit(functools.partial(teste, 2), number=1000))  # tempo
+
+print('11-----------------')
+print('12-----------------')
+
