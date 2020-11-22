@@ -11,6 +11,10 @@ print(datetime)
 print(dir(datetime))
 print(datetime.MAXYEAR)
 print(datetime.MINYEAR)
+print(datetime.datetime)
+print(dir(datetime.datetime))
+
+print('0----------------')
 
 #  modulo / classe / método -> retorna a hora e a data atual
 print(datetime.datetime.now())
