@@ -9,6 +9,21 @@ Testes automatizados
 - Testes garantem que refatoração que costumamos fazer não tragam novos bugs.
 
 
+TDD - test driven development (desenvolvimento guiado por testes)
+
+Com TDD é utilizadp estágios de desenvolvimento:
+   - Você escreve seu teste primeiro;
+   - Então você escreve o código mínimo suficiente para fazer o teste passar (ou seja, executar com sucesso)
+   - Então refatora o código para realizar a funcionalidade e testa novamente
+   - Uma vez que o teste passe, o recurso é considerado completo;
+
+Estes estágios de desenvolvimento do TDD são quase como um mantra que os desenvolvedores seguem, conhecidos como:
+   - Red;
+   - Green;
+   - Refactor;
+
+
+
 """
 
 

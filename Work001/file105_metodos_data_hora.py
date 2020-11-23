@@ -20,7 +20,7 @@ print(type(hoje))
 print(repr(hoje))
 
 print('2------------------')
-# Mudanças ocorrendo à meia noite. combine()
+# Mudanças ocorrendo à meia noite. combine() -> datetime.combine(date, time)
 manutencao = datetime.datetime.combine((datetime.datetime.now() + datetime.timedelta(days=1)), datetime.time())  # +1 dia
 print(manutencao)
 print(type(manutencao))
@@ -94,7 +94,7 @@ print(hoje)
 hoje_formatado = hoje.strftime('%d/%m/%Y')
 print(hoje_formatado)
 
-#hoje_formatado = hoje.strftime('%D/%M/%y')  # para ano somente os 2 últimos dígitos, M é minutos aqui,
+#hoje_formatado = hoje.strftime('%D/%M/%y')  # y para ano somente os 2 últimos dígitos, M é minutos aqui,
 #hoje_formatado = hoje.strftime('%d/%B/%Y')  # B é nome do mês, b é as iniciais do mês,
 hoje_formatado = hoje.strftime('%d/%B/%Y')
 print(hoje_formatado)
