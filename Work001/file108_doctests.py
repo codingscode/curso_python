@@ -80,10 +80,31 @@ print('2-----------------')
 def fala_oi():
     """Fala oi
     >>> fala_oi()
-    "oi"
+    'oi'
     """
+    # se invés de 'oi' fosse "oi" haveria erro
     return "oi"
 
+"""
+obs: Dentro do doctest, o python não reconhece string com aspas duplas. Precisa ser aspas simples.
+"""
 
 print('3-----------------')
+
+
+def verdade():
+    """ Retorna verdade
+    >>> verdade()
+    True
+    """
+    # após esse True na mesma linha não deve haver espaço em outras ides pois há erro. no pycharm há se houver espaços + comentarios.
+    return True
+
+
+"""
+sublime text
+"""
+
 print('4-----------------')
+print('5-----------------')
+
