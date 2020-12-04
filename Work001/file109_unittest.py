@@ -20,6 +20,7 @@ https://docs.python.org/3/library/unittest.html
      ver as assertions
 assertEqual(a, b), assertNotEqual(a, b), assertTrue(x), assertFalse(x), assertIs(a, b), assertIsNot(a, b), assertIsNone(x), assertIsNotNone(x), assertIn(a, b), assertNotIn(a, b), assertIsInstance(a, b), assertNotIsInstance(a, b),
 
+testes por convenção usa-se "test_"
 
 """
 
