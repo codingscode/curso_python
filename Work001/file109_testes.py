@@ -2,10 +2,10 @@
 import unittest
 from file109_atividades import comer, dormir
 
-"""
 #descomentar esse e comentar o outro
 
 
+"""
 class AtividadesTestes(unittest.TestCase):
 
     def test_comer(self):
@@ -23,10 +23,9 @@ class AtividadesTestes(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-# no terminal do arquivo: python file109_testes.py
 """
 
-
+# no terminal do arquivo: python file109_testes.py
 
 print('1----------------')
 
@@ -52,6 +51,7 @@ if __name__ == '__main__':
 """
 
 print('2----------------')
+
 """
 class AtividadesTestesref2(unittest.TestCase):
 
@@ -70,7 +70,7 @@ class AtividadesTestesref2(unittest.TestCase):
     def test_dormir_pouco(self):
         self.assertEqual(
             dormir(4),
-            'Continuo cansado após dormir por 4 horas :('
+            'Continuo cansado após dormir por 4 horas. :('
         )
 
     def test_dormir_muito(self):
@@ -129,6 +129,10 @@ FAILED (failures=4)
 
 print('3----------------')
 
+"""
+
+"""
+
 
 class AtividadesTestesref3(unittest.TestCase):
 
@@ -150,7 +154,7 @@ class AtividadesTestesref3(unittest.TestCase):
         """Testando o retorno dormindo pouco"""
         self.assertEqual(
             dormir(4),
-            'Continuo cansado após dormir por 4 horas :('
+            'Continuo cansado após dormir por 4 horas. :('
         )
 
     def test_dormir_muito(self):
@@ -163,6 +167,7 @@ class AtividadesTestesref3(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 
 print('4------------------')
 """

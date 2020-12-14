@@ -1,5 +1,3 @@
-
-
 def comer(comida, e_saudavel):
     if e_saudavel:
         final = 'quero manter a forma'
@@ -15,9 +13,5 @@ def dormir(numero_horas):
         return f'Continuo cansado após dormir por {numero_horas} horas. :('
 
 
-
-
-
-
-
-
+def e_engracada(pessoa):
+    pass
