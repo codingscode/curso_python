@@ -40,10 +40,10 @@ class AtividadesTestesref3(unittest.TestCase):
             'Ptz! Dormi muito! Estou atrasado para o trabalho!'
         )
 
-    def test_e_engracada(self):
-        #self.assertEqual(e_engracada('Sergio Malandro'), False)
-        self.assertFalse(e_engracada('Sergio Malandro'))
-        #self.assertFalse(None) -> True
+    def test_e_engracada(self):  #self.assertFalse(None) -> True
+        self.assertEqual(e_engracada('Sérgio Malandro'), False)
+        self.assertFalse(e_engracada('Sérgio Malandro'))
+        self.assertTrue(e_engracada('Jim Carrey'), 'Jim Carrey deveria ser engraçado')
 
 
 if __name__ == '__main__':
@@ -57,13 +57,7 @@ no terminal: python nome_do_modulo.py -v
 no terminal: python file110_outros_assertions.py -v
 """
 
-
-
-
-
-
-
-
-
-
+"""
+None não é nem True nem False
+"""
 

@@ -13,5 +13,34 @@ def dormir(numero_horas):
         return f'Continuo cansado após dormir por {numero_horas} horas. :('
 
 
-def e_engracada(pessoa):
+"""
+def e_engracada(pessoa):  # fazer alternado
     pass
+
+"""
+
+"""
+def e_engracada(pessoa):
+    if pessoa == 'Sérgio Malandro':
+        return False
+    return True
+
+"""
+
+
+def e_engracada(pessoa):
+    comediantes = ['Jim Carrey', 'Bozo']
+    if pessoa in comediantes:
+        return True
+    return False
+
+
+
+
+
+
+
+
+
+
+
