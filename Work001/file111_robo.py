@@ -1,6 +1,6 @@
 class Robo:
 
-    def __unit__(self, nome, bateria=100, habilidades=[]):
+    def __init__(self, nome, bateria=100, habilidades=[]):
         self.__nome = nome
         self.__bateria = bateria
         self.__habilidades = habilidades
