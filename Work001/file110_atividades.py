@@ -35,12 +35,3 @@ def e_engracada(pessoa):
     return False
 
 
-
-
-
-
-
-
-
-
-
