@@ -19,5 +19,5 @@ t1.join()
 t2.join()
 fim = time.time()
 
-print(f'tem em segundos: {fim - inicio}')  # 0.631615161895752
+print(f'tempo em segundos: {fim - inicio}')  # 0.631615161895752
 
