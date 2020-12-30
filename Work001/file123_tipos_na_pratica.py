@@ -62,9 +62,34 @@ print(CARTAS)
 print(criar_baralho())
 print(f'{len(criar_baralho())} cartas')
 
-
 print('3------------------')
+
+
+def distribuir_cartas(baralho):
+    """gerencia a mão de cartas de acordo com o baralho gerado"""
+    return baralho[0::4], baralho[1::4], baralho[2::4], baralho[3::4]
+
+
+baralho = criar_baralho()
+print(distribuir_cartas(baralho))  # tupla também ser representadas por virgula
+
 print('4------------------')
+
+
+def jogar():
+    """Inicia um jogo de cartas para 4 jogadores"""
+    cartas = criar_baralho(aleatorio=True)
+    jogadores = 'P1 P2 P3 P4'.split()
+    maos = {jogador: mao for jogador, mao in zip(jogadores, distribuir_cartas(cartas))}
+
+    for jogador, cartas in maos.items():
+        carta = ' '.join(f'{j}{c}' for (j, c) in cartas)
+        print(f'{jogador}: {carta}')
+
+
+if __name__ == '__main__':
+    jogar()
+
 print('5------------------')
 print('6------------------')
 
