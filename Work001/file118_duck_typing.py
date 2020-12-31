@@ -1,7 +1,7 @@
 """
 
-
 """
+
 
 class CisneNegro:
 
@@ -11,6 +11,7 @@ class CisneNegro:
 
 livro = CisneNegro()
 print(len(livro))
+print(livro.__dict__)
 
 print('1-----------------')
 nome = 'ferrovia'

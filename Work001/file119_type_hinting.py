@@ -18,10 +18,9 @@ def cabecalho(texto, alinhamento=True):
 
 
 print(cabecalho('codando em python'))
-print(cabecalho('usando python em django', alinhamento=False))  # ou cabecalho('usando python em django', False)
+print(cabecalho('usando django em python', alinhamento=False))  # ou cabecalho('usando python em django', False)
 
 """
-
 print('2-------------------')
 
 
@@ -33,11 +32,8 @@ def cabecalho(texto: str, alinhamento: bool = True) -> str:
 
 
 print(cabecalho('codando em python'))
-print(cabecalho('usando python em django', alinhamento=False))  # ou cabecalho('usando python em django', False)
+print(cabecalho('usando django em python', alinhamento=False))  # ou cabecalho('usando python em django', False)
 print(cabecalho('code em python', alinhamento='geek'))
 
+
 print('3-------------------')
-
-
-
-

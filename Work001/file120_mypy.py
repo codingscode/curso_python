@@ -14,7 +14,7 @@ def cabecalho(texto: str, alinhamento: bool = True) -> str:
 
 
 print(cabecalho('codando em python'))
-print(cabecalho('usando python em django', alinhamento=False))
+print(cabecalho('usando django em python', alinhamento=False))
 print(cabecalho('code em python', alinhamento='geek'))  # agora checa
 
 print('1-----------------')

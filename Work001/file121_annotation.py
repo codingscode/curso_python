@@ -11,26 +11,30 @@ def cabecalho(texto: str, alinhamento: bool = True) -> str:
 
 
 print(cabecalho('codando em python'))
-print(cabecalho('usando python em django', alinhamento=False))
+print(cabecalho('usando django python', alinhamento=False))
 print(cabecalho('code em python', alinhamento='geek'))  # agora checa
 
 print('1-----------------')
 """
-terminal da pasta do arquivo: mypy file120_mypy.py
+terminal da pasta do arquivo: mypy file121_annotation.py
 
-file120_mypy.py:18: error: Argument "alinhamento" to "cabecalho" has incompatible type "str"; expected "bool"
-Found 1 error in 1 file (checked 1 source file)
+file121_annotation.py:15: error: Argument "alinhamento" to "cabecalho" has incompatible type "str"; expected "bool"
+file121_annotation.py:60: error: Name '__annotations__' is not defined
+file121_annotation.py:81: error: Cannot access "__init__" directly
+file121_annotation.py:82: error: Cannot access "__init__" directly
+
 
 """
 
-# Correto
+"""
+Correto
 texto: str
 
-# Incorreto
+Incorreto
 texto:str
 texto : str
 
-""""""
+"""
 
 import math
 
@@ -66,7 +70,7 @@ class Pessoa:
         self.__peso2: float = peso2
 
     def andar(self) -> str:  # def andar(self: Pessoa) -> str:  daria erro
-        return f'{self.__nome} está andando.'
+        return f'{self.__nome2} está andando.'
 
 
 p = Pessoa(nome2='Aladin', idade2=2, peso2=4)
@@ -74,7 +78,7 @@ p = Pessoa(nome2='Aladin', idade2=2, peso2=4)
 print(p.__dict__)
 #print(p.__annotations__)  # dá erro
 print(p.andar.__annotations__)
+print(p.__init__)
 print(p.__init__.__annotations__)
-
 
 print('4-----------------')
