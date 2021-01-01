@@ -14,7 +14,7 @@ print(versoes)
 print(opcoes)
 print(valores)
 
-#print(__annotations__)
+print(__annotations__)
 
 print('1------------------')
 
@@ -91,5 +91,3 @@ if __name__ == '__main__':
     jogar()
 
 print('5------------------')
-print('6------------------')
-

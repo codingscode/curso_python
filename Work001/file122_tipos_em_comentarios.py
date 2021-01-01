@@ -5,7 +5,6 @@ Tipos em comentarios
 
 import math
 
-
 """
 def circunferencia(raio):
     # type: (float) -> float
@@ -13,7 +12,7 @@ def circunferencia(raio):
 
 
 print(circunferencia(5))  # nao dá erro
-print(circunferencia('geek'))
+#print(circunferencia('geek'))
 
 """
 
@@ -24,7 +23,7 @@ def circunferencia(raio):  # def circunferencia(raio: float) -> float:
 
 
 print(circunferencia(5))  # nao dá erro
-#print(circunferencia('geek'))  # no terminal deveria dar erro
+print(circunferencia('geek'))  # no terminal deveria dar erro
 
 
 """
@@ -42,6 +41,7 @@ def cabecalho(texto, alinhamento=True):
 
 
 print(cabecalho(texto=43, alinhamento='geek'))
+print(cabecalho(texto=43, alinhamento=0))
 print('2---------------------')
 
 
