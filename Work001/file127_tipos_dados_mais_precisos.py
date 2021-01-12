@@ -29,7 +29,7 @@ executar no terminal da pasta do arquivo: mypy file127_tipos_dados_mais_precisos
 print('1---------------------')
 # Literal type
 
-from typing import Literal, Union
+from typing import Literal, Union, Final, final, TypedDict, Protocol
 
 
 def pegar_status(usuario: str) -> Literal['conectado', 'desconectado']:
@@ -47,7 +47,7 @@ def calcular_v1(operacao: str, num1: int, num2: int) -> None:
 
 calcular_v1('+', 4, 5)
 calcular_v1('-', 10, 7)
-calcular_v1('/', 10, 5)  # chama o erro, mas o mypy nao acha
+#calcular_v1('/', 10, 5)  # chama o erro, mas o mypy nao acha
 """
 usar o mypy
 """
@@ -66,7 +66,7 @@ def calcular_v2(operacao: Literal['+', '-'], num1: int, num2: int) -> None:
 
 calcular_v2('+', 4, 5)
 calcular_v2('-', 10, 7)
-calcular_v2('/', 10, 5)  # chama o erro, mas o mypy acha
+#calcular_v2('/', 10, 5)  # chama o erro, mas o mypy acha
 
 
 print('3---------------------')
@@ -81,10 +81,73 @@ def somar(num1: int, num2: int) -> Union[str, int]:
         return resultado
 
 
-
-
-
-
 print('4---------------------')
+# Final
+
+NOME: Final = 'Geek'
+print(NOME)
+
+NOME = 'University'
+print(NOME)
+"""
+usar o mypy
+"""
+
 print('5---------------------')
+
+
+@final  # isto significa que nenhuma classe pode estender esta. Verificar os erros com o mypy
+class Pessoa:
+    pass
+
+
+class Estudante(Pessoa):
+    pass
+
+    @final
+    def estudar(self):
+        print('Estou estudando...')
+
+
+class Estagiario(Estudante):
+    pass
+
+    def estudar(self):
+        print('Estudando e estagiando...')
+
+"""
+no terminal da pasta:  mypy file127_tipos_dados_mais_precisos.py
+"""
+
 print('6---------------------')
+# Typed Dictionaries
+
+
+class CursoPython(TypedDict):
+    versao: str
+    atualizacao: int
+
+
+geek = CursoPython(versao='3.8.5', atualizacao=2020)
+print(geek)
+outro = CursoPython(algo='vai', coisa=True)
+print(outro)
+"""
+no terminal da pasta:  mypy file127_tipos_dados_mais_precisos.py
+"""
+
+print('7---------------------')
+# Protocols
+
+
+class Curso(Protocol):
+    titulo: str
+
+
+def estudar(valor: Curso) -> None:
+    print(f'Estou estudando o curso {valor.titulo}')
+
+
+print('8---------------------')
+print('9---------------------')
+print('10---------------------')
