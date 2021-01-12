@@ -144,10 +144,40 @@ class Curso(Protocol):
     titulo: str
 
 
+
+
+"""
+class Curso(Protocol):
+    titulo: str
+
+    def __init__(self):
+        self.titulo = 'Codando em Python'
+
+"""
+
+
 def estudar(valor: Curso) -> None:
     print(f'Estou estudando o curso {valor.titulo}')
 
 
+class Venda:
+    pass
+
+
+"""
+class Venda:
+    titulo = 'Oi'
+"""
+
+
+v1 = Venda()
+estudar(v1)  # dá erro, 'Venda' object has no attribute 'titulo'
+
+
+#c1 = Curso()
+#estudar(c1)
+
+
+
 print('8---------------------')
 print('9---------------------')
-print('10---------------------')
