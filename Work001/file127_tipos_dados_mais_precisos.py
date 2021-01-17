@@ -115,6 +115,7 @@ class Estagiario(Estudante):
     def estudar(self):
         print('Estudando e estagiando...')
 
+
 """
 no terminal da pasta:  mypy file127_tipos_dados_mais_precisos.py
 """
@@ -145,7 +146,6 @@ class Curso(Protocol):
 
 
 
-
 """
 class Curso(Protocol):
     titulo: str
@@ -171,13 +171,11 @@ class Venda:
 
 
 v1 = Venda()
-estudar(v1)  # dá erro, 'Venda' object has no attribute 'titulo'
+#estudar(v1)  # dá erro, 'Venda' object has no attribute 'titulo'
 
 
 #c1 = Curso()
 #estudar(c1)
-
-
 
 print('8---------------------')
 print('9---------------------')

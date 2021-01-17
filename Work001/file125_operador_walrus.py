@@ -9,7 +9,7 @@ variável := expressao
 nome = 'python'
 print(nome)
 
-print(nome := 'python')
+print(nome2 := 'pythonista')
 
 print('1-------------------')
 """
@@ -28,6 +28,3 @@ while (fruta := input('Informe a fruta: ')) != 'jaca':
 
 print('2-------------------')
 print('3-------------------')
-
-
-

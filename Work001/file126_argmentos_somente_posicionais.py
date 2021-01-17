@@ -58,13 +58,12 @@ print(cumprimentar_v4('Olga', 'Bem vinda'))
 print('5-------------------')
 
 
-def cumprimentar_v5(*, nome):  # tudo depois de '*' é somente posicional
+def cumprimentar_v5(*, nome):  # tudo depois de '*' é somente não posicional
     return f'Olá {nome}'
 
 
 print(cumprimentar_v5(nome='pythonista'))
 #print(cumprimentar_v5('pyhonico'))  # dá erro
-
 
 print('6-------------------')
 
@@ -76,6 +75,7 @@ def cumprimentar_v6(nome, /, mensagem1='Olá', *, mensagem2):
 print(cumprimentar_v6('Geek', mensagem1='Aê', mensagem2='bom dia'))
 print(cumprimentar_v6('Geek', mensagem2='bom legal pra ti'))
 #print(cumprimentar_v6('Geek', 'Oi', 'Vamos?'))  # dá erro
+print(cumprimentar_v6('Geek', 'Oi', mensagem2="Como vai"))
 
 print('7-------------------')
 print('8-------------------')
