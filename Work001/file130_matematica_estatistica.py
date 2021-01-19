@@ -4,7 +4,7 @@ Funções matemáticas e estatistica
 
 math.prod -> retorna o produto de um container numérico
 
-math.isqrt -> integer square root
+math.isqrt -> integer square root -> parte inteira da raiz quadrada
 
 math.dist -> retorna a distância euclidiana entre dois pontos, 3D ou 2D
 
