@@ -40,9 +40,21 @@ class Calcular:
             op = 'Multiplicar'
         else:
             op = 'Operação desconhecida'
-        return f'Valor1: '
+        return f'Valor 1: {self.valor1} \nValor 2: {self.valor2} \nDificuldade: {self.dificuldade} \nOperação: {op}'
 
+    @property
+    def _gerar_valor(self: object) -> int:
+        pass
 
+    @property
+    def _gerar_resultado(self: object) -> int:
+        pass
+
+    def checar_resultado(self: object, resposta: int) -> bool:
+        pass
+
+    def mostrar_operacao(self: object, resposta: int) -> None:
+        pass
 
 
 
