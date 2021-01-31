@@ -19,7 +19,7 @@ def jogar(pontos: int) -> None:
         pontos += 1
         print(f'Você tem {pontos} ponto(s).')
 
-    continuar: int = int('Deseja continuar no jogo? [1 - sim, 0 - não] ')
+    continuar: int = int(input('Deseja continuar no jogo? [1 - sim, 0 - não] '))
 
     if continuar:
         jogar(pontos)
