@@ -28,8 +28,6 @@ def jogar(pontos: int) -> None:
         print('Até a próxima')
 
 
-
-
 if __name__ == '__main__':
     main()
 
