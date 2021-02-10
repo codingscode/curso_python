@@ -15,4 +15,32 @@ class Cliente:
         self.__data_cadastro: date = date.today()
         Cliente.contador += 1
 
-print(str_para_date('03/04/2020'))
+    @property
+    def codigo(self: object) -> int:
+        return self.__codigo
+
+    @property
+    def nome(self: object) -> str:
+        return self.__nome
+
+    @property
+    def email(self: object) -> str:
+        return self.__email
+
+    @property
+    def cpf(self: object) -> str:
+        return self.__cpf
+
+    @property
+    def data_nascimento(self: object) -> str:
+        return self.__data_nascimento
+
+    @property
+    def data_cadastro(self: object) -> str:
+        return self.__data_cadastro
+
+    def __str__(self: object) -> str:
+        return f'Código: {self.codigo} \nNome: {self.nome} \nData de Nascimento: {self.data_nascimento} \nCadastro: {self.data_cadastro}'
+
+
+
