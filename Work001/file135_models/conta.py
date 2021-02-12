@@ -78,7 +78,7 @@ class Conta:
                 self.limite += restante
                 self.saldo = 0
                 self.saldo_total = self._calcula_saldo_total
-                print('Saque efetuado com sucesso')
+            print('Saque efetuado com sucesso')
         else:
             print('Saque não realizado. Tente novamente.')
 

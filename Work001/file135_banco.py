@@ -41,7 +41,7 @@ def menu() -> None:
         listar_contas()
     elif opcao == 6:
         print('Volte sempre')
-        sleep()
+        sleep(2)
         exit(0)
     else:
         print('Opção inválida')
@@ -72,7 +72,7 @@ def criar_conta() -> None:
 
 def efetuar_saque() -> None:
     if len(contas) > 0:
-        numero: int = int('Informe o número da sua conta: ')
+        numero: int = int(input('Informe o número da sua conta: '))
 
         conta: Conta = buscar_conta_por_numero(numero)
 
