@@ -8,7 +8,7 @@ print(f'b é {b}')
 c = 9//2
 print(f'c é {c}')
 
-d = 5%3
+d = 5 % 3
 print(f'd é {d}')
 
 e = 3**2
@@ -21,5 +21,3 @@ g = 1_000_000
 h = 45
 h //= 2
 print(f'g é {g}, seu tipo é {type(g)} e h é {h}')
-
-

@@ -21,10 +21,8 @@ numcomplex = 3j
 print(f'numcomplex é {numcomplex} e seu tipo é {type(numcomplex)}')
 
 numcomplex1 = 5j
-print(f'numcomplex1 ao quadrado é {numcomplex1**2}')
+print(f'numcomplex1 ao quadrado é {numcomplex1**2}, novo tipo é {type(numcomplex1**2)}')
 
 #Converter int para float
 valor4 = 500
 print(f'valor4 em float é {float(valor4)}')
-
-

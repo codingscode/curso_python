@@ -21,4 +21,3 @@ x1, x2, x3 = True, True, True
 print(f'os três são {x1 and x2 and x3}')
 x1, x2, x3 = True, True, False
 print(f'os três são {x1 and x2 and x3}')
-

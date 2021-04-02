@@ -10,5 +10,3 @@ elif idade == 18:
     print('Tem 18 anos')
 else:
     print('É maior de idade')
-
-

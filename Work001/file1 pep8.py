@@ -4,12 +4,14 @@
 olá dia testando
 """
 
+
 class Calculadora:
- pass
+    pass
 
 
 class NovaCalculadora:
- pass
+    pass
+
 
 a = 1
 print(a)

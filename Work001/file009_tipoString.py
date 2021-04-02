@@ -29,8 +29,3 @@ print(frase5.split()[3])
 print(frase3[::-1]) # inverte
 print(frase4[::-1])
 print(frase4.replace('rua', 'praça'))
-
-
-
-
-

@@ -9,7 +9,7 @@ print(f'o tipo de algo primeiro é {type(algo)}')
 algo = 'novo tipo'  # variavel global
 print(f'o tipo de algo segundo é {type(algo)}')
 
-outro = 8
+outro = 10
 #novo = 0
 
 if outro > 10:
