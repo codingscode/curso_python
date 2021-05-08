@@ -1,6 +1,7 @@
 # pasta5
 
 """
+
 #01
 numero1 = float(input('valor numero1: '))
 numero2 = float(input('valor numero2: '))
@@ -49,25 +50,34 @@ else:
     print('pelo menos um deles não é inteiro')
 
 
+
 #08
 from statistics import mean
 
 i = 0
 notas = []
+resposta = ''
 
 for i in range(2):
-    valor = float(input('nota : '))
+    valor = float(input(f'{i+1}º nota : '))
     notas.append(valor)
-    if (0 <= notas[i] <= 10) and len(notas) == 2:
-        print(f'a média deles é {mean(notas)}')
-    elif len(notas) == 2:
-        print('pelo menos um valor inválido')
+
+for cada in notas:
+
+    if (0 <= cada <= 10) is False:
+        resposta = 'pelo menos um valor inválido'
+    else:
+        resposta = f'a média deles é {mean(notas)}'
+
+print(resposta)
 
 
 #11
+#somando digitos
 numero = input('digite o valor do número : ') # toda entrada input é por padrão string
 
-verificar1 = float(numero) - int(numero)
+verificar1 = float(numero) - int(float(numero))           #isinstance(float(numero), int)
+
 num = 0
 
 if (float(numero) > 0) and verificar1 == 0:
@@ -75,8 +85,10 @@ if (float(numero) > 0) and verificar1 == 0:
         num += float(numero[i])
 
     print(num)
-elif float(numero) < 0:
+elif float(numero) < 0 or isinstance(numero, str):
     print('Número inválido')
+
+"""
 
 #19
 numero = input('digite um numero inteiro: ')
@@ -89,7 +101,7 @@ if verificar == 0:
     else:
         print('n ok')
 
-
+"""
 #23
 
 ano = input('Digite um ano: ')
@@ -177,16 +189,6 @@ elif 2 < horas < 4:
 elif horas >= 5:
     print(f'preco: {4.8 + (math.ceil(horas - 4) * 2)}')
 
-
-
-
-"""
-
-
-
-
-
-""" 
 
 
 
