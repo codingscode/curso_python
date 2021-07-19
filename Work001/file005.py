@@ -11,7 +11,3 @@ idade = int(input('Qual sua idade ? '))
 print(f'O {nome} tem {idade} anos')
 print(f'O {nome} nasceu em {2019-idade}')
 
-
-
-
-

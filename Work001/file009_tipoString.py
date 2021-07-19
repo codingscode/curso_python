@@ -3,7 +3,7 @@
 print('Isso é uma string')
 nome = 'uma string'
 print(nome)
-print(f'o tipo de {nome} é {type(nome)}')
+print(f'o tipo de "{nome}" é {type(nome)}')
 
 estabelecimento ="Carla's Restaurante"
 print(estabelecimento)
