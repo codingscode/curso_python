@@ -2,6 +2,8 @@
 
 
 """
+
+
 #01
 numero = int(input('Digite um número inteiro : '))
 print(f'o número é {numero}')
@@ -10,9 +12,11 @@ print(f'o número é {numero}')
 numero = float(input('Digite um numero: '))
 print(numero)
 
+
 #03
 vezes = 3
 soma = 0
+
 for n in range(1, vezes + 1):
    numero = int(input(f'Digite o {n}º de {vezes} valor: '))
    soma += numero
@@ -23,10 +27,10 @@ numero = float(input('Digite o numero: '))
 quadrado = pow(numero, 2)
 print(f'o quadrado de {numero} é {quadrado}')
 
+
 #05
 numero = float(input('digite um número: '))
 print(f'a quinta parte dele é {numero/5}')
-
 
 #10
 velocidade = float(input('digite a velocidade em km/h : '))
@@ -35,14 +39,17 @@ print(f'a velocidade em m/s é : {velocidade/3.6}')
 
 #12.....
 
+
 #28
 vezes = 3
 soma = 0
-for n in range(1, vezes+1):
-    numero = float(input(f'digite o número {n}/ {vezes}: '))
+
+for n in range(1, vezes + 1):
+    numero = float(input(f'digite o número {n} de {vezes}: '))
     soma += pow(numero, 2)
 
 print(f'a soma dos quadrados é {soma}')
+
 
 #29
 vezes = 4
@@ -56,25 +63,33 @@ print(f'a média é {soma/vezes}')
 
 #45
 frase = input('digite uma frase ou uma palavra: ')
+
 for n in range(0, len(frase)):
     if (frase[n].isupper()):
         print(frase[n].lower())
     else:
         print(frase[n])
+"""
 
 #46
-numero = float(input('Digite um número de 3 dígitos: '))
-if not (type(numero) == int or float):
-    print('Não é número')
-elif len(str(numero)) == 3:
-   print(str(numero)[::-1])
-else:
-    print('o número não tem 3 dígitos')
 
+numero = int(input('Digite um número de 3 dígitos: '))
+
+if (isinstance(numero, int)):
+    conv = str(numero)
+    print(f"quantidade de digitos {len(conv)}")
+    if len(conv) == 3:
+        print(conv[::-1])
+    else:
+        print('o número não tem 3 dígitos')
+else:
+    print("não é número")
+
+"""
 #47
 numero = input('Digite um número de 4 dígitos: ')
 
-if(len(str(numero))) != 4:
+if (len(str(numero))) != 4:
     print('o numero n tem 4 digitos')
 elif (int(numero) >= 100 and int(numero)<= 9999) is False:
     print('fora do intervalo')
