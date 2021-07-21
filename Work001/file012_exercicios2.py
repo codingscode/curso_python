@@ -14,9 +14,6 @@ maior = max(numeros)
 
 print(f'o maior é {maior}')
 
-"""
-
-
 
 #02
 numero = float(input('digite um número : '))
@@ -26,7 +23,7 @@ if numero > 0:
 else:
     print('número invalido')
 
-"""
+
 #05
 x = 1.0
 y = 1
@@ -48,15 +45,16 @@ else:
 numero1 = float(input('digite valor numero1: '))
 numero2 = float(input('digite valor numero2: '))
 
-verificar1 = float(numero1) - int(numero1)   # ver se é inteiro
-verificar2 = float(numero2) - int(numero2)
+verificar1 = float(numero1) == int(numero1)   # ver se é inteiro
+verificar2 = float(numero2) == int(numero2)
 
-if verificar1 == 0 and verificar2 == 0:
+if verificar1 and verificar2:
     print(f'o maior deles é {max([numero1, numero2])}')
     print(f'a diferença entre eles é : {abs(numero1 - numero2)}')
 else:
     print('pelo menos um deles não é inteiro')
 
+print(1 == 1.0)
 
 
 #08
@@ -71,7 +69,6 @@ for i in range(2):
     notas.append(valor)
 
 for cada in notas:
-
     if (0 <= cada <= 10) is False:
         resposta = 'pelo menos um valor inválido'
     else:
@@ -79,50 +76,53 @@ for cada in notas:
 
 print(resposta)
 
-
 #11
 #somando digitos
 numero = input('digite o valor do número : ') # toda entrada input é por padrão string
 
-verificar1 = float(numero) - int(float(numero))           #isinstance(float(numero), int)
+verificar1 = float(numero) == int(float(numero))           #isinstance(float(numero), int)
 
 num = 0
 
-if (float(numero) > 0) and verificar1 == 0:
+if (float(numero) > 0) and verificar1:
     for i in range(len(numero)):
         num += float(numero[i])
 
-    print(num)
+    print(f'soma dos digitos: {num}')
 elif float(numero) < 0 or isinstance(numero, str):
     print('Número inválido')
 
 
 
+
 #19
-numero = input('digite um numero inteiro: ')
+numero = float(input('digite um numero inteiro: '))
 
-verificar = float(numero) - int(numero)
+verificar = numero == int(numero)
 
-if verificar == 0:
-    if ((int(numero)%15 == 0) is False) and (int(numero)%3==0 or int(numero)%5 == 0):
+if verificar:
+    if ((int(numero) % 15 == 0) is False) and (int(numero) % 3 == 0 or int(numero) % 5 == 0):
         print('ok')
     else:
         print('n ok')
 
+"""
 
 #23
 
-ano = input('Digite um ano: ')
+ano = float(input('Digite um ano: '))
 
-verificar = float(ano) - int(ano)
+verificar = float(ano) == int(ano)
 
-if verificar == 0:
-    if (int(ano)%400 == 0 or int(ano)%4 == 0) and not int(ano)%100 == 0:
-        print(f'{ano} é ano bissexto')
+if verificar:
+    if (int(ano) % 400 == 0 or int(ano) % 4 == 0) and not int(ano) % 100 == 0:
+        print(f'{int(ano)} é ano bissexto')
     else:
-        print(f'{ano} não é ano bissexto')
+        print(f'{int(ano)} não é ano bissexto')
+else:
+    print("nao é um ano inteiro")
 
-
+"""
 # 26
 
 distancia = float(input('Distancia(Km) percorrida: '))
