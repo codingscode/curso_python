@@ -69,7 +69,7 @@ for n in range(0, len(frase)):
         print(frase[n].lower())
     else:
         print(frase[n])
-"""
+
 
 #46
 
@@ -85,7 +85,6 @@ if (isinstance(numero, int)):
 else:
     print("não é número")
 
-"""
 #47
 numero = input('Digite um número de 4 dígitos: ')
 

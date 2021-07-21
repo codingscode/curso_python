@@ -2,6 +2,9 @@
 
 """
 
+
+
+
 #01
 numero1 = float(input('valor numero1: '))
 numero2 = float(input('valor numero2: '))
@@ -11,14 +14,19 @@ maior = max(numeros)
 
 print(f'o maior é {maior}')
 
+"""
+
+
+
 #02
 numero = float(input('digite um número : '))
 
-if numero>0:
+if numero > 0:
     print(numero**0.5)
 else:
     print('número invalido')
 
+"""
 #05
 x = 1.0
 y = 1
@@ -88,7 +96,7 @@ if (float(numero) > 0) and verificar1 == 0:
 elif float(numero) < 0 or isinstance(numero, str):
     print('Número inválido')
 
-"""
+
 
 #19
 numero = input('digite um numero inteiro: ')
@@ -101,7 +109,7 @@ if verificar == 0:
     else:
         print('n ok')
 
-"""
+
 #23
 
 ano = input('Digite um ano: ')
