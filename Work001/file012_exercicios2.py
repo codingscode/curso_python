@@ -2,9 +2,6 @@
 
 """
 
-
-
-
 #01
 numero1 = float(input('valor numero1: '))
 numero2 = float(input('valor numero2: '))
@@ -106,7 +103,6 @@ if verificar:
     else:
         print('n ok')
 
-"""
 
 #23
 
@@ -122,13 +118,14 @@ if verificar:
 else:
     print("nao é um ano inteiro")
 
-"""
+
 # 26
 
 distancia = float(input('Distancia(Km) percorrida: '))
 litros = float(input('Quantidade(l) consumida: '))
 
 razao = distancia/litros
+print(f'razao: {razao}')
 
 if razao > 12:
     print('seu carro é super economico')
@@ -170,7 +167,6 @@ for i in range(3):
 valor.sort()
 print(f'numeros ordenados {valor}')
 
-
 # 37
 from datetime import timedelta
 import math
@@ -197,7 +193,5 @@ elif 2 < horas < 4:
 elif horas >= 5:
     print(f'preco: {4.8 + (math.ceil(horas - 4) * 2)}')
 
-
-
-
 """
+
