@@ -1,12 +1,14 @@
 # pasta 06
 
 """
+
+
 #01
 
 base = 3
 
 for i in range(5):
-    print(f'{i+1} º : {base + i*3}')
+    print(f'{i+1}º : {base + i*3}')
 
 
 #02
@@ -21,8 +23,9 @@ while ind < 10:
     print(ind)
     ind += 1
 
-print(ind)
+print(f'ind fora: {ind}')
 print('-----------------')
+
 
 # 03
 
@@ -44,9 +47,9 @@ for i in range(3):
 
 soma = sum(valores)
 
-print(soma)
+print(f'soma: {soma}')
 
-
+"""
 #06
 
 from statistics import mean
@@ -59,9 +62,9 @@ for i in range(4):
 
 medianumeros = mean(numeros)
 
-print(medianumeros)
+print(f'media: {medianumeros}')
 
-
+"""
 #07
 from statistics import mean
 
@@ -571,11 +574,3 @@ print(f'a soma é : {sum(n_primos)}')
 """
 
 
-
-
-
-""" 
- 
-
- 
-"""
