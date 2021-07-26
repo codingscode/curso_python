@@ -203,7 +203,6 @@ else:
 print(divisores)
 
 
-"""
 #24
 
 numero = float(input('digite um número inteiro e positivo: '))
@@ -224,7 +223,7 @@ else:
 
 print(divisores)
 print(f'soma de seus divisores com exceção dele mesmo é  {sum(divisores[:-1])}')
-"""
+
 # 25
 
 num = 0
@@ -267,8 +266,8 @@ soma = 0
 atual = 0
 
 if (final > inicio):
-    while atual < final-1:
-        if (inicio+plus)%2 == 1:
+    while atual < final - 1:
+        if (inicio+plus) % 2 == 1:
             atual = inicio + plus
             impares.append(atual)
         plus += 1
@@ -293,14 +292,14 @@ while aleatorio != resposta:
     resposta = int(input('digite um valor: '))
     if resposta < aleatorio:
         print('é maior')
-    elif resposta> aleatorio:
+    elif resposta > aleatorio:
         print('é menor')
     else:
         print('achou')
 
 print(f'resposta : {aleatorio}')
 
-
+"""
 #50
 
 a_chico = 1.5
@@ -321,7 +320,7 @@ while (a_ze <= a_chico):
 print(f'idade chico: {a_chico}')
 print(f'idade ze: {a_ze}')
 print(f'anos: {anos}')
-
+"""
 # 52
 saque = int(input('digite o valor do saque: '))
 # por exemplo 188
