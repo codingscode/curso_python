@@ -299,7 +299,7 @@ while aleatorio != resposta:
 
 print(f'resposta : {aleatorio}')
 
-"""
+
 #50
 
 a_chico = 1.5
@@ -310,8 +310,7 @@ plus_ze = 0.03
 
 anos = 0
 
-
-while (a_ze <= a_chico):
+while a_ze <= a_chico:
     a_chico += plus_chico
     a_ze += plus_ze
     anos += 1
@@ -320,7 +319,7 @@ while (a_ze <= a_chico):
 print(f'idade chico: {a_chico}')
 print(f'idade ze: {a_ze}')
 print(f'anos: {anos}')
-"""
+
 # 52
 saque = int(input('digite o valor do saque: '))
 # por exemplo 188
@@ -342,14 +341,12 @@ r_2 = r_5 % 2   # sobra 1
 n_1 = r_2 // 1
 r_1 = r_2 % 1  # sobra 0
 
-
-
 tipos = ['notas de 100', 'notas de 50', 'notas de 20', 'notas de 10', 'notas de 5', 'notas de 2', 'notas de 1']
 notas = [n_100, n_50, n_20, n_10, n_5, n_2, n_1]
 soma = sum(notas)
 
 for i in range(len(notas)):
-    lado_a_lado.append(tipos[i] + ': ' + str(notas[i]))
+    lado_a_lado.append(f'{tipos[i]}: {str(notas[i])}')  # tipos[i] + ': ' + str(notas[i])
 
 print(tipos)
 print(notas)
@@ -365,8 +362,8 @@ y = 1   # Número que tem que imprimir
 z = 1   # Número de colunas em cada linha
 frase = ''
 
-for x in range(1, n+1):
-    for z in range(1, x+1):  #z recorre de 1 hasta x. Ejemplo en la 4 (x=4 z=1,2,3,4)
+for x in range(1, n + 1):
+    for z in range(1, x + 1):  #z recorre de 1 hasta x. Ejemplo en la 4 (x=4 z=1,2,3,4)
         frase += (str(y) + ' ')
         y += 1
     print(frase)
@@ -382,8 +379,8 @@ divisores = []
 inico = 0
 
 while (numero - delta) >= 1:  # (numero - delta) >= 1
-    if (numero) % (numero - delta) == 0:
-       divisores.append((numero - delta))
+    if numero % (numero - delta) == 0:
+        divisores.append((numero - delta))
     delta += 1
 
 print(f'divisores: {divisores}')
