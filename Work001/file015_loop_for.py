@@ -8,48 +8,49 @@ numeros = range(1, 10)   #é preciso transformar em lista
 
 #exemplo1 para for (iterando em uma string)
 for letra in nome:
-    print(letra)
+    print(letra, end=" ")
 
-print('   ')
+print(' ')
 #exemplo2 para for (iterando sobre uma lista)
 for numero in lista:
-    print(numero)
+    print(numero, end=" ")
 
 print('------')
 #exemplo3 para for (iterand sobre uma range)
 for numero in range(1, 10):          #valor final n inclui
-    print(numero)
+    print(numero, end=" ")
 
 #Enumerate
-print(' com enumerate ')
+print('\ncom enumerate ')
 for indice, letra in enumerate(nome):
-    print(nome[indice])
+    print(nome[indice], end=" ")
 
-print('---------')
+print('\n---------')
 frase = 'A rua bonita'
 for indice, letra in enumerate(frase):
     print(letra)
 
 print('---------')
 saldacao = 'Olá'
+
 for _, letra in enumerate(saldacao):
     print(letra)
 
 print('------')
-for valor in enumerate(frase):
-    print(valor)
+for tupla in enumerate(frase):
+    print(tupla)
 
 print('------')
-for valor in enumerate(frase):
-    print(valor[0])
+for tupla in enumerate(frase):
+    print(tupla[0])
 
 print('------')
-for valor in enumerate(frase):
-    print(valor[1])
+for tupla in enumerate(frase):
+    print(tupla[1])
 
 print('-------')
 quant = int(input('Quantas vezes esse loop deve rodar ?: '))
-for n in range(1, quant+1):
+for n in range(1, quant + 1):
     print(f'Imprimindo {n}')
 
 print('-------')
@@ -65,7 +66,7 @@ quoting = 'a praia é bonita'
 for letra in quoting:
     print(letra, end='')  # em uma linha só
 
-print('------')
+print('\n------')
 palavra1 = 'bentivi'
 print(palavra1*3)
 
@@ -75,7 +76,3 @@ print('---------')
 for _ in range(1, 4):
     for num in range(1, 11):
         print('\U0001F606'*num)
-
-
-
-

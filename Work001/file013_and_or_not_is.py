@@ -17,6 +17,7 @@ if ir == 'onibus' or 'carro':
     print('tudo bem')
 
 situacao = 'favoravel'
+
 if not situacao == 'favoravel':
     print('precisa melhorar')
 else:
@@ -25,6 +26,7 @@ else:
 print(not True)
 
 cartaoVerificado = True
+
 if cartaoVerificado is True:
     print('cartão verificado')
 
@@ -33,7 +35,3 @@ print(cartaoVerificado is False)
 nome = 'Arvore'
 print(nome.isupper())
 print(f'nome começa com maiuscula {nome.istitle()}')
-
-
-
-
