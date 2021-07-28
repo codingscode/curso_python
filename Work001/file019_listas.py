@@ -1,7 +1,7 @@
 # Listas
 
 """
-"""
+
 print(type([]))
 
 lista1 = [51, 3, 27, 22, 42, 5, 27, 6, 7, 3, 17, 27, 42]
@@ -19,18 +19,19 @@ print('------------')
 """
 #checar se valor x está contido na lista
 num = 8
-if num in lista4:
+if num in list(range(11)):
     print(f'encontrado o numero {num}')
 else:
     print(f'não encontrado {num}')
 
 caractere = 'y'
-if caractere in lista2:
+if caractere in list('spotfy'):
     print(f'encontrado o caractere {caractere}')
 else:
     print(f'não encontrado {caractere}')
 
 print('------------')
+"""
 # sort - ordenação
 lista1.sort()
 print(lista1)
