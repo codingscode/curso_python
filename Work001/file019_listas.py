@@ -16,7 +16,7 @@ print(f'lista3 é {lista3}')
 print(f'lista4 é {lista4}')
 print(f'lista5 é {lista5}')
 print('------------')
-
+"""
 #checar se valor x está contido na lista
 num = 8
 if num in lista4:
@@ -335,4 +335,4 @@ list2 = [2, 0, 1]
 
 print(list1 + list2)
 
-
+"""

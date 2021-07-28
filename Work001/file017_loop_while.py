@@ -14,10 +14,3 @@ while resposta != 'sim':
     resposta = input('Quer parar ? : ')
 
 print('---------')
-
-
-
-
-
-
-
