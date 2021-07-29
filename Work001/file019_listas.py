@@ -1,13 +1,13 @@
 # Listas
 
 """
-
+"""
 print(type([]))
 
 lista1 = [51, 3, 27, 22, 42, 5, 27, 6, 7, 3, 17, 27, 42]
 lista2 = ['G', 'e', 'e', 'k', ' ', 'U', 'n', 'i', 'v', 'e', 'r', 's', 'i', 't', 'y']
 lista3 = []
-lista4 = list(range(11)) # 0 a ?-1
+lista4 = list(range(11))  # 0 a ?-1
 lista5 = list('Codar é bom para o cérebro')
 
 print(f'lista1 é {lista1}')
@@ -16,7 +16,7 @@ print(f'lista3 é {lista3}')
 print(f'lista4 é {lista4}')
 print(f'lista5 é {lista5}')
 print('------------')
-"""
+
 #checar se valor x está contido na lista
 num = 8
 if num in list(range(11)):
@@ -31,7 +31,7 @@ else:
     print(f'não encontrado {caractere}')
 
 print('------------')
-"""
+
 # sort - ordenação
 lista1.sort()
 print(lista1)
@@ -101,7 +101,7 @@ print('----------------')
 # remover último elemento de uma lista
 lista11 = [90, 91, 92, 93, 94, 95, 96, 97]
 print(lista11.pop())  # retorna o ultimo e tira
-lista11.pop()
+#lista11.pop()
 print(lista11)
 
 # podemos remover um elemento pelo indice
@@ -178,8 +178,6 @@ while produto != 'sair':
 for produto in carrinho:
     print(produto)
 
-
-
 # fazendo acesso aos elementos de forma indexada
 cores = ['laranja', 'verde', 'amarelo', 'vermelho', 'azul', 'branco']
 
@@ -196,6 +194,7 @@ for cor in cores:
 
 print('------------')
 indice = 0
+
 while indice < len(cores):
     print(cores[indice])
     indice = indice + 1   # ou indice += 1
@@ -329,6 +328,7 @@ lista_a = [1, 2, 3, 4, 5, 6, 7]
 lista_b = [1, 1, 1, 1]
 
 print([sum(v) for v in zip(lista_a, lista_b)])
+print([sum(v) for v in zip(lista_b, lista_a)])
 
 print('--------------------')
 list1 = [2, 3, 7, 10, 4]
@@ -336,4 +336,4 @@ list2 = [2, 0, 1]
 
 print(list1 + list2)
 
-"""
+
