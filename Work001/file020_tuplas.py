@@ -155,11 +155,3 @@ print(type(tupla14))
 
 #tupla = (1, 2, 3)
 # dir(tupla)   em console
-
-
-
-
-
-
-
-

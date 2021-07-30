@@ -32,14 +32,14 @@ print('------------------------')
 pais = {'nome': 'Brasil', 'ufs': 27, 'populacao': 210000000}
 print(pais)
 
-     # forma 1 : acessando via chave
+# forma 1 : acessando via chave
 print(pais['nome'])
 print(pais['ufs'])
 print(pais['populacao'])
 #print(pais['pib'])   # dá erro
 print('------------------------')
 
-     # Forma 2 - Acessando via get - recomendado
+# Forma 2 - Acessando via get - recomendado
 print(pais.get('nome'))
 print(pais.get('pib'))   # não dá erro
 
@@ -61,7 +61,6 @@ print(f'Encontrado a populacao: {populacao_cidade}')
 print(f'Encontrado o idh: {idh}')
 print('------------------------')
 
-
 pedido = {'tipo': 'transporte', 'produto': 'bicicleta', 'preco': 400}
 
 print('tipo' in pedido)
@@ -69,7 +68,6 @@ print('marca' in pedido)
 print('garantia' in pedido)
 print('preco' in pedido)
 print('bicicleta' in pedido)   # busca chave, mas valor não
-
 
 print('------------------------')
 
@@ -94,11 +92,11 @@ print('------------------------')
 receita = {'jan': 100, 'fev': 120, 'marc': 300}
 print(f'{receita}, e seu tipo {type(receita)}')
 
-   # forma 1
+# forma 1
 receita['abr'] = 350
 print(receita)
 
-   # forma 2
+# forma 2
 novo_dado = {'mai': 500}
 receita.update(novo_dado)
 
@@ -132,6 +130,7 @@ print(receita2)
     # forma 2
 del receita2['mai']
 print(receita2)
+print('-------------')
 
 #del receita2['mai']  # apagar elemento q não existe dá erro
 # obs: neste caso o valor removido nao é retornado
