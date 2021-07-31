@@ -26,7 +26,6 @@ print(f'resultado: {resultado} || seu tipo: {type(resultado)}')
 # obs: cada elemento da lista ficou como chave e o valor o número de ocorrencias
 print('--------------\n')
 
-
 # Exemplo 2
 
 print(f'Nasca de bacana: \n {Counter("Nasca de bacana")}')
@@ -47,9 +46,6 @@ print(f'ocorrencias de palavras: {resultado2}')
 
 # as 'n' mais comuns
 print(f'as "5" mais comuns: {resultado2.most_common(5)}')
+print("----------------------")
 
-
-
-
-
-
+print(dir(Counter))
