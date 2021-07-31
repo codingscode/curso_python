@@ -171,11 +171,3 @@ print(f'soma: {sum(conjunto_atual)}')
 print(f'maximo: {max(conjunto_atual)}')
 print(f'minimo: {min(conjunto_atual)}')
 print(f'tamanho: {len(conjunto_atual)}')
-
-
-
-
-
-
-
-
