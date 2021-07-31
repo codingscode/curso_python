@@ -235,4 +235,3 @@ print(veja2)
 
 veja3 = {}.fromkeys(range(1, 7), 'neo')
 print(veja3)
-

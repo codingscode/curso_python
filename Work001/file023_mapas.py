@@ -46,16 +46,3 @@ print(f'soma: {sum(receita.values())}')
 print(f'maximo: {max(receita.values())}')
 print(f'minimo: {min(receita.values())}')
 print(f'tamanho: {len(receita)}')
-
-
-
-
-
-
-
-
-
-
-
-
-

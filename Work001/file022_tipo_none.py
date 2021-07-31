@@ -10,15 +10,3 @@ print(type(numeros))
 numeros = 2.6, 5.0, 9.5
 print(numeros)
 print(type(numeros))
-
-
-
-
-
-
-
-
-
-
-
-
