@@ -7,8 +7,6 @@ Counter -> Recebe um interável como parametro e cria um objeto do tipo Collecti
 que é parecido com um dicionario, contendo como chave o elemento da lista passada como
 parametro e como valor a quantidade de ocorrencias desse elemento.
 
-
-
 """
 
 # Utlizando o counter

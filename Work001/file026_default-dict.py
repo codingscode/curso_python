@@ -12,8 +12,6 @@ valores.
 
 https://docs.python.org/3/library/collections.html#collections.defaultdict
 
-
-
 """
 
 dicionario_1 = {'curso': 'Programando em Python'}
@@ -29,28 +27,9 @@ from collections import defaultdict
 dicionario_2 = defaultdict(lambda: 0)
 print(dicionario_2)
 
-dicionario_2['curso'] = 'ML com Python'
+dicionario_2['curso'] = 'ML com Python'  # criando atributo/propriedade
 print(dicionario_2)
 
 print(dicionario_2['outro'])   # não dá erro, KeyError, vem o 0 de lambda
 print(dicionario_2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print('------------')
