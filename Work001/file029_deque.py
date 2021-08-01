@@ -31,10 +31,3 @@ print(deq1)
 
 print(deq1.popleft())  # remove e retorna o primeiro elemento
 print(deq1)
-
-
-
-
-
-
-

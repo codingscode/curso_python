@@ -12,6 +12,7 @@ from collections import namedtuple
 # precisamos definir o nome e parametros
   # forma 1 - declaração named tuple
 cachorro = namedtuple('cachorro', 'idade raca nome')
+print(cachorro)
 
   # forma 2 - declaração named tuple
 cachorro2 = namedtuple('cachorro2', 'idade, raca, nome')
@@ -30,39 +31,6 @@ print(f'{madruguinha[0]} | {madruguinha[1]} | {madruguinha[2]}')  # idade | raca
 print(f'{madruguinha.idade} | {madruguinha.raca} | {madruguinha.nome}')
 
 print(f'{madruguinha.index("pitchie")} | {madruguinha.count("pitchie")}')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print('--------------------------')
+print(dir(madruguinha))
+print(dir(namedtuple))

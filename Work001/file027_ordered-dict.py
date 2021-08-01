@@ -3,7 +3,6 @@ Modulo Collections: Ordered Dict
 
 OrderedDict -> É um dicionario que nos garante a ordem de inserção dos elementos
 
-
 """
 
 # em dicionario a ordem de inserção de elementos nõa é garantida
@@ -39,15 +38,6 @@ ordenado_dicionario1 = OrderedDict({'a': 1, 'b': 2})
 ordenado_dicionario2 = OrderedDict({'b': 2, 'a': 1})
 
 print(ordenado_dicionario1 == ordenado_dicionario2)  # False, para o ordered-dict a ordem conta diferença
-
-
-
-
-
-
-
-
-
-
-
-
+print('----------')
+print(ordenado_dicionario1)
+print(ordenado_dicionario2)
