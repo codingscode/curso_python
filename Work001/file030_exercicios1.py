@@ -2,9 +2,6 @@
 pasta 7 pdf 1
 
 
-
-
-
 # 01
 
 A = [1, 0, 5, -2, -5, 7]
@@ -23,12 +20,12 @@ print('---------------\n')
 
 # 04
 
-quantidade = 8
+quantidade = 3  # voltar com 8
 valores = []
 x = 0
 y = 0
 
-for indice in range(8):
+for indice in range(quantidade):  # voltar com 8
     cada = int(input(f'{indice + 1}º valor: '))
     valores.append(cada)
 
@@ -38,14 +35,13 @@ x = int(input('posicao indice x: '))
 y = int(input('posicao indice y: '))
 
 try:
-    if 0 <= x or y <= 8:
+    if 0 <= x or y <= quantidade:
         print(f'valores[x]: {valores[x]}, valores[y]: {valores[y]}')
         print(f'soma: {valores[x] + valores[y]}')
     else:
         print('pelo menos um indice está fora do intervalo')
 except:
     print('pelo menos um indice está fora do intervalo')
-
 
 #05
 
@@ -71,7 +67,7 @@ print('digite 10 números inteiros: ')
 valores = []
 
 for indice in range(10):
-    valor = int(input(f'{indice+1}º valor: '))
+    valor = int(input(f'{indice + 1}º valor: '))
     valores.append(valor)
 
 print(valores)
@@ -129,7 +125,7 @@ from functools import reduce
 valores = []
 
 for indice in range(4):
-    valor = int(input(f'{indice+1}º valor: '))
+    valor = int(input(f'{indice + 1}º valor: '))
     valores.append(valor)
 
 print(valores)
@@ -162,7 +158,7 @@ print(f'{elementos} || {type(elementos)}')
 valores = []
 
 for i in range(5):
-    valor = int(input(f'{i+1}º valor: '))
+    valor = int(input(f'{i + 1}º valor: '))
     if valor < 0:
         valores.append(0)
     else:
@@ -170,7 +166,7 @@ for i in range(5):
 
 print(valores)
 
-
+"""
 #18
 
 x = int(input('valor para x: '))
@@ -193,7 +189,7 @@ for cada in numeros:
 print(f'números de múltiplos de {x}: {contador}')
 
 
-
+"""
 #24
 from operator import itemgetter
 

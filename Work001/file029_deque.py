@@ -3,7 +3,6 @@ Modulo Collections - Deque
 
 é uma lista de alta performance
 
-
 """
 
 # importando
@@ -13,6 +12,7 @@ from collections import deque
 deq1 = deque('ipanema')
 
 print(deq1)
+print(list(deq1))
 print('----------------\n')
 
 # adicionando elementos no deque
