@@ -1,4 +1,7 @@
 """
+
+
+
 #01
 matriz1 = [[5, 8, 12, 2], [21, 50, 15, 3], [11, 0, 3, 2], [16, 8, 1, 9]]
 contador = 0
@@ -52,12 +55,11 @@ print(lista)
 #03
 lista = []
 ordem = 4
-linha = []
 
 for i in range(ordem):
     linha = []
     for j in range(ordem):
-        linha.append((i+1)*(j+1))
+        linha.append((i + 1)*(j + 1))
     lista.append(linha)
 
 print(lista)
@@ -72,7 +74,7 @@ for i_coluna in range(len(matriz)):
     for i_linha in range(len(matriz[i_coluna])):
         if matriz[i_coluna][i_linha] > ref:
             ref = matriz[i_coluna][i_linha]
-            posicao = [i_coluna+1, i_linha+1]
+            posicao = [i_coluna + 1, i_linha + 1]
 
 print(f'o maior valor é : {ref}, posição(coluna, linha): {posicao}')
 
@@ -89,7 +91,7 @@ for i_coluna in range(len(matriz)):
     for i_linha in range(len(matriz[i_coluna])):
         if matriz[i_coluna][i_linha] == ref:
             contador += 1
-            posicao = [i_coluna+1, i_linha+1]
+            posicao = [i_coluna + 1, i_linha + 1]
 
 if contador == 0:
     posicao = 'valor não encontrado'
@@ -97,7 +99,7 @@ if contador == 0:
 print(f'valor procurado : {ref}, posição(coluna, linha): {posicao}')
 print(f'ocorrência: {contador} vezes')
 
-
+"""
 #11
 matriz = [[4, 0, 5], [1, 8, 3], [7, 2, 6]]
 submatriz = []
@@ -112,7 +114,7 @@ for i_coluna in range(len(matriz)):
 print(soma)
 print(submatriz)
 
-
+"""
 #11.2 correção
 
 matriz = [[4, 0, 5], [1, 8, 3], [7, 2, 6]]
