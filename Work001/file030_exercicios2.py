@@ -272,18 +272,6 @@ def sexta_coluna(vetor3):
 print(sexta_coluna(matriz_formatada))
 print(matriz_formatada)
 
-
-"""
-
-
-
-
-
-
-
-
-
-
 #25
 import numpy
 import numpy as np
@@ -298,6 +286,19 @@ matriz_formatada = np.array(matriz)
 
 
 print(matriz_formatada)
+
+
+
+"""
+
+
+
+
+
+
+
+
+
 
 
 

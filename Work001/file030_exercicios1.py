@@ -166,7 +166,7 @@ for i in range(5):
 
 print(valores)
 
-"""
+
 #18
 
 x = int(input('valor para x: '))
@@ -189,7 +189,6 @@ for cada in numeros:
 print(f'números de múltiplos de {x}: {contador}')
 
 
-"""
 #24
 from operator import itemgetter
 
@@ -243,11 +242,11 @@ quantidade = 10
 
 valores = []
 ordem = 0
-
 primos = []
 
+
 while len(valores) <= quantidade:
-    valor = int(input(f'{ordem+1}º valor: '))
+    valor = int(input(f'{ordem + 1}º valor: '))
     valores.append(valor)
     ordem += 1
 
@@ -307,7 +306,6 @@ print(f'uniao: {uniao}')
 print(f'somente conjunto1: {soconjunto1}')
 print(f'somente conjunto2: {soconjunto2}')
 
-
 #33
 
 
@@ -318,7 +316,7 @@ quantidade = 4
 valores = set()
 
 for i in range(4):
-    valor = int(input(f'{i+1}º valor: '))
+    valor = int(input(f'{i + 1}º valor: '))
     valores.add(valor)
 
 print(valores)
@@ -328,36 +326,15 @@ print(ordenado)
 
 #36
 vetor0 = set()
-tamanho = 10
+tamanho = 3#10
 
-while len(vetor0) <= tamanho-1:
-    entrada = float(input(f'digite o {len(vetor0)+1}º valor numérico: '))
+while len(vetor0) <= (tamanho - 1):
+    entrada = float(input(f'digite o {len(vetor0) + 1}º valor numérico: '))
     vetor0.add(entrada)
 
 ordenado = sorted(vetor0)
 
 print(ordenado)
-
-
-
-"""
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-
-
-
 
 
 x = {1, 2, 4, 10, -3}
@@ -371,10 +348,10 @@ for cada in x:
 numero = 36528
 
 print(int(repr(numero)[-1]))
+"""
 
 
 
-
-
+"""
 
 """
