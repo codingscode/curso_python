@@ -3,7 +3,6 @@ Funções com parametro Padrão
 
 Funções onde a passagem de parametros seja opcional;
 
-
 """
 # exemplo 1
 
@@ -73,8 +72,7 @@ print(diz_oi())
 #print(ling)   # dá erro
 print('--------------')
 
-
-total = 0
+total = 3
 
 
 def incrementa():
@@ -87,7 +85,6 @@ print(incrementa())
 print(incrementa())
 print(incrementa())
 print('--------------')
-
 # Podemos ter funções que são declaradas dentro de funções, e também uma forma especial de
 # escopo de variavel
 

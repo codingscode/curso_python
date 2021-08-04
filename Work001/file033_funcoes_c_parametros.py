@@ -63,8 +63,6 @@ a ordem dos parametros importa
 caso utilizemos nomes dos parametros nos argumentos para informa-los, podemos utilizar 
 qualquer ordem.
 
-
-
 """
 nome = 'Bob'
 sobrenome = 'Simpson'
@@ -81,20 +79,10 @@ def soma_impares(numeros):
     total = 0
     for numero in numeros:
         if numero % 2 != 0:
-            total = total + numero
+            total += numero
             #return total erro
     return total
 
 
 lista = [1, 2, 3, 4, 5, 6, 7]
 print(soma_impares(lista))
-
-
-
-
-
-
-
-
-
-

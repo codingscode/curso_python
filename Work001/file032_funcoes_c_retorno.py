@@ -2,8 +2,6 @@
 Funções com retorno
 
 
-
-
 """
 
 numeros = [20, 8, 34, 15, 43]
@@ -53,6 +51,7 @@ Obs sobre a palavra reservada 'return'
 """
 
 # exemplo do 1
+
 
 def numero_10():
     print('Estou sendo executado antes do retorno...')
