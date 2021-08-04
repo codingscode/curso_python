@@ -99,7 +99,7 @@ if contador == 0:
 print(f'valor procurado : {ref}, posição(coluna, linha): {posicao}')
 print(f'ocorrência: {contador} vezes')
 
-"""
+
 #11
 matriz = [[4, 0, 5], [1, 8, 3], [7, 2, 6]]
 submatriz = []
@@ -114,7 +114,6 @@ for i_coluna in range(len(matriz)):
 print(soma)
 print(submatriz)
 
-"""
 #11.2 correção
 
 matriz = [[4, 0, 5], [1, 8, 3], [7, 2, 6]]
@@ -169,7 +168,6 @@ def soma_colunas(valor_vetor):
 
 
 print(soma_colunas(matriz))
-
 
 
 #19
@@ -289,40 +287,10 @@ matriz_formatada = np.array(matriz)
 
 print(matriz_formatada)
 
-
-
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 """
 https://kharisecario.wordpress.com/2017/03/25/create-nxn-matrix-in-pythonnumpy/
-
-
-
-
-
 
 
 

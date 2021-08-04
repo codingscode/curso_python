@@ -56,8 +56,6 @@ OBS:
 3 - n recebe nenhum parametro de entrada
 4 - esta função não retorna nada
 
-
-
 """
 # chamando função
 diz_oi()
@@ -75,14 +73,3 @@ def dizer_numeros():
 diga = dizer_numeros
 
 diga()
-
-
-
-
-
-
-
-
-
-
-
