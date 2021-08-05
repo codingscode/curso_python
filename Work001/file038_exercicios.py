@@ -1,6 +1,7 @@
 """
 
 
+
 #01
 
 def o_dobro(numero):
@@ -8,7 +9,7 @@ def o_dobro(numero):
 
 
 o_dobro(3)
-
+"""
 #02
 
 import locale
@@ -24,7 +25,7 @@ print(hoje.strftime("%d de %B de %Y"))
 
 print(hoje.strftime("%m/%d/%y"))
 print(hoje.strftime("%b-%d-%Y"))
-
+"""
 #03
 
 numero = float(input('digite um número: '))
@@ -480,17 +481,6 @@ print(intercalar(pri_string, seg_string))
 
 
 
-
-
-
-
-
-
-
-
-"""
-
-
 #69
 from fractions import Fraction
 
@@ -544,6 +534,12 @@ def seumdc(vetor, variacao=0):
 
 
 print(seumdc([18, 24]))  # exemplo
+"""
+
+
+
+
+
 
 
 """
@@ -570,51 +566,11 @@ print(str(novo))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 b = [10]
 lista = [2, 3, 4, 5, 6]
 print(lista[-2:-6:-1])   # inicio:ondepara:passo
 b.extend(lista)
 print(b)
-
-
-
-
-
-
 
 
 """
