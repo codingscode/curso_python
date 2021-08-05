@@ -9,7 +9,7 @@ def o_dobro(numero):
 
 
 o_dobro(3)
-"""
+
 #02
 
 import locale
@@ -25,7 +25,7 @@ print(hoje.strftime("%d de %B de %Y"))
 
 print(hoje.strftime("%m/%d/%y"))
 print(hoje.strftime("%b-%d-%Y"))
-"""
+
 #03
 
 numero = float(input('digite um número: '))
@@ -35,7 +35,6 @@ def verificar(num):
         return 1
     if num < 0:
         return -1
-    return 0
 
 
 print(verificar(numero))
@@ -290,7 +289,6 @@ def soma(valor):
 print(soma(entrada))
 
 
-
 #32
 numerador = int(input('digite o numerador: '))
 denominador = int(input('digite o denominador: '))
@@ -361,7 +359,7 @@ def listasemrepet(comprimento):
 
 print(listasemrepet(tamanho))
 
-
+"""
 #59
 
 lista1 = [2, 3, 4, 5, 6]
@@ -382,7 +380,7 @@ def uniao(m1, m2):
 
 print(uniao(lista1, lista2))
 
-
+"""
 #60
 uma_string = input('digite uma string: ')
 uma_substring = input('digite uma substring: ')
