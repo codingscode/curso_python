@@ -359,7 +359,7 @@ def listasemrepet(comprimento):
 
 print(listasemrepet(tamanho))
 
-"""
+
 #59
 
 lista1 = [2, 3, 4, 5, 6]
@@ -369,7 +369,6 @@ lista2 = [5, 6, 7, 8, 9, 10, 11]
 def uniao(m1, m2):
     conjunto1 = set()
     conjunto2 = set()
-    uni = set()
     for cada in m1:
         conjunto1.add(cada)
     for cada in m2:
@@ -380,7 +379,7 @@ def uniao(m1, m2):
 
 print(uniao(lista1, lista2))
 
-"""
+
 #60
 uma_string = input('digite uma string: ')
 uma_substring = input('digite uma substring: ')
@@ -435,7 +434,6 @@ def concatenar(valor1, valor2, n):
 print(concatenar(uma_string1, uma_string2, numero))
 
 
-
 #66
 caract = input('digite um caractere: ')
 
@@ -445,7 +443,6 @@ def maiusculo(valor):
 
 
 print(maiusculo(caract))
-
 
 
 #68
@@ -476,7 +473,6 @@ def intercalar(str1, str2):
 
 
 print(intercalar(pri_string, seg_string))
-
 
 
 #69
@@ -512,7 +508,6 @@ def geral(vetor):
 
 print(geral(duasf))
 print('------------------')
-
 
 def seummc(vetor, variacao=0):
     maior = max(vetor)
@@ -569,6 +564,5 @@ lista = [2, 3, 4, 5, 6]
 print(lista[-2:-6:-1])   # inicio:ondepara:passo
 b.extend(lista)
 print(b)
-
 
 """
