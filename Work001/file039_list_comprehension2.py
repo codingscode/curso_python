@@ -6,10 +6,6 @@ Usando a podemos gerar novas listas com dados processados a partir de outro iter
 # Sintaxe da List Comprehension
 [dado for dado in iteravel]
 
-
-
-
-
 """
 
 numeros = [3, 7, 2, 50]
