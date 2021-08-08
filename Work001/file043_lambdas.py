@@ -3,8 +3,6 @@ Utilizando lambdas
 
 são expressões funções sem nome ou seja funções anonimas
 
-
-
 """
 
 
@@ -29,7 +27,7 @@ podemos ter expressões lambdas com multiplas entradas
 
 """
 
-nome_completo = lambda nome, sobrenome: nome.strip().title() + ' ' + sobrenome.strip().title()
+nome_completo = lambda nome, sobrenome: f'{nome.strip().title()} {sobrenome.strip().title()}'
 
 print(nome_completo(' kyle', 'SMITH'))
 print(nome_completo(' amBROsio       ', 'sardinha'))
