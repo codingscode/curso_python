@@ -2,11 +2,6 @@
 Sintaxe:
 {chave:valor for valor in iteravel}
 
-
-
-
-
-
 """
 numeros = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
 
@@ -20,7 +15,6 @@ numeros_lista = [3, 4, 5, 6, 7, 4]  #  funciona também com tupla e conjuntos
 quadrado2 = {valor: valor**2 for valor in numeros_lista}  #  não aceita repetição
 
 print(quadrado2)
-
 print('----------------------------------')
 
 chaves = 'abcde'

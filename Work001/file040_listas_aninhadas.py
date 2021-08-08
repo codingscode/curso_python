@@ -3,9 +3,6 @@ algumas linguagens de programação possuem uma estrutura de dados chamadas de a
 - unidimensionais (arrays/vetores), - multidimensionais(matrizes ou listas aninhadas)
 
 
-
-
-
 """
 listas = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
