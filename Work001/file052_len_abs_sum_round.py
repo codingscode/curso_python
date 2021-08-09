@@ -12,7 +12,6 @@ obs: o valor inicial default é 0
 round() -> retorna um número arredondado para n digito de precisão após a casa decimal. Se a
 precisão não for informada retorna o inteiro mais próximo da entrada.
 
-
 """
 
 print(len([14, 4, 9, 2]))

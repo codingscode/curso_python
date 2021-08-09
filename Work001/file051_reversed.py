@@ -31,7 +31,6 @@ em conjuntos nao definimos a ordem dos elementos
 """
 
 print('----------------------------------------')
-
 # podemos iterar sobre o reversed()
 for letra in reversed('pindamonhangaba'):
     print(letra, end='')
