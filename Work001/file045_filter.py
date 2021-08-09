@@ -82,7 +82,6 @@ print(bool(0))
 print(bool(4))
 
 print('------------------------------------\n')
-
 # combinar filter() e map()
 nomes = ['alina', 'daciana', 'mikaela', 'stela', 'geovana', 'diocleziana']
 

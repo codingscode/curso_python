@@ -3,7 +3,6 @@ Generators (Generator Expression)
 
 = tuple comprehensions
 
-
 """
 
 nomes = ['Cecília', 'Caroline', 'Cassia', 'Carl', 'Roberto']
