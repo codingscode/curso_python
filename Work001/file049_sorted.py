@@ -16,7 +16,7 @@ print(numeros)
 """
 tuplas não são alteraveis
 """
-
+print("listas:")
 numeros2 = [23, 10, 7, 15, 19]
 print(numeros2)
 
@@ -25,7 +25,7 @@ print(sorted(numeros2))  # não modifica
 print(numeros2)
 
 print('-----------------------------')
-
+print("tuplas:")
 numeros3 = (23, 10, 7, 15, 19)
 
 print(numeros3)
@@ -33,7 +33,7 @@ print(sorted(numeros3))  # fica como lista
 print(numeros3)
 
 print('-----------------------------')
-
+print("set:")
 numeros4 = {23, 10, 7, 15, 19}
 
 print(numeros4)

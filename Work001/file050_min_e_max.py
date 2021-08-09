@@ -1,5 +1,4 @@
 """
-
 max() -> retorna o maior valor em um iteravel ou o maior de dois ou mais elementos.
 
 min() -> retorna o menor valor em um iteravel ou o menor de dois ou mais elementos.
@@ -26,9 +25,9 @@ print('--------------------------------------')
 lista2 = [3, 34, 10, 15]  # serve tambem para tupla, set, dicionario
 dicio2 = {'b': 3, 'a': 34, 't': 10, 'k': 15}
 
-print(min(lista))
-print(min(dicio))
-print(min(dicio.values()))
+print(min(lista2))
+print(min(dicio2))
+print(min(dicio2.values()))
 
 print(min(5, 14))
 print(min('a', 'ab', 'abc', 'abcd'))
