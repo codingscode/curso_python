@@ -1,12 +1,10 @@
 """
 Sorted -> ordena elementos
 
-
 Não confunda com sort() que estudamos em listas. o sort() só funciona em listas.
 Podemos usar o sorted() com qualquer iteravel
 
 OBS: O sorted(), SEMPRE retorna uma lista com os elementos do iteravel ordenados
-
 """
 
 numeros = [50, 20, 5, 14, 8]

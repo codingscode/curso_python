@@ -8,8 +8,8 @@ Generators (Generator Expression)
 nomes = ['Cecília', 'Caroline', 'Cassia', 'Carl', 'Roberto']
 
 print(any(nome[0] == 'C' for nome in nomes))  # pelo menos 1
-print(any([nome[0] == 'C' for nome in nomes])) # aqui não é generator
-print(any((nome[0] == 'C' for nome in nomes))) # aqui é generator
+print(any([nome[0] == 'C' for nome in nomes]))  # aqui não é generator
+print(any((nome[0] == 'C' for nome in nomes)))  # aqui é generator
 
 print((nome[0] == 'C' for nome in nomes))   # é generator
 print([nome[0] == 'C' for nome in nomes])
