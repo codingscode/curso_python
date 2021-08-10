@@ -63,3 +63,6 @@ colore('codando python', 'cinza')
 OBS: o raise, assim como o return, finaliza a função. Ou seja, nada após o raise é executado.
 
 """
+
+
+
