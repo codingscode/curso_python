@@ -49,5 +49,7 @@ print(round(10.2, 3))
 print(round(10.5))
 print(round(10.6))
 print(round(1.212121, 2))  # 2 casas de precisao
+print(round(1.212121, 3))  # 3 casas de precisao
 print(round(1.212121))
 print(round(3.21999999, 3))
+print(round(3.21999999, 5))

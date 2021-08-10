@@ -63,5 +63,4 @@ print(final)
 
 # podemos usar o map
 final2 = zip(alunos, map(lambda cada: max(cada), zip(prova1, prova2)))
-
 print(dict(final2))

@@ -6,7 +6,7 @@ o python nao reconhece como parte da linguagem.
 
 NameError -> ocorre quando uma variavel ou função não foi definida.
 
-TyperError -> ocorre quando um funcao/operacao/acao é aplicada a um tipo errodo
+TypeError -> ocorre quando um funcao/operacao/acao é aplicada a um tipo errado
 
 IndexError -> ocorre quando tentamos acessar um elemento em uma lista ou outro tipo de dado
 indexado utilizando um indice inválido.
