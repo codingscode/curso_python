@@ -1,6 +1,7 @@
 """
 Erros mais comuns
 
+
 SyntaxError -> ocorre quando o python encontra um erro de sintaxe. Ou seja, foi escrito algo que
 o python nao reconhece como parte da linguagem.
 
