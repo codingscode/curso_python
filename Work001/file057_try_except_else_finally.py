@@ -7,7 +7,7 @@ Toda entrada deve ser tratada !
 obs: a função do usuario é destruir seu sistema.
 else -> é executado somente se não ocorrer o erro.
 
-"""
+
 num = 0
 
 try:
@@ -19,6 +19,8 @@ else:
 
 print('----------------------------')
 
+#num = 0
+
 try:
     num = float(input('digite um número: '))
 except ValueError:
@@ -29,10 +31,11 @@ finally:
     print('finally executado de qualquer forma')
 
 """
-finally é executado independente de exceção. o finally é, geralmente, usado para fechar
- ou desalocar recursos.
+#finally é executado independente de exceção. o finally é, geralmente, usado para fechar
+# ou desalocar recursos.
 """
 print('----------------------------')
+
 # forma 1
 
 
@@ -77,7 +80,7 @@ def dividir3(a, b):
 numero1 = input('informe o 1º número: ')
 numero2 = input('informe o 2º número: ')
 print(dividir3(numero1, numero2))
-
+"""
 print('----------------------------')
 
 
@@ -94,3 +97,5 @@ def dividir3(a, b):
 numero1 = input('informe o 1º número: ')
 numero2 = input('informe o 2º número: ')
 print(dividir3(numero1, numero2))
+"""
+"""
