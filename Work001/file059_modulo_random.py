@@ -50,7 +50,6 @@ for i in range(10):
 
 print('------------------')
 # randint() -> gera valores pseudo-aleatorios(pode haver repetição) entre os valores estabelecidos
-
 from random import randint
 
 for i in range(6):
@@ -75,7 +74,7 @@ from random import shuffle
 cartas = ['K', 'Q', 'J', 'A', 4, 7, 9, 2]
 
 print(cartas)
-shuffle(cartas) # modifica a original
+shuffle(cartas)  # modifica a original
 
 print(cartas)
 print(cartas.pop())
