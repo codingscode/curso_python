@@ -7,3 +7,4 @@ print('vem do exportado!')
 
 def multiplicacao(a, b):
     return a*b
+
