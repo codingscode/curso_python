@@ -11,7 +11,6 @@ try:
 except:
     // o que deve ser feito em caso de problema
 
-
 """
 
 # tratando um erro generico

@@ -14,7 +14,7 @@ raise TipoDoErro('Mensagem de erro')
 raise ValueError('valor incorreto')
 
 raise ValueError('valor incorreto')
-ValueError: valor incorreto
+#ValueError: valor incorreto
 """
 
 """
