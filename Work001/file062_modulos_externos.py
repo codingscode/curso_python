@@ -3,9 +3,7 @@ Instalando e utilizando módulos externos
 
 
 utilizamos o gerenciador de pacotes python chamado pip(Python Installer Package)
-
 link pacotes modulos externos oficiais https://pypi.org/
-
 
 """
 

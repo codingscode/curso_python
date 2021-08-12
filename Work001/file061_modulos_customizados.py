@@ -1,7 +1,6 @@
 """
 Módulos customizados
 
-
 modulos customizados em python são arquivos python prontos para serem utilizados
 
 """
