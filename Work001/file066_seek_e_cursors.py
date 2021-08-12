@@ -3,7 +3,6 @@ Seek e Cursors
 
 seek() -> utilizada para movimentar o cursor pelo arquivo.
 
-
 """
 
 arquivo1 = open('file066_arquivo1.txt')

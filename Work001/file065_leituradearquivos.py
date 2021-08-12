@@ -13,7 +13,6 @@ teremos o erro FileNotFoundError
 
 mode r -> modo de leitura. r -> read() -> ler
 
-
 """
 
 arquivo1 = open('file065_arquivo1.txt')
@@ -52,5 +51,4 @@ ret = arquivo1_2.read()
 
 print(type(ret))
 print(ret)
-
 print('---------------')
