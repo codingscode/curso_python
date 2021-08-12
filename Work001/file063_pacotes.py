@@ -40,5 +40,4 @@ from file063_pacotes.dentro.dentro_02 import funcao4
 
 print(funcao1(2, 3))
 print(funcao4())
-
 """
