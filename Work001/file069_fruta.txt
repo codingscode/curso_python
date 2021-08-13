@@ -4,3 +4,8 @@ manga
 --------------------uva
 maçã
 laranja
+jaca
+buriti
+goiaba
+ata
+graviola

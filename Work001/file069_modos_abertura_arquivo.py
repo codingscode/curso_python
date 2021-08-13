@@ -16,7 +16,6 @@ try:
 except FileExistsError:
     print('arquivo já existe')
 
-
 print('--------------------')
 
 with open('file069_fruta.txt', 'a') as arquivo1:
