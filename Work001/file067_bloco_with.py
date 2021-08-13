@@ -3,9 +3,8 @@ Bloco With
 
 trabalhar arquivos -> abrir, manipular, fechar arquivo.
 
-o bloco with é utilizado para criar um contexto de trabalho onde os recursos utilizados são fechados
-após o bloco with.
-
+o bloco with é utilizado para criar um contexto de trabalho onde os recursos utilizados são fechados após
+o bloco with.
 """
 
 with open('file067_texto.txt') as arquivo1:  # forma pythonica

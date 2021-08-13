@@ -1,10 +1,8 @@
 """
 Escrever em arquivos
 
-
 OBS: Ao abrir um arquivo para leitura, não podemos realizar a escrita nele. Apenas ler. Da mesma
 forma, se abrirmos um arquivo para escrita, não podemos lê-lo, somente escrever nele.
-
 
 """
 # escrita - modo 'w' -> writing
