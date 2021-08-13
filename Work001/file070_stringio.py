@@ -21,12 +21,12 @@ arquivo1 = StringIO(mensagem)
 
 # Agora tendo o arquivo, podemos utilizar tudo que já sabemos
 print(arquivo1.read())
-
+print('----------------')
 # escrevendo outros textos
-print(arquivo1.write(' Outro texto'))
-
+print(arquivo1.write(' Outro texto'))  # quantidade de caracteres
+print('----------------')
 print(arquivo1.read())
-
+print('----------------')
 # movimentando cursor
 arquivo1.seek(0)
 print(arquivo1.read())
