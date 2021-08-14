@@ -18,11 +18,11 @@ print('04', os.path.exists('file063_pacotes/nao_tem'))
 print('05', os.path.exists('./file063_pacotes/dentro/dentro_01.py'))  # diretorio e arquivo
 
    # exemplo com caminho absoluto
-print('06', os.path.exists('C:\\data'))
-print('07', os.path.exists('C:\\tem_nao'))
-print('08', os.path.exists('C:\\dosbox'))
+print('06', os.path.exists('/etc'))  # C:\\data
+print('07', os.path.exists('/tem_nao'))  # C:\\tem_nao
+print('08', os.path.exists('/dev'))  # C:\\dosbox
 
-print('---------------------')
+print('1---------------------')
 # criando arquivos
 
     # forma 1
@@ -35,7 +35,7 @@ open('file072_texto2.txt', 'a').close()
 with open('file072_texto3.txt', 'w') as arquivo1:
     pass
 
-print('---------------------')
+print('2---------------------')
 
 """
 os.mknod('file072_text04.txt') n funcionou
@@ -46,7 +46,7 @@ obs: criando um arquivo viaknode() se o arquivo já existir teremos o erro FileE
 
 """
 
-print('---------------------')
+print('3---------------------')
 
 try:
     os.mkdir('file072pasta')   # pode-se criar um caminho absoluto também
@@ -58,7 +58,7 @@ except FileExistsError as erro:
 a funcao mkdir() cria um diretorio se este não existir. Caso não exista, teremos FileExistsError
 """
 
-print('---------------------')
+print('4---------------------')
 
 try:
     os.mkdir('file072pasta2/dentro1/dentro2') # fora daqui há erro, poderia se criar um a um
@@ -66,7 +66,7 @@ except FileNotFoundError as erro:
     print(f'*** {erro}')
     print('há erro ao se criar um diretório num diretório não existente')
 
-print('---------------------')
+print('5---------------------')
 # forma abrangente
 
 try:
@@ -77,7 +77,7 @@ except FileExistsError as erro:
 
 # para evitar mostrar erro passa-se como 2ª parametro 'exist ok=True' em makedirs
 
-print('---------------------')
+print('6---------------------')
 
 try:
     os.rename('file072_nomemudara', 'file072_nomemudou')
@@ -91,7 +91,7 @@ try:
 except FileNotFoundError as erro:
     print('arquivo não encontrado ou já renomeado')
 
-print('---------------------')
+print('7---------------------')
 # Removendo arquivos
 # obs: atenção: tome cuidado com os comandos de deleção. Ao deletarmos um arquivo ou
 # diretorio, eles nao vão para a lixeira. Eles somem
@@ -113,7 +113,7 @@ except FileNotFoundError as erro1:
 except OSError as erro2:
     print('o diretorio contem arquivos, n pode ser removido')
 
-print('---------------------')
+print('8---------------------')
 # removendo uma arvores de diretorios ???
 
 try:
@@ -126,7 +126,7 @@ except OSError as erro:
     print(erro)
     print('*** há erro')
 
-print('---------------------')
+print('9---------------------')
 """
 no terminal digitar: pip install send2trash
 """
