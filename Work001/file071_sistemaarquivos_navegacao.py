@@ -16,13 +16,13 @@ os.chdir('../..')  # '../..' , assim sucessivamente
 print(os.getcwd())
 
 # podemos checar se um diretório é absoluto(começa da raiz) ou relativo()
-print(os.path.isabs('C:\\olddoc'))  # windows
+print(os.path.isabs('/usr'))  # windows C:\\olddoc
 
 print(os.path.isabs('..'))
 
 print('geek\\university')
 
-print('------------------------')
+print('1------------------------')
 
 # podemos identificar o sitema operacional com o modulo os
 print(os.name)  # se 'nt' -> windows, se 'posix' -> linux ou mac
@@ -31,12 +31,13 @@ print(os.name)  # se 'nt' -> windows, se 'posix' -> linux ou mac
 import sys
 
 print(sys.platform)  # para linux ou mac -> os.uname()
+print(os.uname())
 
-print('------------------------')
+print('2------------------------')
 
 print(os.getcwd()) #
 
-os.chdir('./PycharmProjects/Work001')
+os.chdir('./Python/Work001')
 
 print(os.getcwd())  #
 res = os.path.join(os.getcwd(), 'file063_pacotes') #, 'dentro do pacote anterior..)'  # acessa outro diretorio
@@ -50,15 +51,15 @@ veja que o os.path.join() recebe dois parametros, sendo o 1º o diretorio atual 
 que será juntado ao atual.
 """
 
-print('------------------------')
+print('3------------------------')
 
 # podemos listar os arquivos e diretorios com o listdir()
 
 os.chdir('..')
 print(os.listdir())
-print(os.listdir('C:\\'))
+print(os.listdir('/'))  # C:\\
 
-print('------------------------')
+print('4------------------------')
 # podemos listar os arquivos e diretorios com mais detalhes com scandir()
 
 print(list(os.scandir()))
@@ -78,7 +79,7 @@ print(arquivos[0].stat())  # estatisticas
 
 # OBS: quando utilizamos a função scandir() nós precisamos fechá-la, assim quando abrimos um arquivo.
 
-print('------------------------')
+print('5------------------------')
 # forma mais adequada
 scanner = os.scandir()
 
@@ -97,4 +98,4 @@ print(arquivos2[0].stat())  # estatisticas
 
 scanner.close()
 
-print('------------------------')
+print('6------------------------')
