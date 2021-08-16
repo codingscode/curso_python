@@ -133,7 +133,7 @@ no terminal digitar: pip install send2trash
 from send2trash import send2trash
 
 
-send2trash('file_072_outroapague.txt')  # vai pra lixeira, pode ser restaurado
+send2trash('file_072_outroapague.txt')   # vai pra lixeira, pode ser restaurado
 print('apagado ou já apagado')
 
 print('---------------------')
