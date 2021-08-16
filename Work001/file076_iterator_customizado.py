@@ -5,14 +5,14 @@ Iterator Customizado
 """
 
 for n in range(5):
-    print(n)
+    print(n, end=" ")
 
-print('---------')
+print('\n---------')
 
 for n in range(3, 8):
-    print(n)
+    print(n, end=" ")
 
-print('---------')
+print('\n---------')
 
 
 class Contador:

@@ -27,5 +27,7 @@ def meu_for(iteravel):
 
 meu_for('jiboia')
 print('-------------')
+print('-------------')
 
 meu_for([23, 8, 6, 10])
+print('-------------')
