@@ -44,6 +44,5 @@ nome2 = 'borboleta'
 for cada in nome2:
     print(f'{cada}')
 
-
 print('-----------------------')
 print('-----------------------')
