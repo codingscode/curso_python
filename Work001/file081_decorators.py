@@ -6,8 +6,8 @@ O que são ?
 - Decorators envolvem outras funções e aprimoram seus comportamentos
 - Decorators também são exemplos de higher order functions
 - Decorators tem uma sintaxe própria, usando '@' (Syntact Sugar/ Açucar Sintatico)
-
 """
+
 # Decorators como funções (Sintaxe não recomendada / Sem Açucar Sintático)
 
 
@@ -26,10 +26,10 @@ def saudacao():
 teste = seja_educado(saudacao)
 
 teste()
-print('----------------')
+print('1----------------')
 saudacao()
 
-print('-----------------')
+print('2-----------------')
 
 
 def indignite():
@@ -39,7 +39,7 @@ def indignite():
 expressando_indig = seja_educado(indignite)
 expressando_indig()
 
-print('-----------------')
+print('3-----------------')
 
 # Decorators com syntax sugar (recomendado)
 
@@ -58,7 +58,7 @@ def apresentando():
 
 apresentando()
 
-print('-----------------')
+print('4-----------------')
 
 @seja_educado_mesmo
 def dormir():
@@ -68,4 +68,4 @@ def dormir():
 dormir()
 
 #OBS: Não confunda Decorator com Decorator Function
-print('-----------------')
+print('5-----------------')
