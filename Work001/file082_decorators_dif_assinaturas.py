@@ -1,10 +1,8 @@
 """
 Decorators com diferentes assinaturas
 
-
 Para resolver, utilizamos um padrão de projeto chamado Decorator Pattern.
 A assinatura de uma função é representada pelo seu retorno, nome e parametros de entrada
-
 """
 
 # Relembrando
@@ -29,12 +27,12 @@ def ordenar(principal, acompanhamento):
 print(saudacao('Fulanis'))
 
 try:
-    print(ordenar('Bisteca', 'pure')) # assim dá erro , a f aumentar() tem só 1 parametro
+    print(ordenar('Bisteca', 'purê')) # assim dá erro , a f aumentar() tem só 1 parametro
 except:
     print('Houve erro')
 
 
-print('---------------------')
+print('1---------------------')
 # Para resolver, utilizamos um padrão de projeto chamado Decorator Pattern.
 # Refatorando com o Decorator Pattern
 
@@ -52,7 +50,7 @@ def ordenar2(principal, acompanhamento):
 
 print(ordenar2('Bisteca', 'purê'))
 
-print('---------------------')
+print('2---------------------')
 
 
 @gritar2
@@ -62,12 +60,12 @@ def lol():
 
 print(lol())
 
-print('---------------------')
+print('3---------------------')
 # OBS: Vale lembrar que podemos utilizar parametros nomeados
 
 print(ordenar2(acompanhamento='salada', principal='peixe assado'))
 
-print('---------------------')
+print('4---------------------')
 # Decorator com argumentos
 
 
@@ -97,4 +95,4 @@ print('2', soma_dez(1, 21))
 print('3', comida_favorita('pizza', 'churrasco', 'salada'))
 print('4', comida_favorita('churrasco', 'salada', 'batata'))
 
-print('---------------------')
+print('5---------------------')
