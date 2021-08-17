@@ -20,7 +20,7 @@ print('---------------')
 # Generator Expression
 gen2 = (num for num in range(1, 8))
 
-print(gen2) # generator expression
+print(gen2)   # generator expression
 print(next(gen2))
 print(next(gen2))
 
