@@ -1,7 +1,6 @@
 """
 Iterator Customizado
 
-
 """
 
 for n in range(5):
@@ -23,13 +22,13 @@ class Contador:
 
 cont = Contador(3, 8)
 print(cont)
+print(dir(cont))
 print(cont.menor)
 print(cont.maior)
 
 #meu_ite = iter(cont)
 
 #print(next(meu_ite)) # TyperError
-
 print('-----------------')
 
 
