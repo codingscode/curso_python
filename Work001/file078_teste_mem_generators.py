@@ -1,7 +1,6 @@
 """
 Teste de memória com generators
 
-
 sequencia de fibonacci: 1, 1, 2, 3, 5, 8, 13 ...
 
 """
@@ -32,3 +31,5 @@ def fib_gen(maximo):   # função usando geradores,  gasta menos memória
 
 for cada in fib_gen(10):
     print(f'{cada} ', end='')
+
+print('---------------------')
