@@ -20,7 +20,6 @@ funções geradoras:
 -> utilizam yield
 -> podem utilizar yield multiplas vezes
 -> quanto executada, retorna um generator
-
 """
 # exemplo generator function
 
