@@ -5,7 +5,6 @@ O que isso significa?
 Quando uma linguagem de programação suporta HOF, indica que podemos ter funções que retornam outras
 funções como resultado ou mesmo que podemos passar função como argumentos para outras funções, e até
 mesmo criar variaveis do tipo de funções nos nossos programas.
-
 """
 # Exemplo - definindo as funções
 
@@ -35,7 +34,6 @@ print(calcular(4, 2, subtrair))
 print(calcular(4, 2, multiplicar))
 print(calcular(4, 2, dividir))
 print('-----------------')
-
 # Nested Functions - Funções Aninhadas (funções dentro de funções)
 
 from random import choice
@@ -66,3 +64,4 @@ print(rindo())
 
 #obs: inner functions (funções internas / nested functions) podem acessar o escopo de funções
 # mais externas
+print('----------------------')
