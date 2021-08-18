@@ -11,11 +11,11 @@ querer saber se a lampada é 110 ou 220 V, se ela é branca, amarela, verde ou o
 luminosidade dela e etc.
 
 - Métodos (funções) -> Representam os comportamentos do objeto. Ou seja, as ações que este objeto pode
- realizar no seu sistema. No caso da lâmpada, por exemplo, um comportamento comum que muito
- provavelmente iriamos querer representar no nosso sistema é o de ligar e desligar a mesma.
+realizar no seu sistema. No caso da lâmpada, por exemplo, um comportamento comum que muito
+provavelmente iriamos querer representar no nosso sistema é o de ligar e desligar a mesma.
 
 obs: quando nomeamos nossas classes em python utilizamos por convenção o nome com inicial em maiusculo.
- Se o nome for composto usa-se camelcase todas juntas
+Se o nome for composto usa-se camelcase todas juntas
 
 - classes internas do python começam com letra minuscula
 obs: Quando estamos planejando um software e definimos quais classes teremos que ter no sistema,
@@ -53,5 +53,5 @@ print('-------------------2')
 
 print(help(int))  # int é classe
 
-print('--------------------')
-print('--------------------')
+print('--------------------3')
+print('--------------------4')

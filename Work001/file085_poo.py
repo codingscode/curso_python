@@ -19,14 +19,14 @@ numero = 12
 print(numero)
 print(type(numero))
 
-print('-----------------------')
+print('1-----------------------')
 
 nome = 'Rudney'
 
 print(nome)
 print(type(nome))
 
-print('-----------------------')
+print('2-----------------------')
 
 class Produto:
     pass
@@ -37,4 +37,4 @@ ps4 = Produto()
 print(ps4)
 print(type(ps4))
 
-print('-----------------------')
+print('3-----------------------')
