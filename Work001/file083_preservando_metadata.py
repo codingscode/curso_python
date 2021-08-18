@@ -5,7 +5,6 @@ Metadados -> são dados intrísecos aos arquivos.
 
 wraps -> são funções que envolvem elementos com diversas finalidades.
 
-
 """
 
 #Problema
@@ -13,8 +12,8 @@ wraps -> são funções que envolvem elementos com diversas finalidades.
 def ver_log(funcao):
     def logar(*args, **kwargs):
         """função logar dentro de outra"""
-        print(f'Você está chamando {funcao. __name__}')
-        print(f'Aqui a documentação {funcao. __doc__}')
+        print(f'Você está chamando: {funcao. __name__}')
+        print(f'Aqui a documentação: {funcao. __doc__}')
         return funcao(*args, **kwargs)
     return logar
 
@@ -26,15 +25,14 @@ def soma_dois(a, b):
 
 
 print(soma_dois(10, 30))
-
-print('--------------------')
+print('1--------------------')
 
 print(soma_dois)
 print(soma_dois.__name__)
 print(soma_dois)
 print(soma_dois.__doc__)
 
-print('--------------------')
+print('2--------------------')
 
 # Resolução do problema
 from functools import wraps
@@ -43,9 +41,9 @@ from functools import wraps
 def ver_log2(funcao):
     @wraps(funcao)
     def logar2(*args, **kwargs):
-        """função logar dentro de outra2"""
-        print(f'Você está chamando {funcao. __name__}')
-        print(f'Aqui a documentação {funcao. __doc__}')
+        """função logar dentro de ver_log2"""
+        print(f'Você está chamando: {funcao. __name__}')
+        print(f'Aqui a documentação: {funcao. __doc__}')
         return funcao(*args, **kwargs)
     return logar2
 
@@ -60,8 +58,8 @@ print(soma_dois2(12, 14))
 
 print(soma_dois2.__name__)
 print(soma_dois2.__doc__)
-print('--------------------')
+print('3--------------------')
 
 print('****', help(soma_dois2))
 
-print('--------------------')
+print('4--------------------')
