@@ -22,10 +22,10 @@ def repete_msg(msg, vezes):
 
 
 repete_msg('python', 3)
-print('-------------')
+print('1-------------')
 repete_msg('python', '3')
 
-print('-------------')
+print('2-------------')
 
 
 @forcar_tipo(float, float)
@@ -35,5 +35,4 @@ def dividir(a, b):
 
 dividir('6', 3)
 dividir('7', '4')
-
-print('-------------------')
+print('3-------------------')
