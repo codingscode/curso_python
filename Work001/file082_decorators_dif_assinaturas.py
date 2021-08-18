@@ -94,5 +94,4 @@ print('2', soma_dez(1, 21))
 
 print('3', comida_favorita('pizza', 'churrasco', 'salada'))
 print('4', comida_favorita('churrasco', 'salada', 'batata'))
-
 print('5---------------------')
