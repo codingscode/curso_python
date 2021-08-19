@@ -38,7 +38,6 @@ Caso queiramos demonstrar que determinado atributo deve ser tratado como privado
   no inicio de seu nome.
 Isso é conhecido também por Name Mangling.
 
-
 """
 # Classes com Atributo de Instancia Público
 
@@ -95,7 +94,6 @@ class Acesso:
 """
 Obs: Lembre-se que isso é apenas uma convenção, ou seja, a ling. Python não vai impedir que façamos
  acesso aos atributos sinalizados como privados fora da classe.
-
 """
 
 usuario = Acesso('usuario@gmail.com', '123456', 'rudney')
@@ -204,9 +202,9 @@ print(meu_prod3.valor)
 
 print(ProdutoRef2.imposto)
 
-print(meu_prod1.id)
-print(meu_prod2.id)
-print(meu_prod3.id)
+print('1-', meu_prod1.id)
+print('2-', meu_prod2.id)
+print('3-', meu_prod3.id)
 
 """
 obs: em linguagens como o java, os atributos conhecidos como atributos de classe aqui em python são
