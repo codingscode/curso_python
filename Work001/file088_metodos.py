@@ -15,7 +15,6 @@ obs: Métodos são escritos em letras minusculas. Se o nome for composto, o nome
 separadas por underline.
 
 # métodos de classe em python são conhecidos como métodos estáticos em outras linguagens
-
 """
 
 
@@ -67,8 +66,8 @@ class Usuario:
         return f'{self.__nome} {self.__sobrenome}'
 
 
-print(dir())
-print(dir(__builtins__))
+print('1:', dir())
+print('2:', dir(__builtins__))
 
 p1 = Produto('play4', 'video game', 2300)
 print(p1.desconto(20))
@@ -163,7 +162,7 @@ class UsuarioRef3:
         print(f'Temos {cls.contador} usuários no sistema')
 
     def __init__(self, nome, sobrenome, email, senha):
-        self.__id = UsuarioRef2.contador + 1
+        self.__id = UsuarioRef3.contador + 1
         self.__nome = nome
         self.__sobrenome = sobrenome
         self.__email = email
@@ -225,7 +224,6 @@ class UsuarioRef4:
 usuario6 = UsuarioRef4('Vangogh', 'van', 'goguinho@gmail.com', '87312')
 #print(usuario6.__gerar_usuario())  # dá erro
 print(usuario6._UsuarioRef4__gerar_usuario())  # acesso, de forma ruim
-
 
 print('----------------------5')
 # Método Estático
