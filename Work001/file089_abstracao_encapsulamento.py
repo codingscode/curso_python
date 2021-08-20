@@ -19,9 +19,6 @@ instancia._Classe__metodo()
 Abstração, em POO, é o ato de expor apenas dados relevantes de uma classe, escondendo atributos e
 métodos privados de usuario.
 
-
-
-
 """
 """
       classe
@@ -59,6 +56,7 @@ print(conta1.titular)
 print(conta1.saldo)
 print(conta1.limite)
 print(conta1.numero)
+print(conta1.__dict__)
 
 conta1.numero = 42
 conta1.titular = 'Bob'
