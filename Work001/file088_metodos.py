@@ -266,13 +266,14 @@ class UsuarioRef5:
         return self.__email.split('@')[0]
 
 
-print(UsuarioRef5.contador)
-print(UsuarioRef5.definicao())
+print('1.', UsuarioRef5.contador)
+print('2.', UsuarioRef5.definicao())
 
 usuario7 = UsuarioRef5('Nelson', 'cavaquinho', 'violaoecavacos@gmail.com', '91341')
 
-print(UsuarioRef5.contador)
-print(UsuarioRef5.definicao())
+print('3.', UsuarioRef5.contador)
+print('4.', UsuarioRef5.definicao())
 usuario7 = UsuarioRef5('Nelson', 'cavaquinho', 'violaoecavacos@gmail.com', '91341')
+usuario8 = UsuarioRef5('ferdinand', 'pcs', 'universoinfo@gmail.com', '817635')
 
 print('----------------------6')
