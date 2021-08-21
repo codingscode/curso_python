@@ -71,7 +71,6 @@ print('1---------------------------')
 
 
 class Conta2:
-
     contador = 400
 
     def __init__(self, titular, saldo, limite):
@@ -135,12 +134,10 @@ conta4.depositar(valor)
 
 conta3.extrato()
 conta4.extrato()
-
 print('3---------------------------')
 
 
 class Conta3:
-
     contador = 400
 
     def __init__(self, titular, saldo, limite):
