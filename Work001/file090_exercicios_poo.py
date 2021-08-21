@@ -4,6 +4,11 @@ Exercicios POO
 """
 
 """
+
+"""
+
+
+
 # 01)
 
 class Pessoa:
@@ -37,7 +42,7 @@ pessoa1.setar_nome('Samuel')
 pessoa1.setar_idade(32)
 pessoa1.setar_altura(1.78)
 print(pessoa1.__dict__)
-
+"""
 # 02)
 
 
@@ -197,7 +202,7 @@ print(elevador1.__dict__)
 
 print('6----------------------------------\n')
 
-"""
+
 
 
 # 04)
@@ -292,3 +297,5 @@ print(aparelho.__dict__)
 
 print('-----------------------')
 print('-----------------------')
+
+"""
