@@ -5,8 +5,6 @@ Exercicios POO
 
 """
 
-"""
-
 
 
 # 01)
@@ -42,7 +40,7 @@ pessoa1.setar_nome('Samuel')
 pessoa1.setar_idade(32)
 pessoa1.setar_altura(1.78)
 print(pessoa1.__dict__)
-"""
+
 # 02)
 
 
@@ -118,7 +116,7 @@ print(agenda1.imprir_pessoa(6))
 
 print('4------------------------------')
 
-
+"""
 # 03)
 
 
@@ -204,7 +202,7 @@ print('6----------------------------------\n')
 
 
 
-
+"""
 # 04)
 
 
