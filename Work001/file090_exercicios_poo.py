@@ -217,7 +217,7 @@ class ControleRemoto:
 
 class Televisao:
 
-    def __init__(self, volume_atual=0, canal_atual=1):
+    def __init__(self, volume_atual = 0, canal_atual = 1):
         self.__volume_atual = volume_atual
         self.__canal_atual = canal_atual
 
