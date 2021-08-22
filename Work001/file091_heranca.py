@@ -4,11 +4,11 @@ Continuação POO -> Herança (Inheritance)
 
 A ideia de herança é a de reaproveitar código. Também extender nossas classes.
 Obs: Com a herança, a partir de uma classe existente, nós extendemos outra classe que passa a herdar
- atributos e métodos da classe herdada.
+atributos e métodos da classe herdada.
 
 
 Pergunta: Existe alguma entidade genérica o suficiente para encapsular os atributos e métodos comuns
- a outras entidades ?
+a outras entidades ?
 
 OBS: Quando uma classe herda de outra classe ela herda todos os atributos e métodos da classe herdada.
 
@@ -26,7 +26,6 @@ Quando uma classe herda de outra classe, ela é chamada de:
 Sobrescrita de métodos (Override):
 Sobrescrita de métodos, ocorre quando reescrevemos/implementamos um método presente na super classe
 em classes filhas.
-
 """
 
 
