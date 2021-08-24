@@ -3,7 +3,6 @@ POO - Metodo super
 
 O metodo super() se refere a super classe.
 
-
 """
 
 
@@ -26,5 +25,4 @@ class Gato(Animal):
 
 chiquinho = Gato('chiquinho', 'felino', 'siames')
 chiquinho.faz_som('miau')
-
 print('---------------------')
