@@ -8,8 +8,6 @@ Em Python, nós podemos conferir a ordem de execução dos métodos (MRO) de 3 f
 - Via metodo mro()
 - Via help
 
-
-
 """
 
 
