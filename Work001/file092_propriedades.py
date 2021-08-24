@@ -5,7 +5,6 @@ Em linguagens como Java, ao declararmos atributos privados nas classes, costumam
 publicos para manipulação desses atributos. Esses metodos são conhecidos por getters e setters, onde
 os getters retornam o valor do atributo e os setters alteram o valor do mesmo.
 
-
 """
 
 
@@ -171,5 +170,3 @@ print('para conta5:', conta5.valor_total)
 print('para conta6:', conta6.valor_total)
 
 print('3---------------------------')
-print('4---------------------------')
-print('5---------------------------')
