@@ -9,8 +9,7 @@ OBS: A herança multipla pode ser feita de duas maneiras:
    - Por Multiderivação Indireta;
 
 OBS: Não importa se a derivação é direta ou indireta. A classe que realizar a herança herdará todos
- os atributos e métodos das super classes.
-
+os atributos e métodos das super classes.
 
 """
 
@@ -51,7 +50,7 @@ class MultiDerivada2(Base6):
     pass
 
 
-print('----------------------------')
+print('1----------------------------')
 
 
 class Animal:
@@ -106,7 +105,7 @@ print(linu.andar())
 print(linu.nadar())
 print(linu.cumprimentar())  #  ??????  Method Resolution Order (MRO) // Eu sou Pingo do mar // Aquatico vem primeiro
 
-print('---------------------')
+print('2---------------------')
 
 print(f'Pingo é instancia de Pinguim ? : {isinstance(linu, Pinguim)}')
 print(f'Pingo é instancia de Aquatico ? : {isinstance(linu, Aquatico)}')
@@ -129,4 +128,4 @@ class Pessoa(object):
 """
 
 print('---------------------')
-print('---------------------')
+
