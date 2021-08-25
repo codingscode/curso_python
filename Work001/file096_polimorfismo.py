@@ -5,7 +5,6 @@ Polimorfismo  :
 Poli (Muitos)
 Morfis (Formas)
 
-
 """
 
 
@@ -60,5 +59,4 @@ mickey = Rato('Mickey')
 mickey.comer()
 #mickey.falar()  #  NotImplementedError: A classe filha precisa implementar este método
 
-print('-----------------------------------------')
 print('-----------------------------------------')
