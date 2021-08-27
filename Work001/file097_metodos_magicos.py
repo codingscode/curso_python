@@ -34,7 +34,7 @@ class Livro:
     #    print('Um objeto do tipo Livro foi deletado da memória')
 
     def __add__(self, outro):  # tenta comentar
-        return f'{self} - {outro}'
+        return f'{self} + {outro}'
 
     def __mul__(self, outro):  # tentar comentar
         if isinstance(outro, int):
@@ -48,11 +48,11 @@ class Livro:
 livro1 = Livro('Python coding', 'escola do codigo', 250)
 livro2 = Livro('IA com Python', 'code match', 100)
 
-print(livro1)
-print(str(livro1))
+print('1.', livro1)
+print('2.', str(livro1))
 
-print(livro2)
-print(str(livro2))
+print('3.', livro2)
+print('4.', str(livro2))
 
 print('1----------------------------------------')
 
@@ -61,21 +61,21 @@ from file097_metodos_magicos import Livro
 l1 = Livro('Qualquer', 'Outro', 80)
 l2 = Livro('Harry Potter', 'ficção', 537)
 
-print(l1)
-print(str(l1))
-print(repr(l1))  # testar no terminal é diferente
-print(repr(l2))  # testar no terminal é diferente
-print(len(l1))   # dá erro
-print(len(l2))
+print('1.', l1)
+print('2.', str(l1))
+print('3.', repr(l1))  # testar no terminal é diferente
+print('4.', repr(l2))  # testar no terminal é diferente
+print('5.', len(l1))   # dá erro
+print('6.', len(l2))
 
 #del l1
 
 print('2----------------------------------------')
-print(l1)
-print(l2)
-print(l1 + l2)  # dá erro
-print(dir())
-print(dir(__builtins__))
+print('l1:', l1)
+print('l2:', l2)
+print('l1 + l2:', l1 + l2)  # dá erro
+print('dir():', dir())
+print('dir(__builtins__):', dir(__builtins__))
 
 print('3----------------------------------------')
 print(l1*3)  # dá erro
