@@ -135,12 +135,6 @@ print(eletro1.__dict__)
 print(eletro1.imprimir())
 
 
-
-
-
-"""
-
-
 #31)
 
 
@@ -180,4 +174,10 @@ produto1.ligar()
 print(produto1.imprimir())
 produto1.desligar()
 print(produto1.imprimir())
+
+
+
+
+"""
+
 
