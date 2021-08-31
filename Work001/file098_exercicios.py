@@ -5,6 +5,10 @@ Exercicios da pasta
 """
 
 """
+
+
+
+
 #01)
 class Pessoa:
 
@@ -21,7 +25,9 @@ pessoa1 = Pessoa('magali', 'belo horizonte', 98782387)
 print(pessoa1.__dict__)
 print(pessoa1.imprimir())
 
+
 #03)
+
 class Quadrado:
 
     def __init__(self, lado): 
@@ -47,6 +53,7 @@ print(quadrado1.imprimir())
 
 
 # 05)
+
 class Retangulo:
 
     def __init__(self, lado1, lado2):
@@ -71,6 +78,7 @@ retangulo1 = Retangulo(3, 4)
 print(retangulo1.__dict__)
 print(retangulo1.imprimir())
 
+"""
 #06)
 class Retangulo:
 
@@ -84,6 +92,7 @@ class Retangulo:
 retangulo1 = Retangulo(5, 7)
 print(retangulo1.__dict__)
 
+"""
 # 11)
 
 
