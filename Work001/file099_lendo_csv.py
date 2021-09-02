@@ -14,7 +14,6 @@ A linguagem Python possui duas formas diferentes para ler dados em arquivos CSV:
   - reader -> Permite que iteremos sobre as linhas do arquivo CSV como listas.
   - DictReader -> Permite que iteremos sobre as linhas do arquivo CSV como OrderedDicts.
 
-
 """
 
 # Possível de se trabalhar, mas não é o ideal (trabalhoso)
@@ -22,6 +21,7 @@ with open('file099_lutadores.csv', encoding='utf-8') as arquivo1:
     dados = arquivo1.read()
     #print(type(dados))
     dados = dados.split(',')[2:]  # a partir do 2
+    #dados = dados.split('\n')[1:]
     print(dados)
 
 print('1---------------------')
