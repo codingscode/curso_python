@@ -4,10 +4,12 @@ Escrevendo em arquivo .csv
 reader() (leitor) writer() (escritor)
 writerow() -> Escreve uma linha
 
-
+"""
+"""
+writer() -> Gera um objeto para que possamos escrever em um arquivo CSV. utilizamos o metodo writerow para escrever 
+cada linha. Este metodo recebe uma lista.
 """
 
-# writer() -> Gera um objeto para que possamos escrever em um arquivo CSV. utilizamos o metodo writerow para escrever cada linha. Este metodo recebe uma lista.
 from csv import writer
 
 with open('file100_criandoarquivo.csv', 'a', encoding='utf-8', newline='') as arquivo:  # 'a' -> adiciona ao conteudo presente
