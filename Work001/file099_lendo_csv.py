@@ -45,7 +45,7 @@ from csv import DictReader
 
 with open('file099_lutadores.csv', encoding='utf-8') as arquivo3:
     leitor_csv = DictReader(arquivo3)
-    # print(list(leitor_csv))
+    #print(list(leitor_csv))
     for linha in leitor_csv:
         # Cada linha é um OrderedDict
         print(f"{linha['Nome']} nasceu no(a)(s) {linha['País']} e mede {linha['Altura']}")
