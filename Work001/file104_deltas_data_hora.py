@@ -1,6 +1,7 @@
 """
 Trabalhando com deltas de data e hora
 
+
 data_inicial = dd/mm/yyyy 12:55:34.9939329
 data_final = dd/mm/yyyy 13:34:23.0903231
 delta = data_final - data_inicial
@@ -31,4 +32,4 @@ vencimento_boleto = data_da_compra + regra_boleto
 print(vencimento_boleto)
 
 print('2-------------------')
-print('3-------------------')
+
