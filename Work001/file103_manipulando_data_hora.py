@@ -1,6 +1,7 @@
 """
 Manipulando data e hora
 
+
 Há um módulo built-in (integrado) para se trabalhar com data e hora chamado datetime .
 
 """
@@ -18,7 +19,7 @@ print('0----------------')
 
 #  modulo / classe / método -> retorna a hora e a data atual
 print(datetime.datetime.now())
-print(repr(datetime.datetime.now()))
+print(repr(datetime.datetime.now()))  # representação se passesse valores
 
 # replace() para fazer ajustes na data/hora
 inicio = datetime.datetime.now()
@@ -60,4 +61,3 @@ print(f'microsegundo : {evento2.microsecond}')
 print(dir(evento2))
 
 print('4-----------------------')
-print('5-----------------------')
