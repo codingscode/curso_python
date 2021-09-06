@@ -1,10 +1,11 @@
 """
 Json e Pickle
 
+
 Json -> javascript object notation
 
-API -> São meios de comunicação entre os serviços oferecidos por empresas (Twitter, Facebook,
-YouTube ...) e terceiros (nós desenvolvedores).
+API -> São meios de comunicação entre os serviços oferecidos por empresas (Twitter, Facebook, YouTube ...) e
+terceiros (nós desenvolvedores).
 
 Integrando o JSON com o Pickle
 
@@ -43,7 +44,6 @@ print(gato1.__dict__)
 retorno2 = json.dumps(gato1.__dict__)
 print(retorno2)
 
-
 print('2-----------------------')
 
 import jsonpickle
@@ -74,4 +74,3 @@ with open('file102_gato_teste1.json', 'r') as arquivo2:
     print(retorno4.raca)
 
 print('5-----------------------')
-print('6-----------------------')
