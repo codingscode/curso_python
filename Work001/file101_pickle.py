@@ -1,5 +1,6 @@
 """
 Pickle :
+
 A função do Pickle é realizar o seguinte processo:
 Objeto Python -> Binarização
 Binarização -> Objeto Python
@@ -66,4 +67,4 @@ with open('file101_pickle_criandoarquivo1.pickle', 'rb') as arquivo2:
 
 
 print('2-----------------')
-print('3-----------------')
+
