@@ -41,6 +41,4 @@ with open('file100_criandoarquivo2.csv', 'w', encoding='utf-8', newline='') as a
             duracao = input('Informe a duração (minutos): ')
             escritor_csv.writerow({'Titulo': filme, 'Genero': genero, 'Duracao': duracao})
 
-
 print('2-----------------')
-print('3-----------------')
