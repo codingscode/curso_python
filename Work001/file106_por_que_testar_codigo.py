@@ -22,8 +22,6 @@ Estes estágios de desenvolvimento do TDD são quase como um mantra que os desen
    - Green;
    - Refactor;
 
-
-
 """
 
 
@@ -44,4 +42,3 @@ animal1 = Gato('felix')
 
 print(animal1.nome)
 print(animal1.miar())
-
