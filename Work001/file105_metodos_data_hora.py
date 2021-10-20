@@ -2,7 +2,6 @@
 Métodos data e hora
 
 
-
 """
 
 import datetime
@@ -106,7 +105,6 @@ print('6------------------')
 pip install textblob
 """
 from textblob import TextBlob
-
 # precisa de internet
 
 
