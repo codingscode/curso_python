@@ -15,9 +15,3 @@ def dormir(numero_horas):
         return f'Continuo cansado após dormir por {numero_horas} horas. :('
 
 
-
-
-
-
-
-

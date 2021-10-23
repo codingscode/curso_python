@@ -129,15 +129,15 @@ FAILED (failures=4)
 
 print('3----------------')
 
-"""
+#"""
 
-"""
+
 
 
 class AtividadesTestesref3(unittest.TestCase):
 
     def test_comer_saudavel(self):
-        """Testando o retorno com comida saudável"""
+        """"Testando o retorno com comida saudável"""
         self.assertEqual(
             comer('salada', True),
             'Estou comendo salada porque quero manter a forma.'
@@ -167,7 +167,7 @@ class AtividadesTestesref3(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
+#"""
 
 print('4------------------')
 """
