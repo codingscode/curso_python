@@ -20,4 +20,3 @@ t2.join()
 fim = time.time()
 
 print(f'tempo em segundos: {fim - inicio}')  # 0.631615161895752
-

@@ -15,3 +15,4 @@ contagem_regressiva(CONTADOR)
 fim = time.time()
 
 print(f'tempo em segundos: {fim - inicio}')  # 0.8874497413635254
+#tempo em segundos: 0.2263796329498291
