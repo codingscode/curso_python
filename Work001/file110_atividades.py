@@ -1,3 +1,4 @@
+
 def comer(comida, e_saudavel):
     if e_saudavel:
         final = 'quero manter a forma'
@@ -33,5 +34,4 @@ def e_engracada(pessoa):
     if pessoa in comediantes:
         return True
     return False
-
 
