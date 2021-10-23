@@ -1,3 +1,5 @@
+
+
 class Robo:
 
     def __init__(self, nome, bateria=100, habilidades=[]):
@@ -32,9 +34,5 @@ class Robo:
             self.__habilidades.append(nova_habilidade)
             return f'Uau. Eu aprendi {nova_habilidade.upper()}'
         return f'Bateria insuficiente. Favor recarregar.'
-
-
-
-
 
 

@@ -4,7 +4,7 @@ from file111_robo import Robo
 
 #descomentar, testar 1 de cada vez
 
-"""
+
 
 class RoboTestes(unittest.TestCase):
 
@@ -21,7 +21,7 @@ class RoboTestes(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-"""
+
 
 #no terminal da pasta do arquivo:
 #   python file111_robo_testes.py -v
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     unittest.main()
 """
 
-
+"""
 class RoboTestes(unittest.TestCase):
 
     def setUp(self):
@@ -67,7 +67,7 @@ class RoboTestes(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
+"""
 
 """
 no terminal da pasta do arquivo:
