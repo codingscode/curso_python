@@ -1,4 +1,5 @@
 """
+type hinting
 
 """
 
@@ -14,7 +15,7 @@ def cabecalho(texto, alinhamento=True):
     if alinhamento:
         return f"{texto.title()}\n{'*'*len(texto)}"
     else:
-        return f"{texto.title()} ".center(50, '#')
+        return f" {texto.title()} ".center(50, '#')
 
 
 print(cabecalho('codando em python'))
@@ -28,12 +29,11 @@ def cabecalho(texto: str, alinhamento: bool = True) -> str:
     if alinhamento:
         return f"{texto.title()}\n{'*'*len(texto)}"
     else:
-        return f"{texto.title()} ".center(50, '#')
+        return f" {texto.title()} ".center(50, '#')
 
 
 print(cabecalho('codando em python'))
 print(cabecalho('usando django em python', alinhamento=False))  # ou cabecalho('usando python em django', False)
 print(cabecalho('code em python', alinhamento='geek'))
-
 
 print('3-------------------')
