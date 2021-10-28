@@ -1,6 +1,7 @@
 """
 Tipos em comentarios
 
+
 """
 
 import math
@@ -16,7 +17,7 @@ print(circunferencia(5))  # nao dá erro
 
 """
 
-
+#"""
 def circunferencia(raio):  # def circunferencia(raio: float) -> float:
     # type: (float) -> float
     return 2 * math.pi * raio
@@ -24,7 +25,7 @@ def circunferencia(raio):  # def circunferencia(raio: float) -> float:
 
 print(circunferencia(5))  # nao dá erro
 print(circunferencia('geek'))  # no terminal deveria dar erro
-
+#"""
 
 """
 testar tambem no terminal: mypy file122_tipos_em_comentarios.py
