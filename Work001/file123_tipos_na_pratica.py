@@ -1,6 +1,7 @@
 """
 jogo_cartas_v1
 
+
 """
 
 nomes: list = ['Geek', 'Universit']
@@ -37,6 +38,7 @@ print(valores2)
 print(__annotations__)
 
 print('2------------------')
+
 """
 https://www.alt-codes.net/suit-cards.php
 
