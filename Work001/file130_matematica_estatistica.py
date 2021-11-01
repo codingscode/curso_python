@@ -16,8 +16,8 @@ statistics.geometric_mean -> calcula a média geométrica de número reais.
 
 statistics.multimode -> retorna o valor mais frequente em uma sequencia.
 
-
 """
+
 import math
 
 nuns_v1 = [2, 3, 6, 8]
