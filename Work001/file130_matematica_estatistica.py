@@ -2,6 +2,7 @@
 Funções matemáticas e estatistica
 
 
+
 math.prod -> retorna o produto de um container numérico
 
 math.isqrt -> integer square root -> parte inteira da raiz quadrada
@@ -15,6 +16,7 @@ statistics.fmean -> calcula a média de números reais
 statistics.geometric_mean -> calcula a média geométrica de número reais.
 
 statistics.multimode -> retorna o valor mais frequente em uma sequencia.
+
 
 """
 
@@ -30,15 +32,15 @@ print(math.prod(nuns_v3))
 
 print('1-----------------------')
 
-print(math.isqrt(9))
-print(math.isqrt(7))
-print(math.sqrt(7))
-print(math.isqrt(4))
-print(math.isqrt(21))
-print(math.sqrt(21))
-print(math.isqrt(25))
-#print(math.isqrt(1.44))  # dá erro
-print(math.sqrt(1.44))
+print('a:', math.isqrt(9))
+print('b:', math.isqrt(7))
+print('c:', math.sqrt(7))
+print('d:', math.isqrt(4))
+print('e:', math.isqrt(21))
+print('f:', math.sqrt(21))
+print('g:', math.isqrt(25))
+#print('h:', math.isqrt(1.44))  # dá erro
+print('i:', math.sqrt(1.44))
 
 print('2-----------------------')
 
@@ -80,7 +82,7 @@ seq1 = 'Jeriquaquara'
 seq2 = [2, 8, 7, 9, 7, 1, 7]
 seq3 = [5, 8, 4, 9, 8, 3, 0, 2, 3, 1, 1]
 
-print(statistics.multimode(seq1))
+print(statistics.multimode(seq1)) # valor(es) mais repetido(s) do iteravel
 print(statistics.multimode(seq2))
 print(statistics.multimode(seq3))
 
