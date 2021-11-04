@@ -30,7 +30,7 @@ class Calcular:
     def resultado(self: object) -> int:
         return self.__resultado
 
-    def __str__(self: object) -> str:
+    def __str__(self: object) -> str:  # chamada automaticamente
         op: str = ''
         if self.operacao == 1:
             op = 'Somar'
