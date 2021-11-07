@@ -121,7 +121,7 @@ def comprar_produto() -> None:
             sleep(2)
             menu()
     else:
-        print('Ainda não existem produtos para vender.')
+        print('Ainda não existem produtos para comprar.')
     sleep(2)
     menu()
 
@@ -157,7 +157,7 @@ def fechar_pedido() -> None:
         print(f'Sua fatura é {formata_float_str_moeda(valor_total)}')
         print('Volte sempre!')
         carrinho.clear()
-        sleep(5)
+        sleep(3)
     else:
         print('Ainda não existem produtos no carrinho.')
     sleep(2)
@@ -203,7 +203,7 @@ Selecione uma opção abaixo:
 5 - Fechar pedido
 6 - Sair do sistema
 3
-Ainda não existem produtos para vender.
+Ainda não existem produtos para comprar.
 ========================================
 ===========  Bem vindo(a)  =============
 ===========   Geek Shop    =============
