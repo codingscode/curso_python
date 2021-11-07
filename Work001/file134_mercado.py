@@ -189,12 +189,8 @@ Selecione uma opção abaixo:
 4 - Visualizar carrinho
 5 - Fechar pedido
 6 - Sair do sistema
-1
-Cadastro de Produto
-===================
-Informe o nome do produto: pendrive
-Informe o preço do produto: 23
-O produto pendrive foi cadastrado com sucesso!
+2
+Ainda não existem produtos cadastrados.
 ========================================
 ===========  Bem vindo(a)  =============
 ===========   Geek Shop    =============
@@ -206,13 +202,51 @@ Selecione uma opção abaixo:
 4 - Visualizar carrinho
 5 - Fechar pedido
 6 - Sair do sistema
-2
-Listagem de produtos
---------------------
-Código: 1 
-Nome: pendrive 
-Preço: R$ 23.00
----------------
+3
+Ainda não existem produtos para vender.
+========================================
+===========  Bem vindo(a)  =============
+===========   Geek Shop    =============
+========================================
+Selecione uma opção abaixo: 
+1 - Cadastrar produto
+2 - Listar produto
+3 - Comprar produto
+4 - Visualizar carrinho
+5 - Fechar pedido
+6 - Sair do sistema
+4
+Ainda não existem produtos no carrinho.
+========================================
+===========  Bem vindo(a)  =============
+===========   Geek Shop    =============
+========================================
+Selecione uma opção abaixo: 
+1 - Cadastrar produto
+2 - Listar produto
+3 - Comprar produto
+4 - Visualizar carrinho
+5 - Fechar pedido
+6 - Sair do sistema
+5
+Ainda não existem produtos no carrinho.
+========================================
+===========  Bem vindo(a)  =============
+===========   Geek Shop    =============
+========================================
+Selecione uma opção abaixo: 
+1 - Cadastrar produto
+2 - Listar produto
+3 - Comprar produto
+4 - Visualizar carrinho
+5 - Fechar pedido
+6 - Sair do sistema
+1
+Cadastro de Produto
+===================
+Informe o nome do produto: pendrive
+Informe o preço do produto: 32
+O produto pendrive foi cadastrado com sucesso!
 ========================================
 ===========  Bem vindo(a)  =============
 ===========   Geek Shop    =============
@@ -245,7 +279,7 @@ Selecione uma opção abaixo:
 Cadastro de Produto
 ===================
 Informe o nome do produto: ssd
-Informe o preço do produto: 200
+Informe o preço do produto: 160
 O produto ssd foi cadastrado com sucesso!
 ========================================
 ===========  Bem vindo(a)  =============
@@ -263,15 +297,18 @@ Listagem de produtos
 --------------------
 Código: 1 
 Nome: pendrive 
-Preço: R$ 23.00
+Preço: R$ 32.00
+
 ---------------
 Código: 2 
 Nome: caderno 
 Preço: R$ 20.00
+
 ---------------
 Código: 3 
 Nome: ssd 
-Preço: R$ 200.00
+Preço: R$ 160.00
+
 ---------------
 ========================================
 ===========  Bem vindo(a)  =============
@@ -290,15 +327,18 @@ Informe o código do produto que deseja adicionar ao carrinho:
 =============== Produtos Disponíveis =========================
 Código: 1 
 Nome: pendrive 
-Preço: R$ 23.00
+Preço: R$ 32.00
+
 ----------------------------------------------------------
 Código: 2 
 Nome: caderno 
 Preço: R$ 20.00
+
 ----------------------------------------------------------
 Código: 3 
 Nome: ssd 
-Preço: R$ 200.00
+Preço: R$ 160.00
+
 ----------------------------------------------------------
 1
 O produto pendrive foi adicionado ao carrinho.
@@ -319,15 +359,18 @@ Informe o código do produto que deseja adicionar ao carrinho:
 =============== Produtos Disponíveis =========================
 Código: 1 
 Nome: pendrive 
-Preço: R$ 23.00
+Preço: R$ 32.00
+
 ----------------------------------------------------------
 Código: 2 
 Nome: caderno 
 Preço: R$ 20.00
+
 ----------------------------------------------------------
 Código: 3 
 Nome: ssd 
-Preço: R$ 200.00
+Preço: R$ 160.00
+
 ----------------------------------------------------------
 3
 O produto ssd foi adicionado ao carrinho.
@@ -346,12 +389,14 @@ Selecione uma opção abaixo:
 Produtos no carrinho: 
 Código: 1 
 Nome: pendrive 
-Preço: R$ 23.00
+Preço: R$ 32.00
+
 Quantidade: 1
 ------------------------
 Código: 3 
 Nome: ssd 
-Preço: R$ 200.00
+Preço: R$ 160.00
+
 Quantidade: 1
 ------------------------
 ========================================
@@ -369,29 +414,18 @@ Selecione uma opção abaixo:
 Produtos do Carrinho
 Código: 1 
 Nome: pendrive 
-Preço: R$ 23.00
+Preço: R$ 32.00
+
 quantidade: 1
 ----------------
 Código: 3 
 Nome: ssd 
-Preço: R$ 200.00
+Preço: R$ 160.00
+
 quantidade: 1
 ----------------
-Sua fatura é R$ 223.00
+Sua fatura é R$ 192.00
 Volte sempre!
-========================================
-===========  Bem vindo(a)  =============
-===========   Geek Shop    =============
-========================================
-Selecione uma opção abaixo: 
-1 - Cadastrar produto
-2 - Listar produto
-3 - Comprar produto
-4 - Visualizar carrinho
-5 - Fechar pedido
-6 - Sair do sistema
-4
-Ainda não existem produtos no carrinho.
 ========================================
 ===========  Bem vindo(a)  =============
 ===========   Geek Shop    =============
@@ -405,8 +439,6 @@ Selecione uma opção abaixo:
 6 - Sair do sistema
 6
 Volte sempre!
-
-Process finished with exit code 0
 
 
 
