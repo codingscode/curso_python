@@ -1,3 +1,4 @@
+
 from file135_models.cliente import Cliente
 from file135_models.conta import Conta
 
@@ -17,11 +18,4 @@ print(contaf)
 print(contaa)
 print('-------------------')
 print('-------------------')
-
-
-
-
-
-
-
 

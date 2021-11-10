@@ -154,3 +154,265 @@ def buscar_conta_por_numero(numero: int) -> None:
 
 if __name__ == '__main__':
     main()
+
+"""
+
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+2
+Ainda não existem contas cadastradas.
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+3
+Ainda não existem contas cadastradas.
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+4
+Ainda não existem contas cadastradas.
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+5
+Não existem contas cadastradas.
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+1
+Informe os dados do cliente: 
+Nome do cliente: aladin
+E-mail do cliente: aladin@gmail.com
+CPF do cliente: 111234
+Data de nascimento do cliente: 03/08/2018
+Conta criada com sucesso.
+Dados da conta: 
+----------------------------------
+Número da conta: 1001 
+Cliente: aladin 
+Saldo Total: R$ 100.00
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+1
+Informe os dados do cliente: 
+Nome do cliente: mel
+E-mail do cliente: mel@outlook.com
+CPF do cliente: 222456
+Data de nascimento do cliente: 11/11/2019
+Conta criada com sucesso.
+Dados da conta: 
+----------------------------------
+Número da conta: 1002 
+Cliente: mel 
+Saldo Total: R$ 100.00
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+1
+Informe os dados do cliente: 
+Nome do cliente: apolo
+E-mail do cliente: apolo@yahoo.com
+CPF do cliente: 333785
+Data de nascimento do cliente: 04/05/2011
+Conta criada com sucesso.
+Dados da conta: 
+----------------------------------
+Número da conta: 1003 
+Cliente: apolo 
+Saldo Total: R$ 100.00
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+3
+Informe o número da sua conta: 1001
+Informe o valor do depósito: 1200
+Depósito efetuado com sucesso!
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+5
+Listagem de contas
+Número da conta: 1001 
+Cliente: aladin 
+Saldo Total: R$ 1,300.00
+-----------------
+Número da conta: 1002 
+Cliente: mel 
+Saldo Total: R$ 100.00
+-----------------
+Número da conta: 1003 
+Cliente: apolo 
+Saldo Total: R$ 100.00
+-----------------
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+2
+Informe o número da sua conta: 1001
+Informe o valor do saque: 200
+Saque efetuado com sucesso
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+5
+Listagem de contas
+Número da conta: 1001 
+Cliente: aladin 
+Saldo Total: R$ 1,100.00
+-----------------
+Número da conta: 1002 
+Cliente: mel 
+Saldo Total: R$ 100.00
+-----------------
+Número da conta: 1003 
+Cliente: apolo 
+Saldo Total: R$ 100.00
+-----------------
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+4
+Informe o número da sua conta:1001
+Informe o número da conta destino: 1003
+Informe o valor da transferência: 400
+Transferência realizada com sucesso. 
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+5
+Listagem de contas
+Número da conta: 1001 
+Cliente: aladin 
+Saldo Total: R$ 700.00
+-----------------
+Número da conta: 1002 
+Cliente: mel 
+Saldo Total: R$ 100.00
+-----------------
+Número da conta: 1003 
+Cliente: apolo 
+Saldo Total: R$ 500.00
+-----------------
+=========================================
+================== ATM ==================
+================ Geek Bank ==============
+=========================================
+Selecione uma opção no menu: 
+1 - Criar conta
+2 - Efetuar saque
+3 - Efetuar depósito
+4 - Efetuar transferência
+5 - Listar contas
+6 - Sair do sistema
+6
+Volte sempre
+
+
+
+"""
