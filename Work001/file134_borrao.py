@@ -16,11 +16,18 @@ x = lista[3].get('codigo')
 print(x)
 
 
-
-rec = {'x' : 2}
+rec = {'x': 2}
 
 print(rec)
+print('------------------')
 
+uma_string = 'nome'
+
+for cada in lista:
+    if cada[f'{uma_string}'] == 'ze':  # if cada.get(f'{uma_string}') == 'ze':
+        print('achado')
+    else:
+        print('não achado')
 
 
 

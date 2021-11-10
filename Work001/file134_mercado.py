@@ -98,22 +98,23 @@ def comprar_produto() -> None:
             if len(carrinho) > 0:
                 tem_no_carrinho: bool = False
                 for item in carrinho:
-                    quant: int = item.get(produto)
+                    quant: int = item.get(f'{produto}') # item.get(produto) mesmo que ...item[f'{produto}']
                     if quant:
-                        item[produto] = quant + 1
+                        item[produto] = quant + 1  # acesso por Produto como se fosse nome. Produto é o próprio nome do atributo/propriedade
                         print(f'O produto {produto.nome} agora possui {quant + 1} unidades no carrinho.')
                         tem_no_carrinho = True
                         sleep(2)
                         menu()
                 if not tem_no_carrinho:
                     prod = {produto: 1}
-                    print(f'xiri: {prod}')
+
                     carrinho.append(prod)
                     print(f'O produto {produto.nome} foi adicionado ao carrinho.')
                     sleep(2)
+                    print(f'xiri: {carrinho[0]}')
                     menu()
             else:
-                item = {produto: 1}
+                item = {produto: 1}  #  {'Produto': 1}
                 carrinho.append(item)
                 print(f'O produto {produto.nome} foi adicionado ao carrinho.')
                 sleep(2)

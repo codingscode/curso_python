@@ -23,7 +23,7 @@ class Produto:
     def preco(self: object) -> float:
         return self.__preco
 
-    def __str__(self: object) -> str:  # impressao automatica
+    def __str__(self: object) -> str:  # chamada automaticamente
         return f'Código: {self.codigo} \nNome: {self.nome} \nPreço: {formata_float_str_moeda(self.preco)}\n'
 
 
