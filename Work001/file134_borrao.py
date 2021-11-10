@@ -11,3 +11,16 @@ lista = [
 
 print(lista)
 
+x = lista[3].get('codigo')
+
+print(x)
+
+
+
+rec = {'x' : 2}
+
+print(rec)
+
+
+
+

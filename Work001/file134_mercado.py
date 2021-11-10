@@ -82,6 +82,7 @@ def listar_produtos() -> None:
 
 
 def comprar_produto() -> None:
+
     if len(produtos) > 0:
         print('Informe o código do produto que deseja adicionar ao carrinho: ')
         print('--------------------------------------------------------------')
@@ -106,6 +107,7 @@ def comprar_produto() -> None:
                         menu()
                 if not tem_no_carrinho:
                     prod = {produto: 1}
+                    print(f'xiri: {prod}')
                     carrinho.append(prod)
                     print(f'O produto {produto.nome} foi adicionado ao carrinho.')
                     sleep(2)
