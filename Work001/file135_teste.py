@@ -19,3 +19,24 @@ print(contaa)
 print('-------------------')
 print('-------------------')
 
+"""
+
+Código: 101 
+Nome: Fiona Verde 
+Data de Nascimento: 1987-09-02 00:00:00 
+Cadastro: 2021-11-10
+Código: 102 
+Nome: Bob aladin 
+Data de Nascimento: 1991-03-12 00:00:00 
+Cadastro: 2021-11-10
+---------------
+Número da conta: 1001 
+Cliente: Fiona Verde 
+Saldo Total: R$ 100.00
+Número da conta: 1002 
+Cliente: Bob aladin 
+Saldo Total: R$ 100.00
+-------------------
+-------------------
+
+"""
