@@ -49,6 +49,7 @@ def menu() -> None:
         menu()
 
 
+
 def criar_conta() -> None:
     print('Informe os dados do cliente: ')
 
